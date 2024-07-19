@@ -1,0 +1,57 @@
+.homie{
+
+
+}
+
+.dreamHome{
+    font-size: 16px;
+}
+
+.dreamhomes{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.find{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 8px;
+
+
+    border-radius: 8px;
+    color: white;
+}
+
+.unlock{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #262626;
+    width: 347.5px;
+    height: 160px;
+    border-radius: 8px;
+    color: white;
+}
+
+.management{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #262626;
+    width: 347.5px;
+    height: 160px;
+    border-radius: 8px;
+    color: white;
+}
+
+.investment{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #262626;
+    width: 347.5px;
+    height: 160px;
+    border-radius: 8px;
+    color: white;
+}

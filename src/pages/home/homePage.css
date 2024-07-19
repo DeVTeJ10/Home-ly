@@ -1,0 +1,104 @@
+.Discover{
+    background-color: black;
+    color: white;
+    padding-left: 80px;
+    width: 690px;
+    height: 622px;
+
+}
+
+.learnProperties{
+    display: flex;
+    gap: 16px;
+    margin-bottom: 50px;
+}
+
+.learnMore{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    font-size: 14px;
+    border: 1px solid;
+    border-radius: 8px;
+}
+
+.journey{
+    margin-bottom: 50px;
+}
+
+.browseProp{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    font-size: 14px;
+    background-color: #703BF7;
+    color: white;
+    border: 1px solid #703BF7;
+    border-radius: 8px;
+}
+
+h1{
+    font-size: 46px;
+    padding-top: 40px
+}
+
+
+
+.experiences{
+    display: flex;
+    gap: 16px;
+    margin-top: 30px;
+    width: 610px;
+    height: 99px;
+}
+
+.happyCustomers{
+    width: 192.67px;
+    height: 99px;
+    border-radius: 10px;
+    background-color: #333333;
+}
+
+.yearsofExperience{
+    width: 192.67px;
+    height: 99px;
+    border-radius: 10px;
+    background-color: #333333;
+}
+
+.clientProperties{
+    width: 192.67px;
+    height: 99px;
+    border-radius: 10px;
+    background-color: #333333;
+}
+
+.customer1{
+    margin-top: 20px;
+    font-size: 30px;
+    padding-left: 20px;
+
+}
+
+.customers4{
+    font-size: 16px;
+    padding-left: 20px;
+    margin-top: -30px;
+    font-weight: lighter;
+    color: gray;
+}
+
+.Dream{
+    margin-bottom: 20px;
+}
+
+.customers44{
+    font-weight: lighter;
+    padding-left: 20px;
+    margin-top: -25px;
+    font-weight: lighter;
+    color: gray;
+
+}
