@@ -9,7 +9,9 @@ const homePage = () => {
   return (
     <div>
         <HomePage />
+
       <div className='hello'>
+
       <div className='Discover'>
         <h1 className='Dream'> Discover your Dream <br></br> Property with Estatein</h1>
       <p className='journey'>Your journey to finding the perfect property begins here. 
@@ -36,6 +38,7 @@ const homePage = () => {
       <img src="./src/images/check.jpg" width={690} height={622}/>
       </div>
       < DreamHome />
+      <img src="./src/images/circogo.png" width={129} height={129} className='type'/>
     </div>
   )
 }

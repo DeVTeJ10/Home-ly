@@ -25,6 +25,7 @@
 
 .journey{
     margin-bottom: 50px;
+    font-size: 16px;
 }
 
 .browseProp{
@@ -92,6 +93,8 @@ h1{
 
 .Dream{
     margin-bottom: 20px;
+    font-size: 46px;
+    margin-top: 79px;
 }
 
 .customers44{
@@ -101,4 +104,16 @@ h1{
     font-weight: lighter;
     color: gray;
 
+}
+
+
+.hello{
+    display: flex;
+
+}
+
+.type{
+    margin-left: 685px;
+    margin-top: -900px;
+    margin-bottom: 620px;
 }
