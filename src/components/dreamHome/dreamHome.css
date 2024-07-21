@@ -6,7 +6,7 @@
 .dreamhomes{
     display: flex;
     justify-content: space-around;
-    background-color: black;
+    background-color: #141414;
     padding-top: 10px;
     border: 4px #262626 solid;
     padding-bottom: 10px;
