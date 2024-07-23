@@ -131,8 +131,9 @@ h1{
 
 .allProperties{
     display: flex;
-    gap: 260px;
+    gap: 240px;
     align-items: center;
+    background-color: #141414;
 }
 
 .checkprops{
@@ -140,6 +141,7 @@ h1{
     color: white;
     padding-left: 80px;
     margin-top: -40px;
+
 }
 
 .viewAll{
@@ -374,6 +376,7 @@ h1{
     border-radius: 10px;
     align-items: center;
     margin-top: -60px;
+
 }
 
 .checkthis{
@@ -396,9 +399,111 @@ h1{
 
 .qwerty{
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
 
 p{
-    font-size: 17px;
+    font-size: 16px;
+}
+
+.pages1{
+    display: flex;
+    margin-top: -80px;
+    justify-content: space-between;
+    padding-left: 80px;
+    padding-right: 80px;
+    align-items: center;
+    background-color: #141414;
+    color: white;
+    border-top: 0.5px solid #262626;
+
+}
+
+.qwertys{
+    display: grid;
+    background-color: #141414;
+    color: white;
+    padding-top: 30px;
+    gap: 24px;
+    border: 2px solid #333333;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 10px;
+    padding-bottom: 40px;
+    width: 413.33px;
+    height: 282px;
+}
+
+.qwertysp{
+    display: flex;
+    justify-content: space-between;
+    /* margin-left: 40px; */
+    /* margin-right: 40px; */
+    padding-left: 80px;
+    padding-right: 80px;
+    background-color: #141414;
+    padding-top: 60px;
+    gap: 20px;
+}
+
+.learnHow{
+    font: 12px;
+    white-space: nowrap;
+    color: #999999;
+}
+
+h3{
+    font-size: 20px;
+    white-space: nowrap;
+}
+
+.colors{
+    background-color: #141414;
+}
+
+.learnHows{
+    margin-top: 35px;
+    color: #999999;
+}
+
+.viewAlls1{
+    width: 107px;
+    height: 46px;
+    border-radius: 8px;
+    border: 0px;
+    color: white;
+    background-color: #333333;
+}
+
+.pages2{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1120px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 40px;
+    background-color: #141414;
+    color: white;
+    margin-bottom: 40px;
+    padding-bottom: 80px;
+}
+
+.checkpropss{
+    background-color: #141414;
+    color: white;
+    padding-left: 80px;
+    padding-right: 80px;
+    gap: 150px;
+    border: 1px solid #262626;
+    margin-top: -50px;
+}
+
+.viewAllsss{
+    width: 152px;
+    height: 49px;
+    background-color: #703BF7;
+    color: white;
+    border: 0px;
+    border-radius: 8px;
+    margin-bottom: 85px;
 }
