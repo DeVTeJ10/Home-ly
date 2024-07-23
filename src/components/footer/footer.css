@@ -1,24 +1,9 @@
 .sentient{
-    display: flex;
-    align-items: center;
     padding-left: 80px;
     padding-right: 80px;
     background-color: #141414;
     color: white;
-    gap: 400px;
 }
-
-.features{
-    display: flex;
-    gap: 110px;
-    white-space: nowrap;
-    color: #999999;
-}
-
-.sentient{
-    display: flex;
-}
-
 
 p{
     font-size: 18px;
@@ -32,10 +17,14 @@ p{
     text-align: center;
 }
 
-.inputss{
+.finalfooter{
+    display: flex;
+    background-color: #141414;
+    color: white;
+    gap: 80px;
     padding-right: 80px;
 }
 
-.sentients{
-    display: flex;
+.mailedit{
+    display: block;
 }
