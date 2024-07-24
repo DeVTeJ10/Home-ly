@@ -13,15 +13,13 @@ const index = () => {
         <div className='logo2s'>
                 <img src="./src/images/Logo.png" width={113.33} height={34} />
         </div>
+                <input placeholder='Enter Your Email' className='emails'></input>
         </div>
 
-        <div className='mailedit'>
-        </div>
-
-
+        <div className='x'>
         <div className='features1'>
         <div className='features'>
-                <p>Home</p>
+                <p className='highlights'>Home</p>
                 <p>Hero Section</p>
                 <p>Features</p>
                 <p>Properties</p>
@@ -31,7 +29,7 @@ const index = () => {
         </div>
         <div className='features1'>
         <div className='features'>
-                <p>About Us</p>
+                <p className='highlights'>About Us</p>
                 <p>Our Story</p>
                 <p>Our Works</p>
                 <p>How It Works</p>
@@ -41,14 +39,14 @@ const index = () => {
         </div>
         <div className='features1'>
         <div className='features'>
-                <p>Properties</p>
+                <p className='highlights'>Properties</p>
                 <p>Portfolios</p>
                 <p>categories</p>
         </div>
         </div>
         <div className='features1'>
         <div className='features'>
-                <p>Services</p>
+                <p className='highlights'>Services</p>
                 <p>Valuation Mastery</p>
                 <p>Strategic Marketing</p>
                 <p>Negotiation Wizardry</p>
@@ -58,9 +56,10 @@ const index = () => {
         </div>
         <div className='features1'>
         <div className='features'>
-                <p>Contact Us</p>
+                <p className='highlights'>Contact Us</p>
                 <p>Contact Form</p>
                 <p>Our Offices</p>
+        </div>
         </div>
         </div>
         </div>

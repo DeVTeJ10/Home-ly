@@ -15,16 +15,46 @@ p{
     padding-top: 14px;
     padding-bottom: 14px;
     text-align: center;
+    background-color: #141414;
+    border: 1px solid #333333;
+    border-radius: 8px;
+    margin-top: 40px;
+    width: 305px;
+    height: 52px;
+    color: white;
+}
+.emails::placeholder{
+    text-align: left;
 }
 
 .finalfooter{
     display: flex;
     background-color: #141414;
     color: white;
-    gap: 80px;
+    gap: 60px;
     padding-right: 80px;
+    padding-top: 40px;
+    padding-bottom: 30px;
 }
 
 .mailedit{
     display: block;
+}
+
+.highlights{
+    color: #999999;
+    margin-bottom: 30px;
+}
+
+.features1{
+    padding-left: 10px;
+}
+
+.x{
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    padding-left: px;
+    padding-right: 80px;
+    white-space: nowrap;
 }
