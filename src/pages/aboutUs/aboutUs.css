@@ -1,0 +1,15 @@
+.s{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.checking{
+    background-color: #141414;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-left: 80px;
+
+}
