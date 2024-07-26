@@ -40,11 +40,11 @@ const aboutUs = () => {
             </div>
           </div>
           </div>
-
         </div>
           </div>
         <img src="./src/images/householding.png" width={610} height={435} className="household" />
       </div>
+      
     </div>
   );
 };
