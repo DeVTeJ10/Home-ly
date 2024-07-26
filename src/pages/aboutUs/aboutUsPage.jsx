@@ -58,11 +58,42 @@ const aboutUs = () => {
               as a small team with big dreams, 
               determined to<br></br> create a real estate platform that transcended the<br></br> ordinary.
           </p>
+
           </div>
       </div>
-        <img src="./src/images/truststar.png" width={23.12} height={22.14} />
-        <h4>Trust</h4>
+
+    <div className="bosslevelapp">
+    <div className="starcomp">
+      <div className="starsdiv">
+        <img src="./src/images/truststar.png" width={60} height={60} className="starjourney"/>
+        <h3>Trust</h3>
+        </div>
         <p>Trust is the cornerstone of every successful<br></br> real estate transaction.</p>
+      </div>
+      <div className="starcomp">
+      <div className="starsdiv">
+        <img src="./src/images/excellence.png" width={60} height={60} className="starjourney"/>
+        <h3>Excellence</h3>
+        </div>
+        <p>We set the bar high for ourselves. From the properties we list to the services we provide.</p>
+      </div>
+    </div>
+    <div className="bosslevelapp">
+    <div className="starcomp">
+      <div className="starsdiv">
+        <img src="./src/images/client3.png" width={60} height={60} className="starjourney"/>
+        <h3>Client-centric</h3>
+        </div>
+        <p>Trust is the cornerstone of every successful<br></br> real estate transaction.</p>
+      </div>
+      <div className="starcomp">
+      <div className="starsdiv">
+        <img src="./src/images/excellence.png" width={60} height={60} className="starjourney"/>
+        <h3>Our Commitment</h3>
+        </div>
+        <p>Trust is the cornerstone of every successful<br></br> real estate transaction.</p>
+      </div>
+    </div>
     </div>
   );
 };
