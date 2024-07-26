@@ -44,7 +44,25 @@ const aboutUs = () => {
           </div>
         <img src="./src/images/householding.png" width={610} height={435} className="household" />
       </div>
-      
+
+      <div className="ourjourneys">
+      <div className="starry1">
+            <img src="./src/images/star1.png" width={24} height={24} />
+            <img src="./src/images/star2.png" width={14.4} height={14.4} />
+            <img src="./src/images/star3.png" width={6.72} height={6.72} />
+          </div>
+          <div className="ourjourney">
+          <h1 className="Dream"> Our Values</h1>
+          <p className="journey">
+              Our story is one of continuous growth and evolution. We<br></br> started 
+              as a small team with big dreams, 
+              determined to<br></br> create a real estate platform that transcended the<br></br> ordinary.
+          </p>
+          </div>
+      </div>
+        <img src="./src/images/truststar.png" width={23.12} height={22.14} />
+        <h4>Trust</h4>
+        <p>Trust is the cornerstone of every successful<br></br> real estate transaction.</p>
     </div>
   );
 };
