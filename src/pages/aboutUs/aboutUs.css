@@ -23,7 +23,7 @@
 }
 
 .ourjourney{
-    margin-top: -80px;
+    margin-top: -100px;
 }
 
 .Discovery{
@@ -35,8 +35,6 @@
 }
 
 .ourjourneys{
-    padding-left: 80px;
-    padding-right: 80px;
     background-color: #141414;
     color: white;
 }
@@ -49,20 +47,90 @@
 .starsdiv{
     display: flex;
     gap: 10px;
-
 }
 
 .starcomp{
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 5px;
     width: 329.5px;
-    height: 124px;
 }
 
 .bosslevelapp{
     display: flex;
+    gap: 40px;
     background-color: #141414;
     color: white;
-    padding-bottom: 50px;
+    margin-left: 80px;
+}
+
+.bosslevelapps{
+    display: flex;
+    gap: 40px;
+    background-color: #141414;
+    color: white;
+    margin-left: 80px;
+}
+
+.couldbeit{
+    display: flex;
+    align-items: center;
+    background-color: #141414;
+    align-items: center;
+    background-color: #141414;
+}
+
+.trythisone{
+    display: flex;
+    gap: 60px;
+    padding-left: 80px;
+    background-color: #141414;
+    color: white;
+}
+
+.Eureka{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 807px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    border: 1px solid #333333;
+    margin-left: 50px;
+    box-shadow: 30px;
+    border-radius: 20px;
+}
+
+p{
+    color: gray;
+}
+
+.starprops{
+padding-top: 40px;
+background-color: #141414;
+}
+
+.qwertyuiop{
+
+    background-color: #141414;
+    color: white;
+    padding-top: 30px;
+    border: 2px solid #333333;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 10px;
+    width: 413.33px;
+    margin-top: -20px;
+    padding-bottom: 30px;
+}
+
+.learnHows{
+    margin-top: 35px;
+    color: #999999;
+
+}
+
+.Navstarsign{
+    padding-top: 50px;
+    background-color: #141414;
 }
