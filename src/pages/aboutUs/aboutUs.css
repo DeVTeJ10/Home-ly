@@ -103,11 +103,12 @@
 
 p{
     color: gray;
+    font-size: 16px;
 }
 
 .starprops{
-padding-top: 40px;
-background-color: #141414;
+    padding-top: 40px;
+    background-color: #141414;
 }
 
 .qwertyuiop{
