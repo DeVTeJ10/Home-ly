@@ -198,10 +198,10 @@ const aboutUs = () => {
         </div>
       </div>
 
-      <div className="steps"> 
-      <h4>Step 01</h4>
-      <h4>Step 02</h4>
-      <h4>Step 03</h4>
+      <div className="steps">
+        <h4>Step 01</h4>
+        <h4>Step 02</h4>
+        <h4>Step 03</h4>
       </div>
       <div className="qwertysp">
         <div className="qwertyuiops">
@@ -215,9 +215,9 @@ const aboutUs = () => {
         <div className="qwertyuiops">
           <h3>Narrowing Down Your Choices</h3>
           <p className="learnHow">
-            Once you've found properties that catch your <br></br> eye, save them to your
-            account or make a<br></br> shortlist. This allows you to
-            compare and revisit<br></br> your favorites as you make your
+            Once you've found properties that catch your <br></br> eye, save
+            them to your account or make a<br></br> shortlist. This allows you
+            to compare and revisit<br></br> your favorites as you make your
             decision.
           </p>
         </div>
@@ -231,39 +231,72 @@ const aboutUs = () => {
         </div>
       </div>
 
+      <div className="howdydo">
+        <div className="steps">
+          <h4>Step 04</h4>
+          <h4>Step 05</h4>
+          <h4>Step 06</h4>
+        </div>
+        <div className="qwertysp">
+          <div className="qwertyuiops">
+            <h3>See It for Yourself</h3>
+            <p className="learnHow">
+              Arrange viewings of the properties you're<br></br> interested in.
+              We'll coordinate with the property<br></br> owners and accompany
+              you to ensure you get<br></br> a firsthand look at your potential
+              new home.
+            </p>
+          </div>
+          <div className="qwertyuiops">
+            <h3>Making Informed Decisions</h3>
+            <p className="learnHow">
+              Before making an offer, our team will assist you<br></br> with due
+              diligence, including property<br></br>
+              inspections, legal checks, and market analysis.<br></br> We want
+              you to be fully informed.
+            </p>
+          </div>
+          <div className="qwertyuiops">
+            <h3>Getting the Best Deal</h3>
+            <p className="learnHowss">
+              We'll help you negotiate the best terms and<br></br> prepare your
+              offer. Our goal is to secure the<br></br> property at the right
+              price and on favorable<br></br> terms.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="hollas">
+        <div className="starry1">
+          <img src="./src/images/star1.png" width={24} height={24} />
+          <img src="./src/images/star2.png" width={14.4} height={14.4} />
+          <img src="./src/images/star3.png" width={6.72} height={6.72} />
+        </div>
+        <div className="ourjourney">
+          <h1 className="Dream"> Meet the Estatein Team</h1>
+          <p className="journey">
+            At Estatein, our success is driven by the dedication and expertise
+            of our team. Get to know the people behind our mission to make your
+            real estate<br></br> dreams a reality.
+          </p>
+        </div>
+      </div>
 
-    <div className="howdydo">
-    <div className="steps"> 
-      <h4>Step 04</h4>
-      <h4>Step 05</h4>
-      <h4>Step 06</h4>
+      <div className="delegates">
+        <img src="./src/images/Max.png" width={257} height={220} />
+        <button className="tweets">
+          {" "}
+          <img
+            src="./src/images/tweet.png"
+            width={20}
+            height={16.25}
+            className="tweeting"
+          />
+        </button>
+        <h3>Max Mitchel</h3>
+        <p>Founder</p>
+        <input placeholder="Say hello" className="contactss"></input>
       </div>
-      <div className="qwertysp">
-        <div className="qwertyuiops">
-        <h3>See It for Yourself</h3>          
-          <p className="learnHow">
-          Arrange viewings of the properties you're<br></br> interested in. 
-          We'll coordinate with the property<br></br> owners and accompany 
-          you to ensure you get<br></br> a firsthand look at your potential new home.
-          </p>
-        </div>
-        <div className="qwertyuiops">
-          <h3>Making Informed Decisions</h3>
-          <p className="learnHow">
-            Before making an offer, our team will assist you<br></br> with due diligence, including property<br></br>
-            inspections, 
-            legal checks, and market analysis.<br></br> We want you to be fully informed.
-          </p>
-        </div>
-        <div className="qwertyuiops">
-          <h3>Getting the Best Deal</h3>
-          <p className="learnHowss">
-          We'll help you negotiate the best terms and<br></br> prepare your offer. 
-          Our goal is to secure the<br></br> property at the right price and on favorable<br></br> terms.
-          </p>
-        </div>
-      </div>
-    </div>
     </div>
   );
 };

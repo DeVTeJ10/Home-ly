@@ -137,7 +137,7 @@ p{
     margin-top: -20px;
     padding-bottom: 30px;
     border-left: none;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .qwertyuiops::before{
@@ -145,11 +145,22 @@ p{
     position: absolute;
     top: -50px;
     left: -2px;
-    bottom: -2px;
+    bottom: -1px;
     width:1.5px;
     background-color: #333333;
-    border-radius: 10px;
 }
+
+.qwertyuiops::before{
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: -2px;
+    bottom: -1px;
+    width:1.5px;
+    background-color: #333333;
+    background: linear-gradient(to bottom, #703BF7, gray)
+}
+
 
 .learnHows{
     margin-top: 35px;
@@ -175,4 +186,37 @@ p{
 .howdydo{
     padding-top: 40px;
     background-color: #141414;
+}
+
+.hollas{
+    padding-left: 80px;
+    padding-right: 80px;
+    background-color: #141414;
+    color: white;
+    padding-top: 30px;
+}
+
+.tweets{
+    padding-left: 20px;
+    padding-top: 12px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    background-color: #703bf7;
+    border-radius: 30px;
+    border: 0px;
+
+}
+
+.contactss{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.delegates{
+
+    border: 2px solid purple;
+}
+
+.tweeting{
+
 }
