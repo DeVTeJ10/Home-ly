@@ -197,8 +197,14 @@ const aboutUs = () => {
           </div>
         </div>
       </div>
+
+      <div className="steps"> 
+      <h4>Step 01</h4>
+      <h4>Step 02</h4>
+      <h4>Step 03</h4>
+      </div>
       <div className="qwertysp">
-        <div className="qwertyuiop">
+        <div className="qwertyuiops">
           <h3>Discover a World of Possibilities</h3>
           <p className="learnHow">
             Your journey begins with exploring our carefully<br></br> curated
@@ -206,16 +212,16 @@ const aboutUs = () => {
             properties based on your<br></br> preferences, including location,
           </p>
         </div>
-        <div className="qwertyuiop">
+        <div className="qwertyuiops">
           <h3>Narrowing Down Your Choices</h3>
           <p className="learnHow">
-            Once you've found properties that catch your eye, save them to your
-            <br></br> account or make a<br></br> shortlist. This allows you to
+            Once you've found properties that catch your <br></br> eye, save them to your
+            account or make a<br></br> shortlist. This allows you to
             compare and revisit<br></br> your favorites as you make your
             decision.
           </p>
         </div>
-        <div className="qwertyuiop">
+        <div className="qwertyuiops">
           <h3>Personalized Guidance</h3>
           <p className="learnHowss">
             Have questions about a property or need more<br></br> information?
@@ -224,31 +230,40 @@ const aboutUs = () => {
           </p>
         </div>
       </div>
+
+
+    <div className="howdydo">
+    <div className="steps"> 
+      <h4>Step 04</h4>
+      <h4>Step 05</h4>
+      <h4>Step 06</h4>
+      </div>
       <div className="qwertysp">
-        <div className="qwertyuiop">
-          <h4>See It for Yourself</h4>
+        <div className="qwertyuiops">
+        <h3>See It for Yourself</h3>          
           <p className="learnHow">
           Arrange viewings of the properties you're<br></br> interested in. 
           We'll coordinate with the property<br></br> owners and accompany 
           you to ensure you get<br></br> a firsthand look at your potential new home.
           </p>
         </div>
-        <div className="qwertyuiop">
-          <h4>Making Informed Decisions</h4>
+        <div className="qwertyuiops">
+          <h3>Making Informed Decisions</h3>
           <p className="learnHow">
             Before making an offer, our team will assist you<br></br> with due diligence, including property<br></br>
             inspections, 
             legal checks, and market analysis.<br></br> We want you to be fully informed.
           </p>
         </div>
-        <div className="qwertyuiop">
-          <h4>Getting the Best Deal</h4>
+        <div className="qwertyuiops">
+          <h3>Getting the Best Deal</h3>
           <p className="learnHowss">
           We'll help you negotiate the best terms and<br></br> prepare your offer. 
           Our goal is to secure the<br></br> property at the right price and on favorable<br></br> terms.
           </p>
         </div>
       </div>
+    </div>
     </div>
   );
 };
