@@ -282,20 +282,28 @@ const aboutUs = () => {
         </div>
       </div>
 
-      <div className="delegates">
-        <img src="./src/images/Max.png" width={257} height={220} />
-        <button className="tweets">
-          {" "}
-          <img
-            src="./src/images/tweet.png"
-            width={20}
-            height={16.25}
-            className="tweeting"
-          />
-        </button>
-        <h3>Max Mitchel</h3>
-        <p>Founder</p>
-        <input placeholder="Say hello" className="contactss"></input>
+      <div className="sups">
+        <div className="delegates">
+          <div className="tweetpic">
+            <img
+              src="./src/images/Max.png"
+              width={257}
+              height={220}
+              className="max"
+            />
+            <button className="tweets">
+              {" "}
+              <img
+                src="./src/images/tweet.png"
+                width={20}
+                height={16.25}
+              />
+            </button>
+          </div>
+          <h3>Max Mitchel</h3>
+          <p>Founder</p>
+          <button placeholder="Say Hello" className="contactss">Say Hello</button>
+        </div>
       </div>
     </div>
   );
