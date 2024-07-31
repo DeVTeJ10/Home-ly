@@ -282,7 +282,9 @@ const aboutUs = () => {
         </div>
       </div>
 
-      <div className="sups">
+
+    <div className="succesful">
+    <div className="sups">
         <div className="delegates">
           <div className="tweetpic">
             <img
@@ -291,6 +293,38 @@ const aboutUs = () => {
               height={220}
               className="max"
             />
+            <div className="tweetsss">
+            <button className="tweets">
+              {" "}
+              <img className="tweetings"
+                src="./src/images/tweet.png"
+                width={20}
+                height={16.25}
+              />
+            </button>
+            </div>
+          </div>
+          <h3>Max Mitchel</h3>
+          <p>Founder</p>
+          <div className="sayshello">
+            <div className="sayhellos">
+            <h4>Say Hello</h4>
+            <img src="./src/images/wave.png" width={36} height={36}/>
+            </div>
+            <img src="./src/images/send.png" width={36} height={36}/>
+          </div>
+        </div>
+      </div>
+      <div className="sups">
+        <div className="delegates">
+          <div className="tweetpic">
+            <img
+              src="./src/images/sarah.png"
+              width={257}
+              height={220}
+              className="max"
+            />
+            <div className="tweetsss">
             <button className="tweets">
               {" "}
               <img
@@ -299,12 +333,82 @@ const aboutUs = () => {
                 height={16.25}
               />
             </button>
+            </div>
           </div>
-          <h3>Max Mitchel</h3>
-          <p>Founder</p>
-          <button placeholder="Say Hello" className="contactss">Say Hello</button>
+          <h3>Sarah Johnson</h3>
+          <p>Chief Real Estate Officer</p>
+          <div className="sayshello">
+            <div className="sayhellos">
+              <h4>Say Hello</h4>
+              <img src="./src/images/wave.png" width={36} height={36} />
+            </div>
+            <img src="./src/images/send.png" width={36} height={36} />
+          </div>
         </div>
       </div>
+      <div className="sups">
+        <div className="delegates">
+          <div className="tweetpic">
+            <img
+              src="./src/images/david.png"
+              width={257}
+              height={220}
+              className="max"
+            />
+            <div className="tweetsss">
+            <button className="tweets">
+              {" "}
+              <img
+                src="./src/images/tweet.png"
+                width={20}
+                height={16.25}
+              />
+            </button>
+            </div>
+          </div>
+          <h3>David Brown</h3>
+          <p>Head of Property Management</p>
+            <div className="sayshello">
+              <div className="sayhellos">
+                <h4>Say Hello</h4>
+                <img src="./src/images/wave.png" width={36} height={36} />
+              </div>
+                <img src="./src/images/send.png" width={36} height={36} />
+            </div>
+        </div>
+      </div>
+      <div className="sups">
+        <div className="delegates">
+          <div className="tweetpic">
+            <img
+              src="./src/images/turner.png"
+              width={257}
+              height={220}
+              className="max"
+            />
+            <div className="tweetsss">
+            <button className="tweets">
+              {" "}
+              <img
+                src="./src/images/tweet.png"
+                width={20}
+                height={16.25}
+              />
+            </button>
+            </div>
+          </div>
+          <h3>Michael Turner</h3>
+          <p>Legal Counsel</p>
+            <div className="sayshello">
+              <div className="sayhellos">
+                <h4>Say Hello</h4>
+                <img src="./src/images/wave.png" width={36} height={36} />
+              </div>
+                <img src="./src/images/send.png" width={36} height={36} />
+            </div>
+        </div>
+      </div>
+    </div>
     </div>
   );
 };
