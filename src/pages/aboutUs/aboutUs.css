@@ -194,6 +194,7 @@ p{
     background-color: #141414;
     color: white;
     padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .tweets{
@@ -204,34 +205,70 @@ p{
     background-color: #703bf7;
     border-radius: 30px;
     border: 0px;
-    margin-left: 100px;
-    margin-top: -50px;
+    margin-top: -400px;
 }
 
 .contactss{
     padding-left: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
+    padding-right: 20px;
     border: 0px;
     border-radius: 100px;
+    background-color: white;
+    width: 257px;
+
 }
 
 .delegates{
-
-    border: 2px solid purple;
-    color: white;
-    padding-left: 24px;
-    padding-top: 24px;
-    padding-bottom: 24px;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    width: 305px;
+    text-align: center;
     height: 450px;
+    border: 1px solid #333333;
+    color: white;
+    padding-top: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 24px;
+    border-radius: 20px;
 }
 
 .sups{
+    align-items: center;
+    padding-bottom: 24px;
+}
+
+.succesful{
+    display: flex;
+    color: white;
+    background-color: #141414;
     padding-left: 80px;
     padding-right: 80px;
-    background-color: #141414;
+    gap: 20px;
+}
+
+.tweetings{
+    align-items: center;
+
+}
+
+.sayshello{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid #333333;
+    border-radius: 100px;
+    gap: 60px;
+    background-color: #262626;
+    margin-top: 20px;
+}
+
+.sayhellos{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.tweetsss{
+    margin-top: -10px;
+    margin-bottom: 50px;
 }
