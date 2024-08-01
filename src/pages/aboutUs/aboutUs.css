@@ -257,7 +257,7 @@ p{
     align-items: center;
     border: 2px solid #333333;
     border-radius: 100px;
-    gap: 60px;
+    gap: 80px;
     background-color: #262626;
     margin-top: 20px;
 }
@@ -270,5 +270,79 @@ p{
 
 .tweetsss{
     margin-top: -10px;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
+}
+
+ .visitsitess{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 14px;
+    padding-bottom: 14px; 
+    padding-left: 20px;
+}
+
+.ABCcorp{
+    display: flex;
+    align-items: center;
+    gap: 170px;
+    padding-top: 40px;
+}
+
+.valuedclients{
+    display: flex;
+    background-color: #141414;
+    color: white;
+}
+
+.domainexpansion{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.domainexpansions{
+    display: flex;
+    flex-direction: column;
+}
+
+.commercialstate{
+    margin-top: -10px;
+}
+
+.juijutsu{
+    display: flex;
+
+}
+
+.heros{
+    border: 2px solid skyblue;
+    display: flex;
+    flex-direction: column;
+    /* gap: 30px; */
+    padding-left: 80px;
+    padding-right: 80px;
+    width: 539.5px;
+    background-color: #141414;
+}
+
+.sheros{
+    border: 2px solid skyblue;
+    display: flex;
+    flex-direction: column;
+    /* gap: 30px; */
+    padding-left: 80px;
+    padding-right: 80px;
+    width: 539.5px;
+    background-color: #141414;
+}
+
+.xpertise{
+    display: flex;
+    gap: 40px;
+    height: 415px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 40px;
+    color: white;
+    background-color: #141414;
 }

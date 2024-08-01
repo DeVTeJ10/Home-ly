@@ -282,132 +282,208 @@ const aboutUs = () => {
         </div>
       </div>
 
+      <div className="succesful">
+        <div className="sups">
+          <div className="delegates">
+            <div className="tweetpic">
+              <img
+                src="./src/images/Max.png"
+                width={257}
+                height={220}
+                className="max"
+              />
+              <div className="tweetsss">
+                <button className="tweets">
+                  {" "}
+                  <img
+                    className="tweetings"
+                    src="./src/images/tweet.png"
+                    width={20}
+                    height={16.25}
+                  />
+                </button>
+              </div>
+            </div>
+            <h3>Max Mitchel</h3>
+            <p>Founder</p>
+            <div className="sayshello">
+              <div className="sayhellos">
+                <h4>Say Hello</h4>
+                <img src="./src/images/wave.png" width={36} height={36} />
+              </div>
+              <img src="./src/images/send.png" width={36} height={36} />
+            </div>
+          </div>
+        </div>
+        <div className="sups">
+          <div className="delegates">
+            <div className="tweetpic">
+              <img
+                src="./src/images/sarah.png"
+                width={257}
+                height={220}
+                className="max"
+              />
+              <div className="tweetsss">
+                <button className="tweets">
+                  {" "}
+                  <img src="./src/images/tweet.png" width={20} height={16.25} />
+                </button>
+              </div>
+            </div>
+            <h3>Sarah Johnson</h3>
+            <p>Chief Real Estate Officer</p>
+            <div className="sayshello">
+              <div className="sayhellos">
+                <h4>Say Hello</h4>
+                <img src="./src/images/wave.png" width={36} height={36} />
+              </div>
+              <img src="./src/images/send.png" width={36} height={36} />
+            </div>
+          </div>
+        </div>
+        <div className="sups">
+          <div className="delegates">
+            <div className="tweetpic">
+              <img
+                src="./src/images/david.png"
+                width={257}
+                height={220}
+                className="max"
+              />
+              <div className="tweetsss">
+                <button className="tweets">
+                  {" "}
+                  <img src="./src/images/tweet.png" width={20} height={16.25} />
+                </button>
+              </div>
+            </div>
+            <h3>David Brown</h3>
+            <p>Head of Property Management</p>
+            <div className="sayshello">
+              <div className="sayhellos">
+                <h4>Say Hello</h4>
+                <img src="./src/images/wave.png" width={36} height={36} />
+              </div>
+              <img src="./src/images/send.png" width={36} height={36} />
+            </div>
+          </div>
+        </div>
+        <div className="sups">
+          <div className="delegates">
+            <div className="tweetpic">
+              <img
+                src="./src/images/turner.png"
+                width={257}
+                height={220}
+                className="max"
+              />
+              <div className="tweetsss">
+                <button className="tweets">
+                  {" "}
+                  <img src="./src/images/tweet.png" width={20} height={16.25} />
+                </button>
+              </div>
+            </div>
+            <h3>Michael Turner</h3>
+            <p>Legal Counsel</p>
+            <div className="sayshello">
+              <div className="sayhellos">
+                <h4>Say Hello</h4>
+                <img src="./src/images/wave.png" width={36} height={36} />
+              </div>
+              <img src="./src/images/send.png" width={36} height={36} />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="starprops">
+        <div className="starSign">
+          <img src="./src/images/star1.png" width={24} height={24} />
+          <img src="./src/images/star2.png" width={14.4} height={14.4} />
+          <img src="./src/images/star3.png" width={6.72} height={6.72} />
+        </div>
+        <div className="checkprops">
+          <h1>Our Valued Clients</h1>
+          <div className="allProperties">
+            <p className="xplore">
+              At Estatein, we have had the privilege of working with a diverse
+              range of clients across various industries. Here are some of the
+              clients we've had<br></br> the pleasure of serving
+            </p>
+          </div>
+        </div>
+      </div>
 
-    <div className="succesful">
-    <div className="sups">
-        <div className="delegates">
-          <div className="tweetpic">
-            <img
-              src="./src/images/Max.png"
-              width={257}
-              height={220}
-              className="max"
-            />
-            <div className="tweetsss">
-            <button className="tweets">
-              {" "}
-              <img className="tweetings"
-                src="./src/images/tweet.png"
-                width={20}
-                height={16.25}
-              />
-            </button>
-            </div>
+
+    <div className="xpertise">
+    <div className="heros">
+    <div className="valuedclients">
+        <div className="ABCcorp">
+          <div>
+            <p>since 2019</p>
+            <h3>ABC Corporation</h3>
           </div>
-          <h3>Max Mitchel</h3>
-          <p>Founder</p>
-          <div className="sayshello">
-            <div className="sayhellos">
-            <h4>Say Hello</h4>
-            <img src="./src/images/wave.png" width={36} height={36}/>
-            </div>
-            <img src="./src/images/send.png" width={36} height={36}/>
-          </div>
+          <button className="visitsitess">Visit Website</button>
         </div>
       </div>
-      <div className="sups">
-        <div className="delegates">
-          <div className="tweetpic">
-            <img
-              src="./src/images/sarah.png"
-              width={257}
-              height={220}
-              className="max"
-            />
-            <div className="tweetsss">
-            <button className="tweets">
-              {" "}
-              <img
-                src="./src/images/tweet.png"
-                width={20}
-                height={16.25}
-              />
-            </button>
-            </div>
+
+      <div className="juijutsu">
+      <div className="domainexpansions">
+      <div className="domainexpansion">
+        <img src="./src/images/Domain.png" width={20} height={20} />
+        <p>Domain</p>
+      </div>
+      <h3 className="commercialstate">Commercial Real Estate</h3>
+      </div>
+        <div className="domainexpansions">
+          <div className="domainexpansion">
+            <img src="./src/images/lightning.png" width={20} height={20} />
+            <p>Category</p>
           </div>
-          <h3>Sarah Johnson</h3>
-          <p>Chief Real Estate Officer</p>
-          <div className="sayshello">
-            <div className="sayhellos">
-              <h4>Say Hello</h4>
-              <img src="./src/images/wave.png" width={36} height={36} />
-            </div>
-            <img src="./src/images/send.png" width={36} height={36} />
-          </div>
+            <h3 className="commercialstate">Luxury Home Development</h3>
         </div>
       </div>
-      <div className="sups">
-        <div className="delegates">
-          <div className="tweetpic">
-            <img
-              src="./src/images/david.png"
-              width={257}
-              height={220}
-              className="max"
-            />
-            <div className="tweetsss">
-            <button className="tweets">
-              {" "}
-              <img
-                src="./src/images/tweet.png"
-                width={20}
-                height={16.25}
-              />
-            </button>
-            </div>
+      
+        <p>What They Said 🤗</p>
+        <p>Estatein's expertise in finding the perfect office space for our<br></br> 
+        expanding operations was invaluable. 
+          They truly understand our<br></br> business needs.
+        </p>
+    </div>
+    <div className="heros">
+    <div className="valuedclients">
+        <div className="ABCcorp">
+          <div>
+            <p>since 2019</p>
+            <h3>ABC Corporation</h3>
           </div>
-          <h3>David Brown</h3>
-          <p>Head of Property Management</p>
-            <div className="sayshello">
-              <div className="sayhellos">
-                <h4>Say Hello</h4>
-                <img src="./src/images/wave.png" width={36} height={36} />
-              </div>
-                <img src="./src/images/send.png" width={36} height={36} />
-            </div>
+          <button className="visitsitess">Visit Website</button>
         </div>
       </div>
-      <div className="sups">
-        <div className="delegates">
-          <div className="tweetpic">
-            <img
-              src="./src/images/turner.png"
-              width={257}
-              height={220}
-              className="max"
-            />
-            <div className="tweetsss">
-            <button className="tweets">
-              {" "}
-              <img
-                src="./src/images/tweet.png"
-                width={20}
-                height={16.25}
-              />
-            </button>
-            </div>
+
+      <div className="juijutsu">
+      <div className="domainexpansions">
+      <div className="domainexpansion">
+        <img src="./src/images/Domain.png" width={20} height={20} />
+        <p>Domain</p>
+      </div>
+      <h3 className="commercialstate">Commercial Real Estate</h3>
+      </div>
+        <div className="domainexpansions">
+          <div className="domainexpansion">
+            <img src="./src/images/lightning.png" width={20} height={20} />
+            <p>Category</p>
           </div>
-          <h3>Michael Turner</h3>
-          <p>Legal Counsel</p>
-            <div className="sayshello">
-              <div className="sayhellos">
-                <h4>Say Hello</h4>
-                <img src="./src/images/wave.png" width={36} height={36} />
-              </div>
-                <img src="./src/images/send.png" width={36} height={36} />
-            </div>
+            <h3 className="commercialstate">Luxury Home Development</h3>
         </div>
       </div>
+        <p>What They Said 🤗</p>
+        <p>Estatein's expertise in finding the perfect office space for our<br></br> 
+        expanding operations was invaluable. 
+          They truly understand our<br></br> business needs.
+        </p>
+    </div>
     </div>
     </div>
   );
