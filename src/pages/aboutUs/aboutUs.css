@@ -284,7 +284,7 @@ p{
 .ABCcorp{
     display: flex;
     align-items: center;
-    gap: 170px;
+    gap: 220px;
     padding-top: 40px;
 }
 
@@ -292,6 +292,7 @@ p{
     display: flex;
     background-color: #141414;
     color: white;
+
 }
 
 .domainexpansion{
@@ -303,6 +304,9 @@ p{
 .domainexpansions{
     display: flex;
     flex-direction: column;
+    gap: 30px;
+    margin-left: -50px;
+
 }
 
 .commercialstate{
@@ -311,7 +315,7 @@ p{
 
 .juijutsu{
     display: flex;
-
+    gap: 150px;
 }
 
 .heros{
@@ -345,4 +349,8 @@ p{
     padding-top: 40px;
     color: white;
     background-color: #141414;
+}
+
+.metro{
+    margin-left: -50px;
 }

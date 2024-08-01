@@ -420,7 +420,7 @@ const aboutUs = () => {
     <div className="heros">
     <div className="valuedclients">
         <div className="ABCcorp">
-          <div>
+          <div className="metro">
             <p>since 2019</p>
             <h3>ABC Corporation</h3>
           </div>
@@ -454,7 +454,7 @@ const aboutUs = () => {
     <div className="heros">
     <div className="valuedclients">
         <div className="ABCcorp">
-          <div>
+          <div className="metro">
             <p>since 2019</p>
             <h3>ABC Corporation</h3>
           </div>
