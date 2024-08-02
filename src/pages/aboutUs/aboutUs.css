@@ -278,13 +278,14 @@ p{
     padding-right: 20px;
     padding-top: 14px;
     padding-bottom: 14px; 
-    padding-left: 20px;
+    margin-left: -100px;
 }
 
 .ABCcorp{
     display: flex;
     align-items: center;
-    gap: 220px;
+    justify-content: space-between;
+    gap: 300px;
     padding-top: 40px;
 }
 
@@ -304,9 +305,8 @@ p{
 .domainexpansions{
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    margin-left: -50px;
-
+    gap: 5px;
+    /* margin-left: -50px; */
 }
 
 .commercialstate{
@@ -315,42 +315,77 @@ p{
 
 .juijutsu{
     display: flex;
-    gap: 150px;
+
+    padding-left: 80px;
+    padding-right: 80px;
 }
 
 .heros{
-    border: 2px solid skyblue;
+    border: 1px solid skyblue;
     display: flex;
     flex-direction: column;
-    /* gap: 30px; */
-    padding-left: 80px;
-    padding-right: 80px;
-    width: 539.5px;
+    align-items: center;
+    width: 619.5px;
+    height: 415px;
     background-color: #141414;
+    /* padding-left: 24px; */
+    /* padding-right: 24px; */
 }
 
-.sheros{
-    border: 2px solid skyblue;
+/* .sheros{
+    border: 1px solid skyblue;
     display: flex;
     flex-direction: column;
-    /* gap: 30px; */
+    align-items: center;
+    width: 619.5px;
+    height: 415px;
+    background-color: #141414;
+    padding-left: 24px;
+    padding-right: 24px;
+} */
+
+.xpertises{
+    display: flex;
     padding-left: 80px;
     padding-right: 80px;
-    width: 539.5px;
-    background-color: #141414;
 }
 
 .xpertise{
     display: flex;
     gap: 40px;
-    height: 415px;
-    padding-left: 80px;
-    padding-right: 80px;
-    padding-top: 40px;
-    color: white;
     background-color: #141414;
+    color: white;
 }
 
 .metro{
-    margin-left: -50px;
+
+}
+
+.cyncro{
+
+}
+
+.sighting{
+    /* margin-left: -30px; */
+}
+
+.samuraicode{
+    padding-left: 50px;
+    padding-right: 40px;
+    line-height: 20px;
+    border: 1px solid;
+}
+
+.samuraicode{
+    padding-left: 40px;
+    padding-right: 50px;
+    border: 1px solid;
+    padding-bottom: 24px;
+}
+
+.samuraicodes{
+    padding-left: 40px;
+    padding-right: 50px;
+    padding-bottom: 24px;
+    border: 1px solid;
 }

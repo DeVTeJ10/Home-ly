@@ -415,75 +415,91 @@ const aboutUs = () => {
         </div>
       </div>
 
-
+    <div className="xpertises">
     <div className="xpertise">
-    <div className="heros">
-    <div className="valuedclients">
-        <div className="ABCcorp">
-          <div className="metro">
-            <p>since 2019</p>
-            <h3>ABC Corporation</h3>
-          </div>
-          <button className="visitsitess">Visit Website</button>
-        </div>
-      </div>
 
-      <div className="juijutsu">
-      <div className="domainexpansions">
+<div className="heros">
+  {/* <div className="valuedclients"> */}
+    <div className="ABCcorp">
+      <div className="metro">
+        <p>since 2019</p>
+        <h2>GreenTech Enterprises</h2>
+      </div>
+      <div className="sighting">
+      <button className="visitsitess">Visit Website</button>
+      </div>
+    </div>
+  {/* </div> */}
+
+  <div className="juijutsu">
+    <div className="domainexpansions">
       <div className="domainexpansion">
         <img src="./src/images/Domain.png" width={20} height={20} />
         <p>Domain</p>
       </div>
-      <h3 className="commercialstate">Commercial Real Estate</h3>
-      </div>
-        <div className="domainexpansions">
-          <div className="domainexpansion">
-            <img src="./src/images/lightning.png" width={20} height={20} />
-            <p>Category</p>
-          </div>
-            <h3 className="commercialstate">Luxury Home Development</h3>
-        </div>
-      </div>
-      
-        <p>What They Said 🤗</p>
-        <p>Estatein's expertise in finding the perfect office space for our<br></br> 
-        expanding operations was invaluable. 
-          They truly understand our<br></br> business needs.
-        </p>
+      <h4 className="commercialstate">Commercial Real Estate</h4>
     </div>
-    <div className="heros">
-    <div className="valuedclients">
-        <div className="ABCcorp">
-          <div className="metro">
-            <p>since 2019</p>
-            <h3>ABC Corporation</h3>
-          </div>
-          <button className="visitsitess">Visit Website</button>
-        </div>
+    <div className="domainexpansions">
+      <div className="domainexpansion">
+        <img src="./src/images/lightning.png" width={20} height={20} />
+        <p>Category</p>
       </div>
+      <h4 className="commercialstate">Luxury Home Development</h4>
+    </div>
+  </div>
 
-      <div className="juijutsu">
-      <div className="domainexpansions">
+<div className="samuraicode">
+<p>What They Said 🤗</p>
+  <p className="cyncro">
+    Estatein's expertise in finding the perfect office space for our
+    <br></br>
+    expanding operations was invaluable. They truly understand our
+    <br></br> business needs.
+  </p>
+</div>
+</div>
+
+
+
+<div className="heros">
+  <div className="valuedclients">
+    <div className="ABCcorp">
+      <div className="metro">
+        <p>since 2018</p>
+        <h2>GreenTech Enterprises</h2>
+      </div>
+      <div className="sighting">
+        <button className="visitsitess">Visit Website</button>
+      </div>
+    </div>
+  </div>
+
+  <div className="juijutsu">
+    <div className="domainexpansions">
       <div className="domainexpansion">
         <img src="./src/images/Domain.png" width={20} height={20} />
         <p>Domain</p>
       </div>
-      <h3 className="commercialstate">Commercial Real Estate</h3>
-      </div>
-        <div className="domainexpansions">
-          <div className="domainexpansion">
-            <img src="./src/images/lightning.png" width={20} height={20} />
-            <p>Category</p>
-          </div>
-            <h3 className="commercialstate">Luxury Home Development</h3>
-        </div>
-      </div>
-        <p>What They Said 🤗</p>
-        <p>Estatein's expertise in finding the perfect office space for our<br></br> 
-        expanding operations was invaluable. 
-          They truly understand our<br></br> business needs.
-        </p>
+      <h4 className="commercialstate">Commercial Real Estate</h4>
     </div>
+    <div className="domainexpansions">
+      <div className="domainexpansion">
+        <img src="./src/images/lightning.png" width={20} height={20} />
+        <p>Category</p>
+      </div>
+      <h4 className="commercialstate">Retail Space</h4>
+    </div>
+  </div>
+  <div className="samuraicodes">
+  <p>What They Said 🤗</p>
+  <p className="cyncro">
+    Estatein's ability to identify prime retail locations helped us
+    expand<br></br> our brand presence. They are a trusted partner in
+    our growth.
+  </p>
+  </div>
+</div>
+</div>
     </div>
     </div>
   );
