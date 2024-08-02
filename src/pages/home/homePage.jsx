@@ -1,11 +1,9 @@
 import React from "react";
 import Header from "../../components/Header/index";
-import FooterComponent from "../../components/Footer/indexx"
+import FooterComponent from "../../components/Footer/indexx";
 import DreamHome from "../../components/DreamHome/index";
 import { Link, Route, Routes } from "react-router-dom";
 import "./homePage.css";
-
-
 
 const homePage = () => {
   return (
