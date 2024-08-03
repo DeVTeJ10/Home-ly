@@ -278,21 +278,33 @@ p{
     padding-right: 20px;
     padding-top: 14px;
     padding-bottom: 14px; 
-    margin-left: -100px;
+    background-color: #262626;
+    color: white;
+    border: 0px;
+    border-radius: 5px;
 }
 
 .ABCcorp{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 300px;
     padding-top: 40px;
+    justify-content: space-evenly;
+    gap: 230px;
+}
+
+.ABCcorprals{
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+    justify-content: space-evenly;
+    gap: 200px;
 }
 
 .valuedclients{
     display: flex;
     background-color: #141414;
     color: white;
+    width: 539.5px;
 
 }
 
@@ -306,7 +318,6 @@ p{
     display: flex;
     flex-direction: column;
     gap: 5px;
-    /* margin-left: -50px; */
 }
 
 .commercialstate{
@@ -315,77 +326,71 @@ p{
 
 .juijutsu{
     display: flex;
+}
 
-    padding-left: 80px;
-    padding-right: 80px;
+.juijutsus{
+    display: flex;
+    gap: 90px;
+    margin-right: 60px;
+
+}
+
+.kingjuijutsus{
+    display: flex;
+    gap: 120px;
+    margin-right: 140px;
+
 }
 
 .heros{
-    border: 1px solid skyblue;
+    border: 1px solid #333333;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 619.5px;
-    height: 415px;
     background-color: #141414;
+    border-radius: 12px;
+    padding-bottom: 50px;
     /* padding-left: 24px; */
     /* padding-right: 24px; */
 }
-
-/* .sheros{
-    border: 1px solid skyblue;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 619.5px;
-    height: 415px;
-    background-color: #141414;
-    padding-left: 24px;
-    padding-right: 24px;
-} */
 
 .xpertises{
     display: flex;
     padding-left: 80px;
     padding-right: 80px;
+    padding-bottom: 40px;
+    gap: 40px;
 }
 
 .xpertise{
     display: flex;
-    gap: 40px;
+    /* gap: 40px; */
     background-color: #141414;
     color: white;
 }
 
-.metro{
-
-}
-
-.cyncro{
-
-}
-
-.sighting{
-    /* margin-left: -30px; */
-}
 
 .samuraicode{
-    padding-left: 50px;
-    padding-right: 40px;
-    line-height: 20px;
-    border: 1px solid;
-}
-
-.samuraicode{
-    padding-left: 40px;
-    padding-right: 50px;
     border: 1px solid;
     padding-bottom: 24px;
 }
 
 .samuraicodes{
-    padding-left: 40px;
-    padding-right: 50px;
-    padding-bottom: 24px;
     border: 1px solid;
+}
+
+.coded{
+    border: 1px solid #333333;
+    padding-right: 49px;
+    padding-left: 49px;
+    border-radius: 12px;
+}
+
+.procoded{
+    border: 1px solid #333333;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 19px;
+    border-radius: 12px;
 }
