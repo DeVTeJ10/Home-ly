@@ -418,7 +418,6 @@ const aboutUs = () => {
       <div className="xpertises">
         <div className="xpertise">
           <div className="heros">
-            {/* <div className="valuedclients"> */}
             <div className="ABCcorp">
               <div className="metro">
                 <p>since 2019</p>
@@ -428,7 +427,6 @@ const aboutUs = () => {
                 <button className="visitsitess">Visit Website</button>
               </div>
             </div>
-            {/* </div> */}
 
             <div className="juijutsus">
               <div className="domainexpansions">
@@ -464,7 +462,6 @@ const aboutUs = () => {
         </div>
         <div className="xpertise">
           <div className="heros">
-            {/* <div className="valuedclients"> */}
             <div className="ABCcorprals">
               <div className="metro">
                 <p>since 2019</p>
@@ -474,7 +471,6 @@ const aboutUs = () => {
                 <button className="visitsitess">Visit Website</button>
               </div>
             </div>
-            {/* </div> */}
 
             <div className="kingjuijutsus">
               <div className="domainexpansions">
@@ -500,12 +496,25 @@ const aboutUs = () => {
             <div className="procoded">
               <p>What They Said 🤗</p>
               <p className="cyncro">
-              Estatein's ability to identify prime retail locations helped us expand<br>
-              </br> our brand presence. 
-              They are a trusted partner in our growth. 
+                Estatein's ability to identify prime retail locations helped us
+                expand<br></br> our brand presence. They are a trusted partner
+                in our growth.
               </p>
             </div>
           </div>
+        </div>
+      </div>
+      <div className="pages1">
+        <p> 01 of 10 </p>
+        <div className="pageBTNs">
+          <button className="nextPage1">
+            {" "}
+            <img src="./src/images/arrow2.png" width={24} height={24}></img>
+          </button>
+          <button className="nextPage2">
+            {" "}
+            <img src="./src/images/arrow1.png" width={24} height={24}></img>
+          </button>
         </div>
       </div>
     </div>
