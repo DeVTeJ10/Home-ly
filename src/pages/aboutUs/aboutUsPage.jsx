@@ -1,5 +1,6 @@
 import React from "react";
 import HeaderComponent from "../../components/Header/index";
+import Footer from "../../components/Footer/indexx";
 import { Link, Route, Routes } from "react-router-dom";
 import "./aboutUs.css";
 
@@ -504,7 +505,7 @@ const aboutUs = () => {
           </div>
         </div>
       </div>
-      <div className="pages1">
+      <div className="pages2">
         <p> 01 of 10 </p>
         <div className="pageBTNs">
           <button className="nextPage1">
@@ -517,6 +518,21 @@ const aboutUs = () => {
           </button>
         </div>
       </div>
+      <div className="checkpropss">
+        <h1>Start Your Real Estate Journey Today</h1>
+        <div className="allProperties">
+          <p className="xplore">
+            Your dream property is just a click away. Whether you're looking for
+            a new home, a strategic investment, or expert real estate advice,
+            <br></br> Estatein is here to assist you every step of the way. Take
+            the first step towards your real estate goals and explore our
+            available properties<br></br> or get in touch with our team for
+            personalized assistance.
+          </p>
+          <button className="viewAllsss">Explore Properties</button>
+        </div>
+      </div>
+      <Footer />
     </div>
   );
 };
