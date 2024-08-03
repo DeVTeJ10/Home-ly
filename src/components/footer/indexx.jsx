@@ -7,54 +7,61 @@ const index = () => {
       <div className="finalfooter">
         <div className="sentient">
           <div className="logo2s">
-            <img src="./src/images/Logo.png" width={113.33} height={34} />
+            <img src="./src/images/Logo.png" width={113.33} height={34} className="logossss"/>
+            <div className="dinosaurs">
+            <input placeholder="Enter Your Email" className="gangstacode" type="email"></input>
           </div>
+          <img src="./src/images/planar.png" width={24} height={24} className="planar"/>
+          <img src="./src/images/postman.png" width={24} height={24} className="postman"/>
+            </div>
         </div>
 
-        <div className="mailedit"></div>
+        <div className="mailedit">
+
+        </div>
 
         <div className="features1">
           <div className="features">
-            <p>Home</p>
-            <p>Hero Section</p>
-            <p>Features</p>
-            <p>Properties</p>
-            <p>Testimonials</p>
-            <p>FAQs</p>
+            <p className="topss">Home</p>
+            <p className="mavericks">Hero Section</p>
+            <p className="mavericks">Features</p>
+            <p className="mavericks">Properties</p>
+            <p className="mavericks">Testimonials</p>
+            <p className="mavericks">FAQs</p>
           </div>
         </div>
         <div className="features1">
           <div className="features">
-            <p>About Us</p>
-            <p>Our Story</p>
-            <p>Our Works</p>
-            <p>How It Works</p>
-            <p>Our Team</p>
-            <p>Our Clients</p>
+            <p className="topss">About Us</p>
+            <p className="mavericks">Our Story</p>
+            <p className="mavericks">Our Works</p>
+            <p className="mavericks">How It Works</p>
+            <p className="mavericks">Our Team</p>
+            <p className="mavericks">Our Clients</p>
           </div>
         </div>
         <div className="features1">
           <div className="features">
-            <p>Properties</p>
-            <p>Portfolios</p>
-            <p>categories</p>
+            <p className="topss">Properties</p>
+            <p className="mavericks">Portfolios</p>
+            <p className="mavericks">categories</p>
           </div>
         </div>
         <div className="features1">
           <div className="features">
-            <p>Services</p>
-            <p>Valuation Mastery</p>
-            <p>Strategic Marketing</p>
-            <p>Negotiation Wizardry</p>
-            <p>Closing Success</p>
-            <p>Property Management</p>
+            <p className="topss">Services</p>
+            <p className="mavericks">Valuation Mastery</p>
+            <p className="mavericks">Strategic Marketing</p>
+            <p className="mavericks">Negotiation Wizardry</p>
+            <p className="mavericks">Closing Success</p>
+            <p className="mavericks">Property Management</p>
           </div>
         </div>
         <div className="features1">
           <div className="features">
-            <p>Contact Us</p>
-            <p>Contact Form</p>
-            <p>Our Offices</p>
+            <p className="topss">Contact Us</p>
+            <p className="mavericks"> Contact Form</p>
+            <p className="mavericks">Our Offices</p>
           </div>
         </div>
       </div>
