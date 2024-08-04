@@ -16,8 +16,9 @@ const index = () => {
           <Link to={"/about-us"}>
             <h3>About us</h3>
           </Link>
-
+          <Link to={"/properties-page"}>
           <h3>Properties</h3>
+          </Link>
           <h3>Services</h3>
         </div>
         <div className="contact-us">
