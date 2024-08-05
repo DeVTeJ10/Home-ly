@@ -1,0 +1,74 @@
+.propertiesx{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 80px;
+    padding-right: 80px;
+    color: white;
+    margin-top: 40px;
+}
+
+.locationx{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border: 1px solid #333333;
+    border-radius: 8px;
+}
+
+.seasidex{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.pricex{
+    display: flex;
+    flex-direction: column;
+    line-height: 0px;
+}
+
+.xproperties{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding-top: 20px;
+}
+
+.geniusYeah{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid #333333;
+    width: 1200px;
+    border-radius: 10px;
+    background-color: #141414;
+    /* padding-left: 80px; */
+    /* padding-right: 80px; */
+}
+
+.better{
+    border: 1px solid #333333;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    background-color: #262626;
+}
+
+.badtguy{
+    display: flex;
+    justify-content: center;
+
+}
+
+.classicman{
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 60px;
+
+}
