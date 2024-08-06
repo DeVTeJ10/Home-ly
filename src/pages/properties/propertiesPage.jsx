@@ -12,7 +12,7 @@ function propertiesPage() {
         <h3>Seaside Serenity Villa</h3>
         <div className='locationx'>
         <img src='./src/images/locate.png' width={13.75} height={16.87} />
-        <p>Malibu, Carlifonia</p>
+        <p className='malibu'>Malibu, Carlifonia</p>
         </div>
         </div>
         <div className='pricex'>
@@ -21,7 +21,10 @@ function propertiesPage() {
         </div>
       </div>
 
-    <div className='classicman'>
+
+
+  {/* <div className='tinypartment'> */}
+  <div className='classicman'>
     <div className='better'>
     <div className='badtguy'>
     <div className='geniusYeah'>
@@ -43,6 +46,24 @@ function propertiesPage() {
         </div>
     </div>
     </div>
+
+<div className='history'>
+<div className='howdy'>
+  <div className='noirarrows'>
+      <img src='./src/images/arrow2.png' width={22} height={22} className='legolas'/>
+    <div className='pageson'>
+    <button className='buttons'></button>
+      <button className='buttons'></button>
+      <button className='buttons'></button>
+      <button className='buttons'></button>
+      <button className='buttons'></button>
+      <button className='buttons'></button>
+    </div>
+      <img src='./src/images/arrow1.png' width={22} height={22} className='legolas1'/>
+    </div>
+  </div>
+</div>
+  {/* </div> */}
     </div>
   )
 }
