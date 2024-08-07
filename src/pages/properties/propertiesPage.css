@@ -65,7 +65,7 @@
     display: flex;
     flex-direction: column;
     padding-top: 40px;
-    padding-bottom: 110px;
+    padding-bottom: 150px;
     background-color: #262626;
 }
 
@@ -111,6 +111,7 @@
 .buttons{
     border: 0px;
     height: 1px;
+    background-color: #333333;
 }
 
 .pageson{
@@ -140,11 +141,85 @@
 .history{
     display: flex;
     justify-content: center;
-    margin-top: -80px;
+    margin-top: -110px;
 
 }
 
-.tinypartment{
-    padding-bottom: 40px;
-    color: #999;
+.geniusclass{
+    display: flex;
+    gap: 90px;
+    margin-top: 45px;
 }
+
+.giants{
+    display: flex;
+    flex-direction: column;
+}
+
+.paragh{
+    color: white;
+    margin-top: -3px;
+}
+
+.santa{
+    color: white;
+}
+
+.santafe{
+    margin-bottom: 0px;
+}
+
+.santaboss{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 100px;
+    width: 1280px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.betterbest{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid skyblue;
+    padding-left: 20px;
+}
+
+.betterthebest{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* padding-left: 40px;
+    padding-right: 40px; */
+}
+
+.bosslevelbadtguy{
+    color: white;
+    background-color: #141414;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 40px;
+    border: 1px solid skyblue;
+    width: 550px;
+}
+
+.santafes{
+    display: flex;
+    flex-direction: column;
+    /* padding-right: 40px; */
+    border: 1px solid skyblue;
+    padding-left: 40px;
+    padding-top: 40px;
+    width: 550px;
+
+}
+
+/* .santabosses{
+    display: flex;
+
+    /* padding-left: 80px; */
+    /* padding-right: 80px; */
+    /* border: 1px solid pink; */
+/* } */
