@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "../../components/Header/index";
+import Stark from "../../components/Stark/indexmax";
 import "./propertiesPage.css";
 
 function propertiesPage() {
@@ -72,79 +73,83 @@ function propertiesPage() {
         </div>
       </div>
 
-  <div className="santabosses">
-    <div className="santaboss">
-    {/* <div className="goodyeah"> */}
-    <div className="santafes">
-        <div className="santafe">
-          <h2 className="santa">Description</h2>
-          <div className="descripx">
-          <p>
-            Discover your own piece of paradise with the Seaside Serenity Villa.
-            T With an<br></br> open floor plan, breathtaking ocean views from
-            every room, and direct access<br></br> to a pristine sandy beach,
-            this property is the epitome of coastal living.
-          </p>
+      <div className="santabosses">
+        <div className="santaboss">
+          {/* <div className="goodyeah"> */}
+          <div className="santafes">
+            <div className="santafe">
+              <h2 className="santa">Description</h2>
+              <div className="descripx">
+                <p>
+                  Discover your own piece of paradise with the Seaside Serenity
+                  Villa. T With an<br></br> open floor plan, breathtaking ocean
+                  views from every room, and direct access<br></br> to a
+                  pristine sandy beach, this property is the epitome of coastal
+                  living.
+                </p>
+              </div>
+            </div>
+
+            <div className="geniusclass">
+              <div className="giants" id="giantess">
+                <div className="xprops">
+                  <img src="./src/images/bedroom.png" width={20} height={20} />
+                  <p>Bedrooms</p>
+                </div>
+                <h3 className="paragh">04</h3>
+              </div>
+
+              <div className="giants">
+                <div className="xprops">
+                  <img src="./src/images/bathroom.png" width={20} height={20} />
+                  <p>Bathroom</p>
+                </div>
+                <h3 className="paragh">03</h3>
+              </div>
+
+              <div className="giants">
+                <div className="xprops">
+                  <img src="./src/images/area.png" width={20} height={20} />
+                  <p>Area</p>
+                </div>
+                <h3 className="paragh">2,500 Square Feet</h3>
+              </div>
+            </div>
+          </div>
+          {/* </div> */}
+
+          <div className="bosslevelbadtguy">
+            <h2>Key Features and Amenities</h2>
+
+            <div className="betterthebest">
+              <div className="betterbest">
+                <img src="./src/images/lightnings.png" width={20} height={20} />
+                <p>Expansive oceanfront terrace for outdoor entertaining</p>
+              </div>
+              <div className="betterbest">
+                <img src="./src/images/lightnings.png" width={20} height={20} />
+                <p>Gourmet kitchen with top-of-the-line appliances</p>
+              </div>
+              <div className="betterbest">
+                <img src="./src/images/lightnings.png" width={20} height={20} />
+                <p>Private beach access for morning strolls and sunset views</p>
+              </div>
+              <div className="betterbest">
+                <img src="./src/images/lightnings.png" width={20} height={20} />
+                <p>
+                  Master suite with a spa-inspired bathroom and ocean-facing
+                  <br></br> balcony
+                </p>
+              </div>
+              <div className="betterbest">
+                <img src="./src/images/lightnings.png" width={20} height={20} />
+                <p>Private garage and ample storage space</p>
+              </div>
+            </div>
           </div>
         </div>
-
-          <div className="geniusclass">
-            <div className="giants" id="giantess">
-              <div className="xprops">
-                <img src="./src/images/bedroom.png" width={20} height={20} />
-                <p>Bedrooms</p>
-              </div>
-              <h3 className="paragh">04</h3>
-            </div>
-
-            <div className="giants">
-              <div className="xprops">
-                <img src="./src/images/bathroom.png" width={20} height={20} />
-                <p>Bathroom</p>
-              </div>
-              <h3 className="paragh">03</h3>
-            </div>
-
-            <div className="giants">
-              <div className="xprops">
-                <img src="./src/images/area.png" width={20} height={20} />
-                <p>Area</p>
-              </div>
-              <h3 className="paragh">2,500 Square Feet</h3>
-            </div>
-          </div>
       </div>
-    {/* </div> */}
-
-
-      <div className="bosslevelbadtguy">
-        <h2>Key Features and Amenities</h2>
-
-      <div className="betterthebest">
-      <div className="betterbest">
-        <img src="./src/images/lightnings.png" width={20} height={20} />
-        <p>Expansive oceanfront terrace for outdoor entertaining</p>
-      </div>
-      <div className="betterbest">
-        <img src="./src/images/lightnings.png" width={20} height={20} />
-        <p>Gourmet kitchen with top-of-the-line appliances</p>
-      </div>
-      <div className="betterbest">
-        <img src="./src/images/lightnings.png" width={20} height={20} />
-        <p>Private beach access for morning strolls and sunset views</p>
-      </div>
-      <div className="betterbest">
-        <img src="./src/images/lightnings.png" width={20} height={20} />
-        <p>Master suite with a spa-inspired bathroom and ocean-facing<br></br> balcony</p>
-      </div>
-      <div className="betterbest">
-        <img src="./src/images/lightnings.png" width={20} height={20} />
-        <p>Private garage and ample storage space</p>
-      </div>
-      </div>
-  </div>
-    </div>
-    </div>
+      <Stark />
     </div>
   );
 }
