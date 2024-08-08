@@ -89,7 +89,7 @@ function propertiesPage() {
         </div>
 
           <div className="geniusclass">
-            <div className="giants">
+            <div className="giants" id="giantess">
               <div className="xprops">
                 <img src="./src/images/bedroom.png" width={20} height={20} />
                 <p>Bedrooms</p>
@@ -105,7 +105,7 @@ function propertiesPage() {
               <h3 className="paragh">03</h3>
             </div>
 
-            <div>
+            <div className="giants">
               <div className="xprops">
                 <img src="./src/images/area.png" width={20} height={20} />
                 <p>Area</p>
