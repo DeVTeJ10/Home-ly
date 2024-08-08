@@ -1,0 +1,19 @@
+.starSign{
+    display: flex;
+    align-items: center;
+    background-color: #141414;
+    padding-left: 80px;
+    margin-top: -19px;
+    padding-top: 100px;
+    gap: 5px;
+}
+
+.starboys{
+    display: flex;
+    align-items: center;
+}
+
+.starcomps{
+    color: white;
+
+}
