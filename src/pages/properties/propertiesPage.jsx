@@ -149,7 +149,68 @@ function propertiesPage() {
           </div>
         </div>
       </div>
-      <Stark />
+
+      <div className="starks">
+        <Stark />
+        <div className="youaregoodguy">
+          <div className="historygood">
+            <div className="omoguygood">
+              <div className="inputs1">
+                <div>
+                  <h3>First Name</h3>
+                  <input
+                    placeholder="Enter First Name"
+                    className="toogood"
+                  ></input>
+                </div>
+                <div>
+                  <h3>Last Name</h3>
+                  <input
+                    placeholder="Enter Last Name"
+                    className="toogood"
+                  ></input>
+                </div>
+              </div>
+              <div className="inputs2">
+                <div>
+                  <h3>Email</h3>
+                  <input placeholder="Enter Email" className="toogood"></input>
+                </div>
+                <div>
+                  <h3>Phone number</h3>
+                  <input
+                    placeholder="Enter Phone Number"
+                    className="toogood"
+                  ></input>
+                </div>
+              </div>
+            </div>
+            <div className="selectmessages">
+              <div>
+                <h3>Selected Property</h3>
+                <input
+                  placeholder="Seaside Serenity Villa, Malibu, California"
+                  className="toogoods"
+                ></input>
+              </div>
+              <div>
+                <h3>Message</h3>
+                <input
+                  placeholder="Enter Your Message Here"
+                  className="toogoodss"
+                ></input>
+              </div>
+            </div>
+            <div className="wowzers">
+              <div className="wowz">
+                <input type="checkbox" width={24} height={24} className="checkboxess"></input>
+                <p>I agree with Terms of Use and Privacy Policy</p>
+              </div>
+              <button className="sendmessage">Send Your Message</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
