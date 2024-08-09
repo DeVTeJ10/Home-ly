@@ -196,7 +196,6 @@ const homePage = () => {
         <h1> What Our Clients Say </h1>
         <div className="clientSay">
           <p className="success">
-            {" "}
             Read the success stories and heartfelt testimonials from our valued
             clients. Discover why they chose Estatein for their real estate
             needs.
