@@ -312,185 +312,135 @@ function propertiesPage() {
       </div>
 
 
-  <div className="constantinegood">
-  <div className="youaregoodegbon">
-    <div className="oboygood">
-        <div className="pricesthebest">
-          <div className="mygoodness">
-            <div className="greatguyman">
-              <div className="additional">
-                <h3>Additional Fees</h3>
-                <button className="learnmore">Learn More</button>
-              </div>
-            </div>
+      <div className="constantinegood">
+        <div className="youaregoodegbon">
+          <div className="oboygoods">
+            <div className="pricesthebest">
+              <div className="mygoodnesss">
+                <div className="greatguyman">
+                  <div className="additional">
+                    <h3>Monthly Costs</h3>
+                    <button className="learnmore">Learn More</button>
+                  </div>
+                </div>
 
-            <div className="legalproperty">
-              <div className="thebestyou">
-                <p>Property Transfer Tax</p>
-                <div className="dollars">
-                  <h3>$25,000</h3>
-                  <p>Based on the sale price and local regulations</p>
-                </div>
-              </div>
+                <div className="legalproperty">
+                  <div className="thebestyou">
+                    <p>Property Taxes</p>
+                    <div className="dollars">
+                      <h3>$1,250</h3>
+                      <p className="">Approximate monthly property tax based on the sale price and local rates</p>
+                    </div>
+                  </div>
 
-              <div className="thebestyou">
-                <p>Legal Fees</p>
-                <div className="dollars">
-                  <h3>$3,000</h3>
-                  <p>
-                    Approximate cost for legal services, including title
-                    transfer
-                  </p>
+                </div>
+                <div className="legalproperties">
+                  <div className="thebestyou">
+                    <p>Homeowners' Association Fee</p>
+                    <div className="dollars">
+                      <h3>$300</h3>
+                      <p>Monthly fee for common area maintenance and security</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div className="legalproperties">
-              <div className="thebestyou">
-                <p>Home Inspection</p>
-                <div className="dollars">
-                  <h3>$500</h3>
-                  <p>Recommended for due diligence</p>
+          </div>
+          <div className="oboygood">
+            <div className="pricesthebests">
+              <div className="mygoodness">
+                <div className="greatguyman">
+                  <div className="additional">
+                    <h3>Total Initial Costs</h3>
+                    <button className="learnmore">Learn More</button>
+                  </div>
                 </div>
-              </div>
-              <div className="thebestyous">
-                <p>Property Insurance</p>
-                <div className="dollars">
-                  <h3>$1,200</h3>
-                  <p>Annual cost for comprehensive property insurance</p>
+
+                <div className="legalproperty">
+                  <div className="thebestyou">
+                    <p>Listing Price</p>
+                    <div className="dollars">
+                      <h3>$1 250,000</h3>
+                    </div>
+                  </div>
+
+                  <div className="thebestyou">
+                    <p>Additional Fees</p>
+                    <div className="dollars">
+                      <h3>$29,700</h3>
+                      <p>
+                      Property transfer tax, legal fees, inspection, insurance
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="legalproperties">
+                  <div className="thebestyou">
+                    <p>Down Payment</p>
+                    <div className="dollars">
+                      <h3>$250,000</h3>
+                      <p>Recommended for due diligence</p>
+                    </div>
+                  </div>
+                  <div className="thebestyous">
+                    <p>Mortgage Amount</p>
+                    <div className="dollars">
+                      <h3>$1,000,000</h3>
+                      <p>If applicable</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div className="thebestyouss">
-              <p>Mortgage Fees</p>
-              <div className="dollars">
-                <h3>Varies</h3>
-                <p>
-                  If applicable, consult with your lender for specific details
-                </p>
+          </div>
+          <div className="oboygood">
+            <div className="pricesthebestss">
+              <div className="mygoodness">
+                <div className="greatguyman">
+                  <div className="additional">
+                    <h3>Monthly Expenses</h3>
+                    <button className="learnmore">Learn More</button>
+                  </div>
+                </div>
+
+                <div className="legalproperty">
+                  <div className="thebestyou">
+                    <p>Property Taxes</p>
+                    <div className="dollars">
+                      <h3>$1,250</h3>
+                      <p>Based on the sale price and local regulations</p>
+                    </div>
+                  </div>
+
+                  <div className="thebestyou">
+                    <p>Homeowners' Association Fee</p>
+                    <div className="dollars">
+                      <h3>$300</h3>
+                    </div>
+                  </div>
+                </div>
+                <div className="legalproperties">
+                  <div className="thebestyou">
+                    <p>Mortgage Payment</p>
+                    <div className="dollars">
+                      <p>Varies based on terms and interest rate</p>
+                    </div>
+                  </div>
+                  <div className="thebestyous">
+                    <p>Property Insurance</p>
+                    <div className="dollars">
+                      <h3>$100</h3>
+                      <p>Approximate monthly cost</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="thebestyouss">
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="oboygood">
-        <div className="pricesthebest">
-          <div className="mygoodness">
-            <div className="greatguyman">
-              <div className="additional">
-                <h3>Additional Fees</h3>
-                <button className="learnmore">Learn More</button>
-              </div>
-            </div>
-
-            <div className="legalproperty">
-              <div className="thebestyou">
-                <p>Property Transfer Tax</p>
-                <div className="dollars">
-                  <h3>$25,000</h3>
-                  <p>Based on the sale price and local regulations</p>
-                </div>
-              </div>
-
-              <div className="thebestyou">
-                <p>Legal Fees</p>
-                <div className="dollars">
-                  <h3>$3,000</h3>
-                  <p>
-                    Approximate cost for legal services, including title
-                    transfer
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="legalproperties">
-              <div className="thebestyou">
-                <p>Home Inspection</p>
-                <div className="dollars">
-                  <h3>$500</h3>
-                  <p>Recommended for due diligence</p>
-                </div>
-              </div>
-              <div className="thebestyous">
-                <p>Property Insurance</p>
-                <div className="dollars">
-                  <h3>$1,200</h3>
-                  <p>Annual cost for comprehensive property insurance</p>
-                </div>
-              </div>
-            </div>
-            <div className="thebestyouss">
-              <p>Mortgage Fees</p>
-              <div className="dollars">
-                <h3>Varies</h3>
-                <p>
-                  If applicable, consult with your lender for specific details
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="oboygood">
-        <div className="pricesthebest">
-          <div className="mygoodness">
-            <div className="greatguyman">
-              <div className="additional">
-                <h3>Additional Fees</h3>
-                <button className="learnmore">Learn More</button>
-              </div>
-            </div>
-
-            <div className="legalproperty">
-              <div className="thebestyou">
-                <p>Property Transfer Tax</p>
-                <div className="dollars">
-                  <h3>$25,000</h3>
-                  <p>Based on the sale price and local regulations</p>
-                </div>
-              </div>
-
-              <div className="thebestyou">
-                <p>Legal Fees</p>
-                <div className="dollars">
-                  <h3>$3,000</h3>
-                  <p>
-                    Approximate cost for legal services, including title
-                    transfer
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="legalproperties">
-              <div className="thebestyou">
-                <p>Home Inspection</p>
-                <div className="dollars">
-                  <h3>$500</h3>
-                  <p>Recommended for due diligence</p>
-                </div>
-              </div>
-              <div className="thebestyous">
-                <p>Property Insurance</p>
-                <div className="dollars">
-                  <h3>$1,200</h3>
-                  <p>Annual cost for comprehensive property insurance</p>
-                </div>
-              </div>
-            </div>
-            <div className="thebestyouss">
-              <p>Mortgage Fees</p>
-              <div className="dollars">
-                <h3>Varies</h3>
-                <p>
-                  If applicable, consult with your lender for specific details
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
     </div>
   );
 }
