@@ -386,13 +386,19 @@
 .additional{
     display: flex;
     justify-content: space-between;
-    gap: 693px;
+    gap: 680px;
 }
 
-.additionals{
+.additionalxxss{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 680px;
+}
+
+.additionalxs{
     display: flex;
     justify-content: space-between;
-    gap: 680px;
+    gap: 690.9px;
 }
 
 .dollars{
@@ -408,10 +414,22 @@
     border-left: none;
     border-right: none;
     padding-top: 10px;
+    /* padding-left: 20px; */
     margin-bottom: -20px;
 }
 
 .legalproperties{
+    display: flex;
+    gap: 120px;
+    border: 1px solid #262626;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    /* margin-top: -1px; */
+    /* margin-bottom: 5px; */
+}
+
+.legalpropertiesxs{
     display: flex;
     gap: 120px;
     border: 1px solid #262626;
@@ -428,10 +446,36 @@
     line-height: 10px;
 }
 
+.thebestyou{
+    /* display: block; */
+    color: white;
+    line-height: 10px;
+}
+
+.thebestyouqx{
+    /* display: block; */
+    color: white;
+    line-height: 10px;
+}
+
+.thebestyousss{
+    /* display: block; */
+    color: white;
+    line-height: 10px;
+    padding-left: 290px;
+}
+
 .thebestyous{
     /* display: block; */
     color: white;
     padding-left: 100px;
+    line-height: 10px;
+}
+
+.thebestyousxs{
+    /* display: block; */
+    color: white;
+    padding-left: 265px;
     line-height: 10px;
 }
 
@@ -453,15 +497,24 @@
 
 }
 
-/* .pricesthebests{
-    /* display: flex; */
-    /* align-items: center; */
+.pricesthebestssss{
+    display: flex;
+    align-items: center;
+    justify-content: right;
     /* justify-content: right; */
     /* padding-left: 80px; */
-    /* padding-right: 80px; */
-    /* gap: 160px; */
+    padding-right: 85px;
+}
 
-/* } */
+.pricesthebests{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    /* padding-left: 80px; */
+    /* padding-right: 80px; */
+    /* gap: 110px; */
+
+}
 
 .pricesthebestss{
     display: flex;
@@ -469,7 +522,7 @@
     justify-content: right;
     /* padding-left: 80px; */
     /* padding-right: 80px; */
-    gap: 180px;
+    gap: 160px;
 
 }
 
@@ -482,7 +535,7 @@
     gap: 30px;
     border: 1px solid #262626;
     border-radius: 10px;
-    padding-left: 40px;
+    padding-left: 30px;
     padding-right: 40px;
     padding-top: 40px;
     padding-bottom: 40px;
@@ -500,10 +553,21 @@
     padding-bottom: 40px;
 }
 
+.mygoodnessss{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border: 1px solid #262626;
+    border-radius: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
 .greatguyman{
     display: flex;
-    gap: 30px;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     color: white;
 }
 
@@ -513,19 +577,37 @@
     margin-top: 40px;
 }
 
-.oboygoods{
-    /* display: flex; */
-    padding-left: 110px;
-    /* padding-right: 80px; */
+.oboygoodxs{display: flex;
+    padding-left: 80px;
+    padding-right: 80px;
     margin-top: 40px;
 }
 
-/* .youaregoodegbon{
-    /* display: flex; */
-    /* flex-direction: column; */
+.oboygoods{
+    padding-left: 100px;
+    margin-top: 40px;
+}
+
+.oboygoodsssss{
+    /* padding-left: 80px; */
+    margin-top: 40px;
+    /* padding-right: 80px; */
+}
+
+.youaregoodegbon{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
     /* border: 1px solid pink; */
     /* padding-left: 30px; */
-/* }  */ 
+} 
+
+.youaregoodegbon{
+    display: flex;
+    justify-content: right;
+    flex-direction: column;
+    /* border: 1px solid pink; */
+}
 
 .constantinegood{ 
     display: flex;
