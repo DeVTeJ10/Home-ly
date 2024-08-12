@@ -397,6 +397,13 @@
     padding-left: 8px;
 }
 
+.additionalqxsx{
+    display: flex;
+    justify-content: space-between;
+    gap: 651px;
+    padding-left: 8px;
+}
+
 .additionalxxss{
     display: flex;
     justify-content: space-around;
@@ -448,6 +455,18 @@
 .thebestyou{
     color: white;
     line-height: 10px;
+}
+
+.thebestyouqsxq{
+    color: white;
+    line-height: 10px;
+    padding-left: 40px;
+}
+
+.thebestyouqsxqs{
+    color: white;
+    line-height: 10px;
+    padding-left: 55px;
 }
 
 .thebestyous{
@@ -522,6 +541,14 @@
     justify-content: right;
     padding-right: 80px;
     margin-top: 40px;
+}
+
+.goodnaessgraciouswow{
+    display: flex;
+    justify-content: right;
+    padding-right: 80px;
+    margin-top: 40px;
+    padding-left: 300px;
 }
 
 .greatguyman{

@@ -397,7 +397,7 @@ function propertiesPage() {
     <div className="goodnaessgracious">
     <div className="mygoodnessx">
             <div className="greatguyman">
-              <div className="additionalqxs">
+              <div className="additionalqxsx">
                 <h3>Monthly Expenses</h3>
                 <button className="learnmore">Learn More</button>
               </div>
@@ -412,7 +412,7 @@ function propertiesPage() {
                 </div>
               </div>
 
-              <div className="thebestyou">
+              <div className="thebestyouqsxq">
                 <p>Homeowners' Association Fee</p>
                 <div className="dollars">
                   <h3>$300</h3>
@@ -430,7 +430,7 @@ function propertiesPage() {
                   <p>If applicable</p>
                 </div>
               </div>
-              <div className="thebestyoussxxqsx">
+              <div className="thebestyouqsxqs">
                 <p>Property Insurance</p>
                 <div className="dollars">
                   <h3>$100</h3>
