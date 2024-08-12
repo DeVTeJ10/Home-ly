@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../../components/Header/index";
 import Stark from "../../components/Stars/indexmax";
+import Footer from "../../components/Footer/indexx"
 import "./propertiesPage.css";
 
 function propertiesPage() {
@@ -446,6 +447,85 @@ function propertiesPage() {
           </div>
         </div>
       </div>
+      <div className="starSign">
+        <img src="./src/images/star1.png" width={24} height={24} />
+        <img src="./src/images/star2.png" width={14.4} height={14.4} />
+        <img src="./src/images/star3.png" width={6.72} height={6.72} />
+      </div>
+
+      <div className="colors">
+        <div className="checkprops">
+          <h1>Frequently Asked Questions</h1>
+          <div className="allProperties">
+            <p className="xplore">
+              Find answers to common questions about Estatein's services,
+              property listings, and the real estate process. We're here to
+              provide clarity and<br></br> assist you every step of the way.
+            </p>
+            <button className="viewAll">View all FAQs</button>
+          </div>
+        </div>
+
+        <div className="qwertysp">
+          <div className="qwertys">
+            <h3>
+              How do I search for properties on<br></br> Estatein?
+            </h3>
+            <p className="learnHow">
+              Learn how to use our user-friendly search tools<br></br>
+              to find properties that match your criteria.
+            </p>
+            <button className="viewAlls1"> Read More</button>
+          </div>
+          <div className="qwertys">
+            <h3>
+              What documents do I need to sell my<br></br> property through
+              Estatein?
+            </h3>
+            <p className="learnHow">
+              Find out about the necessary documentation <br></br>
+              for listing your property with us.
+            </p>
+            <button className="viewAlls1"> Read More</button>
+          </div>
+          <div className="qwertys">
+            <h3>How can I contact an Estatein agent?</h3>
+            <p className="learnHows">
+              Discover the different ways you can get in touch<br></br>
+              with our experienced agents.
+            </p>
+            <button className="viewAlls1"> Read More</button>
+          </div>
+        </div>
+      </div>
+      <div className="pages2">
+        <p> 01 of 10 </p>
+        <div className="pageBTNs">
+          <button className="nextPage1">
+            {" "}
+            <img src="./src/images/arrow2.png" width={24} height={24}></img>
+          </button>
+          <button className="nextPage2">
+            {" "}
+            <img src="./src/images/arrow1.png" width={24} height={24}></img>
+          </button>
+        </div>
+      </div>
+      <div className="checkpropss">
+        <h1>Start Your Real Estate Journey Today</h1>
+        <div className="allProperties">
+          <p className="xplore">
+            Your dream property is just a click away. Whether you're looking for
+            a new home, a strategic investment, or expert real estate advice,
+            <br></br> Estatein is here to assist you every step of the way. Take
+            the first step towards your real estate goals and explore our
+            available properties<br></br> or get in touch with our team for
+            personalized assistance.
+          </p>
+          <button className="viewAllsss">Explore Properties</button>
+        </div>
+      </div>
+      < Footer/>
     </div>
   );
 }
