@@ -386,13 +386,15 @@
 .additional{
     display: flex;
     justify-content: space-between;
-    gap: 680px;
+    gap: 670px;
+
 }
 
 .additionalxxss{
     display: flex;
-    justify-content: space-evenly;
-    gap: 680px;
+    justify-content: space-around;
+    gap: 690px;
+
 }
 
 .additionalxs{
@@ -520,7 +522,7 @@
     display: flex;
     align-items: center;
     justify-content: right;
-    /* padding-left: 80px; */
+    padding-left: 100px;
     /* padding-right: 80px; */
     gap: 160px;
 
@@ -535,8 +537,8 @@
     gap: 30px;
     border: 1px solid #262626;
     border-radius: 10px;
-    padding-left: 30px;
-    padding-right: 40px;
+    padding-left: 25px;
+    padding-right: 60px;
     padding-top: 40px;
     padding-bottom: 40px;
 }
@@ -569,6 +571,14 @@
     display: flex;
     justify-content: space-between;
     color: white;
+    padding-left: -10px;
+    gap: 30px;
+}
+
+.greatguymanxq{
+    display: flex;
+    justify-content: space-between;
+    color: white;
 }
 
 .oboygood{display: flex;
@@ -578,9 +588,10 @@
 }
 
 .oboygoodxs{display: flex;
-    padding-left: 80px;
+    padding-left: 170px;
     padding-right: 80px;
     margin-top: 40px;
+    /* justify-content: right; */
 }
 
 .oboygoods{
