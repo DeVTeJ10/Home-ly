@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../../components/Header/index";
 import Stark from "../../components/Stars/indexmax";
-import Footer from "../../components/Footer/indexx"
+import Footer from "../../components/Footer/indexx";
 import "./propertiesPage.css";
 
 function propertiesPage() {
@@ -311,142 +311,137 @@ function propertiesPage() {
           </div>
         </div>
       </div>
+      <div>
+      </div>
 
-      <div className="constantinegood">
-        <div className="youaregoodegbon">
-          <div className="oboygoodsssss">
-            <div className="pricesthebestssss">
-              <div className="mygoodnessss">
-                <div className="greatguyman">
-                  <div className="additionalxs">
-                    <h3>Monthly Costs</h3>
-                    <button className="learnmore">Learn More</button>
-                  </div>
-                </div>
 
-                <div className="legalproperty">
-                  <div className="thebestyou">
-                    <p>Property Taxes</p>
-                    <div className="dollars">
-                      <h3>$1,250</h3>
-                      <p className="">
-                        Approximate monthly property tax based on the sale price
-                        and local rates
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="legalproperties">
-                  <div className="thebestyou">
-                    <p>Homeowners' Association Fee</p>
-                    <div className="dollars">
-                      <h3>$300</h3>
-                      <p>
-                        Monthly fee for common area maintenance and security
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+    <div className="geniusboss">
+    <div className="mygoodnesss">
+        <div className="greatguyman">
+          <div className="additionalxxss">
+            <h3>Monthly Costs</h3>
+            <button className="learnmore">Learn More</button>
+          </div>
+        </div>
+
+        <div className="legalproperty">
+          <div className="thebestyou">
+            <p>Property Taxes</p>
+            <div className="dollars">
+              <h3>$1,250</h3>
+              <p>Approximate monthly property tax based on the sale price and local rates</p>
             </div>
           </div>
 
-          <div className="oboygoodxs">
-            <div className="pricesthebests">
-              <div className="mygoodness">
-                <div className="greatguyman">
-                  <div className="additionalxxss">
-                    <h3>Total Initial Costs</h3>
-                    <button className="learnmore">Learn More</button>
-                  </div>
-                </div>
-
-                <div className="legalproperty">
-                  <div className="thebestyouqx">
-                    <p>Listing Price</p>
-                    <div className="dollars">
-                      <h3>$1 250,000</h3>
-                    </div>
-                  </div>
-
-                  <div className="thebestyousss">
-                    <p>Additional Fees</p>
-                    <div className="dollars">
-                      <h3>$29,700</h3>
-                      <p>
-                        Property transfer tax, legal fees, inspection, insurance
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="legalpropertiesxs">
-                  <div className="thebestyou">
-                    <p>Down Payment</p>
-                    <div className="dollars">
-                      <h3>$250,000</h3>
-                      <p>20%</p>
-                    </div>
-                  </div>
-                  <div className="thebestyousxs">
-                    <p>Mortgage Amount</p>
-                    <div className="dollars">
-                      <h3>$1,000,000</h3>
-                      <p>If applicable</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="oboygood">
-            <div className="pricesthebestss">
-              <div className="mygoodness">
-                <div className="greatguyman">
-                  <div className="additional">
-                    <h3>Monthly Expenses</h3>
-                    <button className="learnmore">Learn More</button>
-                  </div>
-                </div>
-
-                <div className="legalproperty">
-                  <div className="thebestyou">
-                    <p>Property Taxes</p>
-                    <div className="dollars">
-                      <h3>$1,250</h3>
-                      <p>Based on the sale price and local regulations</p>
-                    </div>
-                  </div>
-
-                  <div className="thebestyou">
-                    <p>Homeowners' Association Fee</p>
-                    <div className="dollars">
-                      <h3>$300</h3>
-                    </div>
-                  </div>
-                </div>
-                <div className="legalproperties">
-                  <div className="thebestyou">
-                    <p>Mortgage Payment</p>
-                    <div className="dollars">
-                      <p>Varies based on terms and interest rate</p>
-                    </div>
-                  </div>
-                  <div className="thebestyous">
-                    <p>Property Insurance</p>
-                    <div className="dollars">
-                      <h3>$100</h3>
-                      <p>Approximate monthly cost</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="thebestyouss"></div>
-              </div>
+        </div>
+        <div className="legalproperties">
+          <div className="thebestyou">
+            <p>Home Inspection</p>
+            <div className="dollars">
+              <h3>$500</h3>
+              <p>Recommended for due diligence</p>
             </div>
           </div>
         </div>
       </div>
+    </div>
+
+
+    <div className="goodnaessgracious">
+    <div className="mygoodnessx">
+            <div className="greatguyman">
+              <div className="additionalqxs">
+                <h3>Total Initial Costs</h3>
+                <button className="learnmore">Learn More</button>
+              </div>
+            </div>
+
+            <div className="legalproperty">
+              <div className="thebestyou">
+                <p>Listing Price</p>
+                <div className="dollars">
+                  <h3>$1,250,000</h3>
+                  <p>Based on the sale price and local regulations</p>
+                </div>
+              </div>
+
+              <div className="thebestyou">
+                <p>Additional Fees</p>
+                <div className="dollars">
+                  <h3>$29,700</h3>
+                  <p>
+                  Property transfer tax, legal fees, inspection, insurance
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="legalproperties">
+              <div className="thebestyou">
+                <p>Down Payment</p>
+                <div className="dollars">
+                  <h3>$250,000</h3>
+                  <p>Recommended for due diligence</p>
+                </div>
+              </div>
+              <div className="thebestyoussxx">
+                <p>Mortgage Amount</p>
+                <div className="dollars">
+                  <h3>$1,000,000</h3>
+                  <p>If applicable</p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+
+    <div className="goodnaessgracious">
+    <div className="mygoodnessx">
+            <div className="greatguyman">
+              <div className="additionalqxs">
+                <h3>Monthly Expenses</h3>
+                <button className="learnmore">Learn More</button>
+              </div>
+            </div>
+
+            <div className="legalproperty">
+              <div className="thebestyou">
+                <p>Property Taxes</p>
+                <div className="dollars">
+                  <h3>$1,250</h3>
+                  <p>Based on the sale price and local regulations</p>
+                </div>
+              </div>
+
+              <div className="thebestyou">
+                <p>Homeowners' Association Fee</p>
+                <div className="dollars">
+                  <h3>$300</h3>
+                  <p>
+                  Property transfer tax, legal fees, inspection, insurance
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="legalproperties">
+              <div className="thebestyou">
+                <p>Mortgage Payment</p>
+                <div className="dollars">
+                  <p>Varies based on terms and interest rate</p>
+                  <p>If applicable</p>
+                </div>
+              </div>
+              <div className="thebestyoussxxqsx">
+                <p>Property Insurance</p>
+                <div className="dollars">
+                  <h3>$100</h3>
+                  <p>Approximate monthly cost</p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+
+
       <div className="starSign">
         <img src="./src/images/star1.png" width={24} height={24} />
         <img src="./src/images/star2.png" width={14.4} height={14.4} />
@@ -525,7 +520,7 @@ function propertiesPage() {
           <button className="viewAllsss">Explore Properties</button>
         </div>
       </div>
-      < Footer/>
+      <Footer />
     </div>
   );
 }
