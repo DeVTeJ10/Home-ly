@@ -387,13 +387,20 @@
     display: flex;
     justify-content: space-between;
     gap: 670px;
+    padding-left: 8px;
+}
 
+.additionalqxs{
+    display: flex;
+    justify-content: space-between;
+    gap: 655px;
+    padding-left: 8px;
 }
 
 .additionalxxss{
     display: flex;
     justify-content: space-around;
-    gap: 690px;
+    gap: 689px;
 
 }
 
@@ -407,6 +414,7 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    color: white;
 }
 
 .legalproperty{
@@ -416,7 +424,6 @@
     border-left: none;
     border-right: none;
     padding-top: 10px;
-    /* padding-left: 20px; */
     margin-bottom: -20px;
 }
 
@@ -427,8 +434,6 @@
     border-left: none;
     border-right: none;
     border-top: none;
-    /* margin-top: -1px; */
-    /* margin-bottom: 5px; */
 }
 
 .legalpropertiesxs{
@@ -438,98 +443,36 @@
     border-left: none;
     border-right: none;
     border-top: none;
-    /* margin-top: -1px; */
-    /* margin-bottom: 5px; */
 }
 
 .thebestyou{
-    /* display: block; */
     color: white;
     line-height: 10px;
-}
-
-.thebestyou{
-    /* display: block; */
-    color: white;
-    line-height: 10px;
-}
-
-.thebestyouqx{
-    /* display: block; */
-    color: white;
-    line-height: 10px;
-}
-
-.thebestyousss{
-    /* display: block; */
-    color: white;
-    line-height: 10px;
-    padding-left: 290px;
 }
 
 .thebestyous{
-    /* display: block; */
     color: white;
-    padding-left: 100px;
     line-height: 10px;
+    padding-left: 103px;
 }
 
-.thebestyousxs{
-    /* display: block; */
+.thebestyoussxx{
     color: white;
-    padding-left: 265px;
     line-height: 10px;
+    padding-left: 90px;
 }
 
-
-.thebestyouss{
-    /* display: block; */
+.thebestyoussxxqsx{
     color: white;
     line-height: 10px;
-    margin-top: -10px;
+    padding-left: 15px;
 }
 
 .pricesthebest{
     display: flex;
     align-items: center;
-    /* justify-content: right; */
-    /* padding-left: 80px; */
-    /* padding-right: 80px; */
     gap: 160px;
-
 }
-
-.pricesthebestssss{
-    display: flex;
-    align-items: center;
-    justify-content: right;
-    /* justify-content: right; */
-    /* padding-left: 80px; */
-    padding-right: 85px;
-}
-
-.pricesthebests{
-    display: flex;
-    align-items: center;
-    justify-content: right;
-    /* padding-left: 80px; */
-    /* padding-right: 80px; */
-    /* gap: 110px; */
-
-}
-
-.pricesthebestss{
-    display: flex;
-    align-items: center;
-    justify-content: right;
-    padding-left: 100px;
-    /* padding-right: 80px; */
-    gap: 160px;
-
-}
-
-
-
 
 .mygoodness{
     display: flex;
@@ -537,8 +480,20 @@
     gap: 30px;
     border: 1px solid #262626;
     border-radius: 10px;
-    padding-left: 25px;
-    padding-right: 60px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.mygoodnessx{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border: 1px solid #262626;
+    border-radius: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
     padding-top: 40px;
     padding-bottom: 40px;
 }
@@ -555,16 +510,18 @@
     padding-bottom: 40px;
 }
 
-.mygoodnessss{
+.geniusboss{
     display: flex;
-    flex-direction: column;
-    gap: 30px;
-    border: 1px solid #262626;
-    border-radius: 10px;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    justify-content: right;
+    padding-right: 80px;
+    margin-top: 40px;
+}
+
+.goodnaessgracious{
+    display: flex;
+    justify-content: right;
+    padding-right: 80px;
+    margin-top: 40px;
 }
 
 .greatguyman{
@@ -575,50 +532,21 @@
     gap: 30px;
 }
 
-.greatguymanxq{
-    display: flex;
-    justify-content: space-between;
-    color: white;
-}
+
 
 .oboygood{display: flex;
-    padding-left: 80px;
+    padding-left: 85px;
     padding-right: 80px;
     margin-top: 40px;
 }
 
-.oboygoodxs{display: flex;
-    padding-left: 170px;
-    padding-right: 80px;
-    margin-top: 40px;
-    /* justify-content: right; */
-}
-
-.oboygoods{
-    padding-left: 100px;
-    margin-top: 40px;
-}
-
-.oboygoodsssss{
-    /* padding-left: 80px; */
-    margin-top: 40px;
-    /* padding-right: 80px; */
-}
 
 .youaregoodegbon{
     display: flex;
     flex-direction: column;
     justify-content: right;
-    /* border: 1px solid pink; */
-    /* padding-left: 30px; */
 } 
 
-.youaregoodegbon{
-    display: flex;
-    justify-content: right;
-    flex-direction: column;
-    /* border: 1px solid pink; */
-}
 
 .constantinegood{ 
     display: flex;
