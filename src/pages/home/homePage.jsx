@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../../components/Header/index";
 import FooterComponent from "../../components/Footer/indexx";
 import DreamHome from "../../components/DreamHome/index";
-import checkImg from "../../images/check.jpg"
+import checkImg from "../../images/Container.png"
 import { Link, Route, Routes } from "react-router-dom";
 import "./homePage.css";
 
