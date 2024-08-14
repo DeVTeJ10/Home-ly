@@ -49,6 +49,21 @@
     border-radius: 10px;
 }
 
+.valuemasterys{
+    padding: 40px;
+    width: 350.33px;
+    border: 1px solid #262626;
+    border-radius: 10px;
+}
+
+.valuemasteries{
+    padding: 40px;
+    border: 1px solid #262626;
+    border-radius: 10px;
+    width: 830px;
+
+}
+
 .senseix{
     border: 1px solid pink;
 
@@ -60,4 +75,30 @@
     padding-left: 80px;
     padding-right: 80px;
     /* gap: 20px; */
+}
+
+.masterysuccess{
+    display: flex;
+    gap: 15px;
+    padding-left: 80px;
+    padding-right: 80px;
+    margin-top: 20px;
+}
+
+.valuemasterys{
+    padding: 40px;
+    width: 365px;
+    border: 1px solid #262626;
+    border-radius: 10px;
+}
+
+.masterchef{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.valuations{
+    display: flex;
+    justify-content: space-between;
+    color: white;
 }
