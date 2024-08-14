@@ -9,10 +9,13 @@
     background-color: #141414;
     padding-top: 10px;
     border: 4px #262626 solid;
+    /* border-bottom: 20px solid #262626; */
+    border-bottom-color: #262626;
     padding-bottom: 10px;
     padding-left: 10px;
     padding-right: 10px;
     gap: 10px;
+
 }
 .find{
     text-align: center;
