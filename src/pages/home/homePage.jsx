@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "../../components/Header/index";
+import Header from "../../components/Header";
 import FooterComponent from "../../components/Footer";
 import DreamHome from "../../components/DreamHome";
 import checkImg from "../../images/Container.png"
