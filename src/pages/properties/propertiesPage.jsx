@@ -506,6 +506,7 @@ function propertiesPage() {
           </button>
         </div>
       </div>
+      
       <div className="checkpropss">
         <h1>Start Your Real Estate Journey Today</h1>
         <div className="allProperties">
