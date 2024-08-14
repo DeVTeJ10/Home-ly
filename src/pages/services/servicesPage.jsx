@@ -1,6 +1,6 @@
 import React from "react";
-import Header from "../../components/Header/index";
-import DreamHome from "../../components/DreamHome/index";
+import Header from "../../components/Header";
+import DreamHome from "../../components/DreamHome";
 import Footer from "../../components/Footer"
 import "./servicesPage.css";
 
