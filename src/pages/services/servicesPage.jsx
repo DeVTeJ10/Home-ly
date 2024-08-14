@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "../../components/Header/index.jsx";
+import Header from "../../components/Header";
 import DreamHome from "../../components/DreamHome";
 import Footer from "../../components/Footer"
 import "./servicesPage.css";
