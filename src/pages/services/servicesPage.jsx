@@ -33,6 +33,8 @@ const servicesPage = () => {
             </div>
         </div>
           </div>
+
+
         <div className="starSigns">
         <img src="./src/images/star1.png" width={24} height={24} />
         <img src="./src/images/star2.png" width={14.4} height={14.4} />
@@ -76,7 +78,87 @@ const servicesPage = () => {
             <p>Negotiating the best deal is an art, and our<br></br> negotiation experts are masters of it.</p>
         </div>    
         </div>
+
+    <div className='masterysuccess'>
+    <div className="valuemasterys">
+        <div className="valuation">
+            <img src="./src/images/success.png" width={60} height={60} />
+            <h3>Closing Success</h3>
+        </div>
+            <p>A successful sale is not complete until the<br></br> closing. 
+                We guide you through the intricate<br></br> closing process.</p>
+        </div>
         
+        <div className="valuemasteries">
+        <div className="valuations">
+            <h3>Unlock the Value of Your Property Today</h3>
+            <button className='masterchef'>Learn More</button>
+        </div>
+            <p>Ready to unlock the true value of your property? Explore our Property Selling Service categories and 
+                let us help you achieve the best deal possible for your valuable asset.</p>
+        </div>
+    </div>
+    <div className="starSigns">
+        <img src="./src/images/star1.png" width={24} height={24} />
+        <img src="./src/images/star2.png" width={14.4} height={14.4} />
+        <img src="./src/images/star3.png" width={6.72} height={6.72} />
+      </div>
+
+    <div>
+    <div className="clientFeedbacks">
+        <h1> Smart Investments,<br></br> Informed Decisions </h1>
+        <div className="clientSay">
+          <p className="success">
+          Owning a property should be a pleasure, not a hassle. Estatein's Property Management Service takes the stress out of property ownership, 
+          offering<br></br> comprehensive solutions tailored to your needs. 
+          Explore the categories below to see how we can make property management effortless for you
+          </p>
+        </div>
+      </div>
+    </div>
+        <div className='mastervalue'>
+        <div className="valuemastery">
+        <div className="valuation">
+            <img src="./src/images/harmony.png" width={60} height={60} />
+            <h3>Tenant Harmony</h3>
+        </div>
+            <p>Our Tenant Management services ensure that<br></br> your tenants have a smooth and reducing<br></br> vacancies.</p>
+        </div>
+        <div className="valuemastery">
+        <div className="valuation">
+            <img src="./src/images/maintainance.png" width={60} height={60} />
+            <h3>Maintenance Ease</h3>
+        </div>
+            <p>Selling a property requires more than just a<br></br> listing; 
+                it demands a strategic marketing.</p>
+        </div>
+        <div className="valuemastery">
+        <div className="valuation">
+            <img src="./src/images/financial.png" width={60} height={60} />
+            <h3>Financial Peace of Mind</h3>
+        </div>
+            <p>Managing property finances can be complex.<br></br> Our financial experts take care of rent<br></br> collection</p>
+        </div>    
+        </div>
+
+    <div className='masterysuccess'>
+    <div className="valuemasterys">
+        <div className="valuation">
+            <img src="./src/images/guardian.png" width={60} height={60} />
+            <h3>Legal Guardian</h3>
+        </div>
+            <p>Stay compliant with property laws and<br></br> regulations effortlessly.</p>
+        </div>
+        
+        <div className="valuemasteries">
+        <div className="valuations">
+            <h3>Experience Effortless Property Management</h3>
+            <button className='masterchef'>Learn More</button>
+        </div>
+            <p>Ready to experience hassle-free property management? Explore our Property Management Service<br></br> 
+            categories and let us handle the complexities while you enjoy the benefits of property ownership.</p>
+        </div>
+    </div>
     </div>
   )
 }
