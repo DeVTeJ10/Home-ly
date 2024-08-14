@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../../components/Header/index";
 import Stark from "../../components/Stars/indexmax";
-import Footer from "../../components/Footer/indexx";
+import Footer from "../../components/Footer";
 import "./propertiesPage.css";
 
 function propertiesPage() {
@@ -506,7 +506,7 @@ function propertiesPage() {
           </button>
         </div>
       </div>
-      
+
       <div className="checkpropss">
         <h1>Start Your Real Estate Journey Today</h1>
         <div className="allProperties">
