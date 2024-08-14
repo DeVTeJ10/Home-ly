@@ -1,0 +1,63 @@
+.Gemini{
+    padding-left: 80px;
+    padding-right: 80px;
+    /* margin-top: 100px; */
+    /* margin-bottom: 100px; */
+}
+
+.Elevate{
+    color: white;
+}
+
+.clientFeedbacks{
+    justify-content: space-between;
+    padding-left: 80px;
+    padding-right: 80px;
+    /* background-color: #141414; */
+    color: white;
+    /* margin-top: -30px; */
+    /* padding-bottom: 60px; */
+}
+
+.dreamhomesxq{
+    display: flex;
+    /* justify-content: space-around; */
+    /* background-color: #141414; */
+    padding-top: 8px;
+    border: 6px #262626 solid;
+    border-bottom: 24px solid #262626;
+    /* border-bottom-color: #262626; */
+    border-left: none;
+    border-right: none;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    gap: 10px;
+    margin-top: 100px;
+}
+
+.valuation{
+    display: flex;
+    color: white;
+    gap: 16px;
+}
+
+.valuemastery{
+    padding: 40px;
+    width: 333.33px;
+    border: 1px solid #262626;
+    border-radius: 10px;
+}
+
+.senseix{
+    border: 1px solid pink;
+
+}
+
+.mastervalue{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 80px;
+    padding-right: 80px;
+    /* gap: 20px; */
+}
