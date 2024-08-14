@@ -102,3 +102,101 @@
     justify-content: space-between;
     color: white;
 }
+
+.guybadoo{
+    margin-top: 40px;
+}
+
+.learningmore{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 14px;
+    padding-top: 14px;
+    width: 290px;
+    color: white;
+    background-color: #262626;
+    border: 0px;
+}
+
+.unlockinvestment{
+    color: white;
+    padding-left: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-right: 40px;
+    border: 1px solid #262626;
+    width: 330px;
+}
+
+.superstarguy{
+    margin-top: 280px;
+}
+
+.unlocksvestments{
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    padding-left: 80px;
+    padding-right: 80px;
+
+}
+
+.youarethebestguy{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -310px;
+    margin-top: 80px;
+}
+
+.markinsight{
+    display: flex;
+    color: white;
+}
+
+.marketROI{
+    display: flex;
+    gap: 10px;
+}
+
+.marketROs{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.insightmark{
+    padding-left: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-right: 2px;
+    border: 1px solid #262626;
+    width: 350px;
+}
+
+.insightmark{
+    border: 1px solid #262626;
+}
+
+.classicmangee{
+    /* padding-left: 80px; */
+
+}
+
+.thankyouGod{
+    /* margin-bottom: -180px; */
+    /* padding-left: 80px; */
+    padding-right: 80px;
+}
+
+.checkpropssqsx{
+    background-color: #141414;
+    color: white;
+    padding-left: 80px;
+    padding-right: 80px;
+    gap: 150px;
+    border: 1px solid #262626;
+    margin-top: 90px;
+}
+
+.checkpropss{
+}
