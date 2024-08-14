@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../../components/Header/index";
 import DreamHome from "../../components/DreamHome/index";
-import Footer from "../../components/Footer/indexx"
+import Footer from "../../components/Footer"
 import "./servicesPage.css";
 
 const servicesPage = () => {
