@@ -1,6 +1,6 @@
 import React from "react";
-import HeaderComponent from "../../components/Header";
-import Footer from "../../components/Footer";
+import HeaderComponent from "../../components/header/indexmax";
+import Footer from "../../components/Footer/indexmaxx";
 import { Link, Route, Routes } from "react-router-dom";
 import "./aboutUs.css";
 

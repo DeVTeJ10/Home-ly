@@ -1,6 +1,6 @@
 import React from "react";
-import Header from "../../components/Header";
-import FooterComponent from "../../components/Footer";
+import Header from "../../components/header/indexmax";
+import FooterComponent from "../../components/Footer/indexmaxx";
 import DreamHome from "../../components/DreamHome";
 import checkImg from "../../images/Container.png";
 import { Link, Route, Routes } from "react-router-dom";
