@@ -1,7 +1,7 @@
 import React from "react";
-import Header from "../../components/header";
+import Header from "../../components/header/indexmax";
 import Stark from "../../components/Stars/indexmax";
-import Footer from "../../components/Footer";
+import Footer from "../../components/Footer/indexmaxx";
 import "./propertiesPage.css";
 
 function propertiesPage() {
