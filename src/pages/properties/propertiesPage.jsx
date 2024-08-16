@@ -1,445 +1,292 @@
 import React from "react";
-import Header from "../../components/header/indexmax";
-import Stark from "../../components/Stars/indexmax";
-import Footer from "../../components/footer";
+import Header from "../../components/header";
+import FooterComponent from "../../components/footer";
+import DreamHome from "../../components/dreamHome";
+import checkImg from "../../images/Container.png";
+import circogo from "../../images/circogo.png";
+import star1Img from "../../images/star1.png";
+import star2Img from "../../images/star2.png";
+import star3Img from "../../images/star3.png";
+import villaImg from "../../images/villa.png";
+import bedroomImg from "../../images/bedroom.png";
+import bathroomImg from "../../images/bathroom.png";
+import villa2Img from "../../images/villa 2.png";
+import havenImg from "../../images/haven.png";
+import cottageImg from "../../images/cottage.png";
+import arrow2Img from "../../images/arrow2.png";
+import arrow1Img from "../../images/arrow1.png";
+import stars1Img from "../../images/stars1.png";
+import stars2Img from "../../images/stars2.png";
+import stars3Img from "../../images/stars3.png";
+import stars4Img from "../../images/stars4.png";
+import stars5Img from "../../images/stars5.png";
+import wadeImg from "../../images/wade.png";
+import emelieImg from "../../images/emelie.png";
+import johnImg from "../../images/john.png";
+import { Link, Route, Routes } from "react-router-dom";
 import "./propertiesPage.css";
 
-function propertiesPage() {
+function homePage() {
   return (
     <div>
       <Header />
-      <div className="propertiesx">
-        <div className="seasidex">
-          <h3>Seaside Serenity Villa</h3>
-          <div className="locationx">
-            <img src="./src/images/locate.png" width={13.75} height={16.87} />
-            <p className="malibu">Malibu, Carlifonia</p>
-          </div>
+      <div className="home">
+        <div className="homeText">
+          <h1>
+            Discover Your <br /> Dream Home
+          </h1>
+          <p>
+            Explore our curated selection of luxurious properties, <br />
+            tailored to your unique preferences and lifestyle.
+          </p>
+          <button className="explore">Explore Properties</button>
         </div>
-        <div className="pricex">
-          <p className="marg">Price</p>
-          <h3>$1,250,000</h3>
-        </div>
-      </div>
-
-      <div className="tinypartment">
-        <div className="classicman">
-          <div className="better">
-            <div className="badtguy">
-              <div className="geniusYeah">
-                <img src="./src/images/prop1.png" width={122.22} height={74} />
-                <img src="./src/images/prop2.png" width={122.22} height={74} />
-                <img src="./src/images/prop3.png" width={122.22} height={74} />
-                <img src="./src/images/prop4.png" width={122.22} height={74} />
-                <img src="./src/images/prop5.png" width={122.22} height={74} />
-                <img src="./src/images/prop6.png" width={122.22} height={74} />
-                <img src="./src/images/prop7.png" width={122.22} height={74} />
-                <img src="./src/images/prop8.png" width={122.22} height={74} />
-                <img src="./src/images/prop9.png" width={122.22} height={74} />
-              </div>
-            </div>
-
-            <div className="xproperties">
-              <img src="./src/images/villa2.png" width={585} height={507} />
-              <img src="./src/images/inhouse.png" width={585} height={507} />
-            </div>
-          </div>
-        </div>
-
-        <div className="history">
-          <div className="howdy">
-            <div className="noirarrows">
-              <img
-                src="./src/images/arrow2.png"
-                width={22}
-                height={22}
-                className="legolas"
-              />
-              <div className="pageson">
-                <button className="buttons" id="idisthis"></button>
-                <button className="buttons"></button>
-                <button className="buttons"></button>
-                <button className="buttons"></button>
-                <button className="buttons"></button>
-                <button className="buttons"></button>
-              </div>
-              <img
-                src="./src/images/arrow1.png"
-                width={22}
-                height={22}
-                className="legolas1"
-              />
-            </div>
-          </div>
+        <div className="homeImg">
+          <img src={checkImg} width={690} height={622} alt="Check" />
         </div>
       </div>
 
-      <div className="santabosses">
-        <div className="santaboss">
-          {/* <div className="goodyeah"> */}
-          <div className="santafes">
-            <div className="santafe">
-              <h2 className="santa">Description</h2>
-              <div className="descripx">
-                <p>
-                  Discover your own piece of paradise with the Seaside Serenity
-                  Villa. T With an<br></br> open floor plan, breathtaking ocean
-                  views from every room, and direct access<br></br> to a
-                  pristine sandy beach, this property is the epitome of coastal
-                  living.
-                </p>
-              </div>
-            </div>
-
-            <div className="geniusclass">
-              <div className="giants" id="giantess">
-                <div className="xprops">
-                  <img src="./src/images/bedroom.png" width={20} height={20} />
-                  <p>Bedrooms</p>
-                </div>
-                <h3 className="paragh">04</h3>
-              </div>
-
-              <div className="giants">
-                <div className="xprops">
-                  <img src="./src/images/bathroom.png" width={20} height={20} />
-                  <p>Bathroom</p>
-                </div>
-                <h3 className="paragh">03</h3>
-              </div>
-
-              <div className="giants">
-                <div className="xprops">
-                  <img src="./src/images/area.png" width={20} height={20} />
-                  <p>Area</p>
-                </div>
-                <h3 className="paragh">2,500 Square Feet</h3>
-              </div>
-            </div>
-          </div>
-          {/* </div> */}
-
-          <div className="bosslevelbadtguy">
-            <h2>Key Features and Amenities</h2>
-
-            <div className="betterthebest">
-              <div className="betterbest">
-                <img src="./src/images/lightnings.png" width={20} height={20} />
-                <p>Expansive oceanfront terrace for outdoor entertaining</p>
-              </div>
-              <div className="betterbest">
-                <img src="./src/images/lightnings.png" width={20} height={20} />
-                <p>Gourmet kitchen with top-of-the-line appliances</p>
-              </div>
-              <div className="betterbest">
-                <img src="./src/images/lightnings.png" width={20} height={20} />
-                <p>Private beach access for morning strolls and sunset views</p>
-              </div>
-              <div className="betterbest">
-                <img src="./src/images/lightnings.png" width={20} height={20} />
-                <p>
-                  Master suite with a spa-inspired bathroom and ocean-facing
-                  <br></br> balcony
-                </p>
-              </div>
-              <div className="betterbest">
-                <img src="./src/images/lightnings.png" width={20} height={20} />
-                <p>Private garage and ample storage space</p>
-              </div>
-            </div>
-          </div>
+      <div className="home2">
+        <div className="home2Text">
+          <h1>
+            <img src={circogo} width={129} height={129} alt="Circogo" className="type" />
+            <br />
+            <span className="type">Estatein</span>
+          </h1>
+          <p>
+            Your trusted partner in finding the perfect home. <br />
+            With a commitment to excellence and a passion for <br />
+            real estate, we're here to guide you every step <br />
+            of the way.
+          </p>
+          <button className="explore">Learn More</button>
         </div>
-      </div>
-
-      <div className="starkses">
-        <Stark />
-        <div className="youaregoodguy">
-          <div className="historygood">
-            <div className="omoguygood">
-              <div className="inputs1">
-                <div>
-                  <h3>First Name</h3>
-                  <input
-                    placeholder="Enter First Name"
-                    className="toogood"
-                  ></input>
-                </div>
-                <div>
-                  <h3>Last Name</h3>
-                  <input
-                    placeholder="Enter Last Name"
-                    className="toogood"
-                  ></input>
-                </div>
-              </div>
-              <div className="inputs2">
-                <div>
-                  <h3>Email</h3>
-                  <input placeholder="Enter Email" className="toogood"></input>
-                </div>
-                <div>
-                  <h3>Phone number</h3>
-                  <input
-                    placeholder="Enter Phone Number"
-                    className="toogood"
-                  ></input>
-                </div>
-              </div>
-            </div>
-            <div className="selectmessages">
-              <div>
-                <h3>Selected Property</h3>
-                <input
-                  placeholder="Seaside Serenity Villa, Malibu, California"
-                  className="toogoods"
-                ></input>
-              </div>
-              <div>
-                <h3>Message</h3>
-                <input
-                  placeholder="Enter Your Message Here"
-                  className="toogoodss"
-                ></input>
-              </div>
-            </div>
-            <div className="wowzers">
-              <div className="wowz">
-                <input
-                  type="checkbox"
-                  width={24}
-                  height={24}
-                  className="checkboxess"
-                ></input>
-                <p>I agree with Terms of Use and Privacy Policy</p>
-              </div>
-              <button className="sendmessage">Send Your Message</button>
-            </div>
-          </div>
+        <div className="home2Img">
+          <img src={checkImg} width={690} height={622} alt="Check" />
         </div>
       </div>
 
       <div className="starSign">
-        <img src="./src/images/star1.png" width={24} height={24} />
-        <img src="./src/images/star2.png" width={14.4} height={14.4} />
-        <img src="./src/images/star3.png" width={6.72} height={6.72} />
+        <img src={star1Img} width={24} height={24} alt="Star 1" />
+        <img src={star2Img} width={14.4} height={14.4} alt="Star 2" />
+        <img src={star3Img} width={6.72} height={6.72} alt="Star 3" />
       </div>
 
       <div className="colors">
         <div className="checkprops">
-          <h1>Comprehensive Pricing Details</h1>
+          <h1>Featured Properties</h1>
           <div className="allProperties">
             <p className="xplore">
-              At Estatein, transparency is key. We want you to have a clear
-              understanding of all costs associated with your property
-              investment. Below, we break down<br></br> the pricing for Seaside
-              Serenity Villa to help you make an informed decision
+              Explore our handpicked selection of exquisite properties, <br />
+              featuring stunning designs, prime locations, and <br />
+              unparalleled luxury.
             </p>
-          </div>
-        </div>
-      </div>
-      <div className="outstandingguy">
-        <div className="figures2">
-          <div className="notethefigures">
-            <h3>Note</h3>
-            <p>
-              The figures provided above are estimates and may vary depending on
-              the property, location, and individual circumstances.
-            </p>
+            <button className="viewAll">View all Properties</button>
           </div>
         </div>
       </div>
 
-      <div className="oboygood">
-        <div className="pricesthebest">
-          <div className="listingprice">
-            <p>Listing Price</p>
+      <div className="cottage">
+        <div className="cottageImg">
+          <img src={villaImg} width={353.33} height={255} alt="Villa" className="cottage" />
+        </div>
+        <div className="cottageText">
+          <h1>Seaside Serenity Villa</h1>
+          <div className="cottageDetails">
+            <div className="cottageDetail">
+              <img src={bedroomImg} width={20} height={20} alt="Bedroom" />
+              <p>Bedrooms</p>
+              <h3>04</h3>
+            </div>
+            <div className="cottageDetail">
+              <img src={bathroomImg} width={20} height={20} alt="Bathroom" />
+              <p>Bathroom</p>
+              <h3>03</h3>
+            </div>
+            <div className="cottageDetail">
+              <img src={villa2Img} width={20} height={20} alt="Villa 2" />
+              <p>Area</p>
+              <h3>2,500 Square Feet</h3>
+            </div>
+          </div>
+          <div className="cottagePrice">
+            <p>Price</p>
             <h2>$1,250,000</h2>
           </div>
-          <div className="mygoodness">
-            <div className="greatguyman">
-              <div className="additional">
-                <h3>Additional Fees</h3>
-                <button className="learnmore">Learn More</button>
-              </div>
-            </div>
-
-            <div className="legalproperty">
-              <div className="thebestyou">
-                <p>Property Transfer Tax</p>
-                <div className="dollars">
-                  <h3>$25,000</h3>
-                  <p>Based on the sale price and local regulations</p>
-                </div>
-              </div>
-
-              <div className="thebestyou">
-                <p>Legal Fees</p>
-                <div className="dollars">
-                  <h3>$3,000</h3>
-                  <p>
-                    Approximate cost for legal services, including title
-                    transfer
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="legalproperties">
-              <div className="thebestyou">
-                <p>Home Inspection</p>
-                <div className="dollars">
-                  <h3>$500</h3>
-                  <p>Recommended for due diligence</p>
-                </div>
-              </div>
-              <div className="thebestyous">
-                <p>Property Insurance</p>
-                <div className="dollars">
-                  <h3>$1,200</h3>
-                  <p>Annual cost for comprehensive property insurance</p>
-                </div>
-              </div>
-            </div>
-            <div className="thebestyouss">
-              <p>Mortgage Fees</p>
-              <div className="dollars">
-                <h3>Varies</h3>
-                <p>
-                  If applicable, consult with your lender for specific details
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div></div>
-
-      <div className="geniusboss">
-        <div className="mygoodnesss">
-          <div className="greatguyman">
-            <div className="additionalxxss">
-              <h3>Monthly Costs</h3>
-              <button className="learnmore">Learn More</button>
-            </div>
-          </div>
-
-          <div className="legalproperty">
-            <div className="thebestyou">
-              <p>Property Taxes</p>
-              <div className="dollars">
-                <h3>$1,250</h3>
-                <p>
-                  Approximate monthly property tax based on the sale price and
-                  local rates
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="legalproperties">
-            <div className="thebestyou">
-              <p>Home Inspection</p>
-              <div className="dollars">
-                <h3>$500</h3>
-                <p>Recommended for due diligence</p>
-              </div>
-            </div>
-          </div>
+          <button className="explore">View Property</button>
         </div>
       </div>
 
-      <div className="goodnaessgracious">
-        <div className="mygoodnessx">
-          <div className="greatguyman">
-            <div className="additionalqxs">
-              <h3>Total Initial Costs</h3>
-              <button className="learnmore">Learn More</button>
+      <div className="cottage">
+        <div className="cottageImg">
+          <img src={havenImg} width={353.33} height={255} alt="Haven" className="cottage" />
+        </div>
+        <div className="cottageText">
+          <h1>Urban Oasis Haven</h1>
+          <div className="cottageDetails">
+            <div className="cottageDetail">
+              <img src={bedroomImg} width={20} height={20} alt="Bedroom" />
+              <p>Bedrooms</p>
+              <h3>03</h3>
+            </div>
+            <div className="cottageDetail">
+              <img src={bathroomImg} width={20} height={20} alt="Bathroom" />
+              <p>Bathroom</p>
+              <h3>02</h3>
+            </div>
+            <div className="cottageDetail">
+              <img src={villa2Img} width={20} height={20} alt="Villa 2" />
+              <p>Area</p>
+              <h3>1,800 Square Feet</h3>
             </div>
           </div>
-
-          <div className="legalproperty">
-            <div className="thebestyou">
-              <p>Listing Price</p>
-              <div className="dollars">
-                <h3>$1,250,000</h3>
-                <p>Based on the sale price and local regulations</p>
-              </div>
-            </div>
-
-            <div className="thebestyou">
-              <p>Additional Fees</p>
-              <div className="dollars">
-                <h3>$29,700</h3>
-                <p>Property transfer tax, legal fees, inspection, insurance</p>
-              </div>
-            </div>
+          <div className="cottagePrice">
+            <p>Price</p>
+            <h2>$850,000</h2>
           </div>
-          <div className="legalproperties">
-            <div className="thebestyou">
-              <p>Down Payment</p>
-              <div className="dollars">
-                <h3>$250,000</h3>
-                <p>Recommended for due diligence</p>
-              </div>
-            </div>
-            <div className="thebestyoussxx">
-              <p>Mortgage Amount</p>
-              <div className="dollars">
-                <h3>$1,000,000</h3>
-                <p>If applicable</p>
-              </div>
-            </div>
-          </div>
+          <button className="explore">View Property</button>
         </div>
       </div>
 
-      <div className="goodnaessgracious">
-        <div className="mygoodnessx">
-          <div className="greatguyman">
-            <div className="additionalqxsx">
-              <h3>Monthly Expenses</h3>
-              <button className="learnmore">Learn More</button>
+      <div className="cottage">
+        <div className="cottageImg">
+          <img src={cottageImg} width={353.33} height={255} alt="Cottage" className="cottage" />
+        </div>
+        <div className="cottageText">
+          <h1>Rustic Retreat Cottage</h1>
+          <div className="cottageDetails">
+            <div className="cottageDetail">
+              <img src={bedroomImg} width={20} height={20} alt="Bedroom" />
+              <p>Bedrooms</p>
+              <h3>02</h3>
+            </div>
+            <div className="cottageDetail">
+              <img src={bathroomImg} width={20} height={20} alt="Bathroom" />
+              <p>Bathroom</p>
+              <h3>01</h3>
+            </div>
+            <div className="cottageDetail">
+              <img src={villa2Img} width={20} height={20} alt="Villa 2" />
+              <p>Area</p>
+              <h3>1,200 Square Feet</h3>
             </div>
           </div>
+          <div className="cottagePrice">
+            <p>Price</p>
+            <h2>$650,000</h2>
+          </div>
+          <button className="explore">View Property</button>
+        </div>
+      </div>
 
-          <div className="legalproperty">
-            <div className="thebestyou">
-              <p>Property Taxes</p>
-              <div className="dollars">
-                <h3>$1,250</h3>
-                <p>Based on the sale price and local regulations</p>
-              </div>
-            </div>
-
-            <div className="thebestyouqsxq">
-              <p>Homeowners' Association Fee</p>
-              <div className="dollars">
-                <h3>$300</h3>
-                <p>Property transfer tax, legal fees, inspection, insurance</p>
-              </div>
-            </div>
-          </div>
-          <div className="legalproperties">
-            <div className="thebestyou">
-              <p>Mortgage Payment</p>
-              <div className="dollars">
-                <p>Varies based on terms and interest rate</p>
-                <p>If applicable</p>
-              </div>
-            </div>
-            <div className="thebestyouqsxqs">
-              <p>Property Insurance</p>
-              <div className="dollars">
-                <h3>$100</h3>
-                <p>Approximate monthly cost</p>
-              </div>
-            </div>
-          </div>
+      <div className="pages">
+        <p> 01 of 10 </p>
+        <div className="pageBTNs">
+          <button className="nextPage1">
+            <img src={arrow2Img} width={24} height={24} alt="Arrow 2" />
+          </button>
+          <button className="nextPage2">
+            <img src={arrow1Img} width={24} height={24} alt="Arrow 1" />
+          </button>
         </div>
       </div>
 
       <div className="starSign">
-        <img src="./src/images/star1.png" width={24} height={24} />
-        <img src="./src/images/star2.png" width={14.4} height={14.4} />
-        <img src="./src/images/star3.png" width={6.72} height={6.72} />
+        <img src={star1Img} width={24} height={24} alt="Star 1" />
+        <img src={star2Img} width={14.4} height={14.4} alt="Star 2" />
+        <img src={star3Img} width={6.72} height={6.72} alt="Star 3" />
+      </div>
+
+      <div className="colors">
+        <div className="checkprops">
+          <h1>Client Testimonials</h1>
+          <div className="allProperties">
+            <p className="xplore">
+              Discover what our satisfied clients have to say about their <br />
+              exceptional experiences working with Estatein.
+            </p>
+            <button className="viewAll">View all Testimonials</button>
+          </div>
+        </div>
+      </div>
+
+      <div className="testimonials">
+        <div className="testimonial">
+          <div className="testimonialImg">
+            <img src={wadeImg} width={100} height={100} alt="Wade" />
+          </div>
+          <div className="testimonialText">
+            <h1>Wade Warren</h1>
+            <p>
+              "Estatein exceeded my expectations in every way. <br />
+              From the initial consultation to the closing, their <br />
+              team was professional, knowledgeable, and <br />
+              genuinely caring. I highly recommend Estatein <br />
+              to anyone looking for a top-notch real estate <br />
+              experience."
+            </p>
+            <div className="stars">
+              <img src={stars1Img} width={120} height={24} alt="Stars 1" />
+            </div>
+          </div>
+        </div>
+        <div className="testimonial">
+          <div className="testimonialImg">
+            <img src={emelieImg} width={100} height={100} alt="Emelie" />
+          </div>
+          <div className="testimonialText">
+            <h1>Emelie Gates</h1>
+            <p>
+              "I couldn't have asked for a better real estate <br />
+              partner than Estatein. Their attention to detail, <br />
+              personalized service, and commitment to <br />
+              finding the perfect home for me and my <br />
+              family were truly remarkable. I'm grateful <br />
+              for the exceptional experience."
+            </p>
+            <div className="stars">
+              <img src={stars2Img} width={120} height={24} alt="Stars 2" />
+            </div>
+          </div>
+        </div>
+        <div className="testimonial">
+          <div className="testimonialImg">
+            <img src={johnImg} width={100} height={100} alt="John" />
+          </div>
+          <div className="testimonialText">
+            <h1>John Smith</h1>
+            <p>
+              "Estatein's team was instrumental in helping <br />
+              me sell my property quickly and for a fair <br />
+              price. Their marketing strategies, <br />
+              negotiation skills, and overall professionalism <br />
+              were outstanding. I would definitely <br />
+              recommend Estatein to anyone <br />
+              looking to buy or sell."
+            </p>
+            <div className="stars">
+              <img src={stars3Img} width={120} height={24} alt="Stars 3" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="pages">
+        <p> 01 of 10 </p>
+        <div className="pageBTNs">
+          <button className="nextPage1">
+            <img src={arrow2Img} width={24} height={24} alt="Arrow 2" />
+          </button>
+          <button className="nextPage2">
+            <img src={arrow1Img} width={24} height={24} alt="Arrow 1" />
+          </button>
+        </div>
+      </div>
+
+      <div className="starSign">
+        <img src={star1Img} width={24} height={24} alt="Star 1" />
+        <img src={star2Img} width={14.4} height={14.4} alt="Star 2" />
+        <img src={star3Img} width={6.72} height={6.72} alt="Star 3" />
       </div>
 
       <div className="colors">
@@ -447,9 +294,9 @@ function propertiesPage() {
           <h1>Frequently Asked Questions</h1>
           <div className="allProperties">
             <p className="xplore">
-              Find answers to common questions about Estatein's services,
-              property listings, and the real estate process. We're here to
-              provide clarity and<br></br> assist you every step of the way.
+              Find answers to common questions about Estatein's services, <br />
+              property listings, and the real estate process. We're here to <br />
+              provide clarity and assist you every step of the way.
             </p>
             <button className="viewAll">View all FAQs</button>
           </div>
@@ -458,21 +305,22 @@ function propertiesPage() {
         <div className="qwertysp">
           <div className="qwertys">
             <h3>
-              How do I search for properties on<br></br> Estatein?
+              How do I search for properties on<br />
+              Estatein?
             </h3>
             <p className="learnHow">
-              Learn how to use our user-friendly search tools<br></br>
+              Learn how to use our user-friendly search tools<br />
               to find properties that match your criteria.
             </p>
             <button className="viewAlls1"> Read More</button>
           </div>
           <div className="qwertys">
             <h3>
-              What documents do I need to sell my<br></br> property through
-              Estatein?
+              What documents do I need to sell my<br />
+              property through Estatein?
             </h3>
             <p className="learnHow">
-              Find out about the necessary documentation <br></br>
+              Find out about the necessary documentation <br />
               for listing your property with us.
             </p>
             <button className="viewAlls1"> Read More</button>
@@ -480,7 +328,7 @@ function propertiesPage() {
           <div className="qwertys">
             <h3>How can I contact an Estatein agent?</h3>
             <p className="learnHows">
-              Discover the different ways you can get in touch<br></br>
+              Discover the different ways you can get in touch<br />
               with our experienced agents.
             </p>
             <button className="viewAlls1"> Read More</button>
@@ -491,12 +339,10 @@ function propertiesPage() {
         <p> 01 of 10 </p>
         <div className="pageBTNs">
           <button className="nextPage1">
-            {" "}
-            <img src="./src/images/arrow2.png" width={24} height={24}></img>
+            <img src={arrow2Img} width={24} height={24} alt="Arrow 2" />
           </button>
           <button className="nextPage2">
-            {" "}
-            <img src="./src/images/arrow1.png" width={24} height={24}></img>
+            <img src={arrow1Img} width={24} height={24} alt="Arrow 1" />
           </button>
         </div>
       </div>
@@ -505,19 +351,19 @@ function propertiesPage() {
         <h1>Start Your Real Estate Journey Today</h1>
         <div className="allProperties">
           <p className="xplore">
-            Your dream property is just a click away. Whether you're looking for
-            a new home, a strategic investment, or expert real estate advice,
-            <br></br> Estatein is here to assist you every step of the way. Take
-            the first step towards your real estate goals and explore our
-            available properties<br></br> or get in touch with our team for
+            Your dream property is just a click away. Whether you're looking for <br />
+            a new home, a strategic investment, or expert real estate advice, <br />
+            Estatein is here to assist you every step of the way. Take <br />
+            the first step towards your real estate goals and explore our <br />
+            available properties or get in touch with our team for <br />
             personalized assistance.
           </p>
           <button className="viewAllsss">Explore Properties</button>
         </div>
       </div>
-      <Footer />
+      <FooterComponent />
     </div>
   );
 }
 
-export default propertiesPage;
+export default homePage;
