@@ -1,8 +1,26 @@
 import React from "react";
-import Header from "../../components/header/indexmax";
+import Header from "../../components/header";
 import DreamHome from "../../components/dreamHome";
-import Footer from "../../components/footer"
+import Footer from "../../components/Footer"
 import "./servicesPage.css";
+
+// Import all images
+import tryImg from "../../images/try.png";
+import propertyImg from "../../images/property.png";
+import star1Img from "../../images/star1.png";
+import star2Img from "../../images/star2.png";
+import star3Img from "../../images/star3.png";
+import valuationImg from "../../images/valuation.png";
+import strategicImg from "../../images/strategic.png";
+import wizardryImg from "../../images/wizardry.png";
+import successImg from "../../images/success.png";
+import harmonyImg from "../../images/harmony.png";
+import maintainanceImg from "../../images/maintainance.png";
+import financialImg from "../../images/financial.png";
+import guardianImg from "../../images/guardian.png";
+import insightImg from "../../images/insight.png";
+import assesmentImg from "../../images/assesment.png";
+import ideasImg from "../../images/ideas.png";
 
 const servicesPage = () => {
   return (
@@ -20,28 +38,28 @@ const servicesPage = () => {
         {/* <DreamHome /> */}
         <div className="dreamhomesxq">
           <div className="find">
-            <img src="./src/images/try.png" width={60} height={60} />
+            <img src={tryImg} width={60} height={60} alt="Find Your Dream Home" />
             <p className="dreamHome"> Find Your Dream Home </p>
           </div>
           <div className="unlock">
-            <img src="./src/images/property.png" width={60} height={60} />
+            <img src={propertyImg} width={60} height={60} alt="Unlock Property Value" />
             <p className="dreamHome"> Unlock Property Value </p>
           </div>
           <div className="management">
-            <img src="./src/images/try.png" width={60} height={60} />
+            <img src={tryImg} width={60} height={60} alt="Effortless Property Management" />
             <p className="dreamHome"> Effortless Property Management </p>
           </div>
           <div className="investment">
-            <img src="./src/images/try.png" width={60} height={60} />
+            <img src={tryImg} width={60} height={60} alt="Smart Investments, Informed Decisions" />
             <p className="dreamHome"> Smart Investments, Informed Decisions </p>
           </div>
         </div>
       </div>
 
       <div className="starSigns">
-        <img src="./src/images/star1.png" width={24} height={24} />
-        <img src="./src/images/star2.png" width={14.4} height={14.4} />
-        <img src="./src/images/star3.png" width={6.72} height={6.72} />
+        <img src={star1Img} width={24} height={24} alt="Star 1" />
+        <img src={star2Img} width={14.4} height={14.4} alt="Star 2" />
+        <img src={star3Img} width={6.72} height={6.72} alt="Star 3" />
       </div>
 
       <div>
@@ -62,7 +80,7 @@ const servicesPage = () => {
       <div className="mastervalue">
         <div className="valuemastery">
           <div className="valuation">
-            <img src="./src/images/valuation.png" width={60} height={60} />
+            <img src={valuationImg} width={60} height={60} />
             <h3>Valuation Mastery</h3>
           </div>
           <p>
@@ -72,7 +90,7 @@ const servicesPage = () => {
         </div>
         <div className="valuemastery">
           <div className="valuation">
-            <img src="./src/images/strategic.png" width={60} height={60} />
+            <img src={strategicImg} width={60} height={60} />
             <h3>Strategic Marketing</h3>
           </div>
           <p>
@@ -82,7 +100,7 @@ const servicesPage = () => {
         </div>
         <div className="valuemastery">
           <div className="valuation">
-            <img src="./src/images/wizardry.png" width={60} height={60} />
+            <img src={wizardryImg} width={60} height={60} />
             <h3>Negotiation Wizardry</h3>
           </div>
           <p>
@@ -95,7 +113,7 @@ const servicesPage = () => {
       <div className="masterysuccess">
         <div className="valuemasterys">
           <div className="valuation">
-            <img src="./src/images/success.png" width={60} height={60} />
+            <img src={successImg} width={60} height={60} />
             <h3>Closing Success</h3>
           </div>
           <p>
@@ -117,9 +135,9 @@ const servicesPage = () => {
         </div>
       </div>
       <div className="starSigns">
-        <img src="./src/images/star1.png" width={24} height={24} />
-        <img src="./src/images/star2.png" width={14.4} height={14.4} />
-        <img src="./src/images/star3.png" width={6.72} height={6.72} />
+        <img src={star1Img} width={24} height={24} alt="Star 1" />
+        <img src={star2Img} width={14.4} height={14.4} alt="Star 2" />
+        <img src={star3Img} width={6.72} height={6.72} alt="Star 3" />
       </div>
 
       <div>
@@ -139,7 +157,7 @@ const servicesPage = () => {
       <div className="mastervalue">
         <div className="valuemastery">
           <div className="valuation">
-            <img src="./src/images/harmony.png" width={60} height={60} />
+            <img src={harmonyImg} width={60} height={60} />
             <h3>Tenant Harmony</h3>
           </div>
           <p>
@@ -149,7 +167,7 @@ const servicesPage = () => {
         </div>
         <div className="valuemastery">
           <div className="valuation">
-            <img src="./src/images/maintainance.png" width={60} height={60} />
+            <img src={maintainanceImg} width={60} height={60} />
             <h3>Maintenance Ease</h3>
           </div>
           <p>
@@ -159,7 +177,7 @@ const servicesPage = () => {
         </div>
         <div className="valuemastery">
           <div className="valuation">
-            <img src="./src/images/financial.png" width={60} height={60} />
+            <img src={financialImg} width={60} height={60} />
             <h3>Financial Peace of Mind</h3>
           </div>
           <p>
@@ -172,7 +190,7 @@ const servicesPage = () => {
       <div className="masterysuccess">
         <div className="valuemasterys">
           <div className="valuation">
-            <img src="./src/images/guardian.png" width={60} height={60} />
+            <img src={guardianImg} width={60} height={60} />
             <h3>Legal Guardian</h3>
           </div>
           <p>
@@ -198,9 +216,9 @@ const servicesPage = () => {
       <div className="youarethebestguy">
         <div className="guybadoo">
           <div className="starSigns">
-            <img src="./src/images/star1.png" width={24} height={24} />
-            <img src="./src/images/star2.png" width={14.4} height={14.4} />
-            <img src="./src/images/star3.png" width={6.72} height={6.72} />
+            <img src={star1Img} width={24} height={24} alt="Star 1" />
+            <img src={star2Img} width={14.4} height={14.4} alt="Star 2" />
+            <img src={star3Img} width={6.72} height={6.72} alt="Star 3" />
           </div>
 
           <div>
@@ -240,7 +258,7 @@ const servicesPage = () => {
             <div className="marketROI">
               <div className="insightmark">
                 <div className="markinsight">
-                  <img src="./src/images/insight.png" width={60} height={60} />
+                  <img src={insightImg} width={60} height={60} />
                   <h3>Market Insight</h3>
                 </div>
                 <p>
@@ -251,11 +269,7 @@ const servicesPage = () => {
               </div>
               <div className="insightmark">
                 <div className="markinsight">
-                  <img
-                    src="./src/images/assesment.png"
-                    width={60}
-                    height={60}
-                  />
+                  <img src={assesmentImg} width={60} height={60} />
                   <h3>ROI Assessment</h3>
                 </div>
                 <p>
@@ -268,7 +282,7 @@ const servicesPage = () => {
             <div className="marketROs">
               <div className="insightmark">
                 <div className="markinsight">
-                  <img src="./src/images/ideas.png" width={60} height={60} />
+                  <img src={ideasImg} width={60} height={60} />
                   <h3>Customized Strategies</h3>
                 </div>
                 <p>
@@ -279,11 +293,7 @@ const servicesPage = () => {
               </div>
               <div className="insightmark">
                 <div className="markinsight">
-                  <img
-                    src="./src/images/assesment.png"
-                    width={60}
-                    height={60}
-                  />
+                  <img src={assesmentImg} width={60} height={60} />
                   <h3>Diversification Mastery</h3>
                 </div>
                 <p>

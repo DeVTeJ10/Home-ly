@@ -1,8 +1,22 @@
 import React from "react";
-import HeaderComponent from "../../components/header/indexmax";
+import HeaderComponent from "../../components/header";
 import Footer from "../../components/footer";
 import { Link, Route, Routes } from "react-router-dom";
 import "./aboutUs.css";
+
+// Import all images
+import star1Img from "../../images/star1.png";
+import star2Img from "../../images/star2.png";
+import star3Img from "../../images/star3.png";
+import householdingImg from "../../images/householding.png";
+import truststartImg from "../../images/truststar.png";
+import excellenceImg from "../../images/excellence.png";
+import client3Img from "../../images/client3.png";
+import arrow2Img from "../../images/arrow2.png";
+import arrow1Img from "../../images/arrow1.png";
+import wadeImg from "../../images/wade.png";
+import emelieImg from "../../images/emelie.png";
+import johnImg from "../../images/john.png";
 
 const aboutUs = () => {
   return (
@@ -12,9 +26,9 @@ const aboutUs = () => {
         <div className="discoveries">
           <div className="Discovery">
             <div className="starry1">
-              <img src="./src/images/star1.png" width={24} height={24} />
-              <img src="./src/images/star2.png" width={14.4} height={14.4} />
-              <img src="./src/images/star3.png" width={6.72} height={6.72} />
+              <img src={star1Img} width={24} height={24} alt="Star 1" />
+              <img src={star2Img} width={14.4} height={14.4} alt="Star 2" />
+              <img src={star3Img} width={6.72} height={6.72} alt="Star 3" />
             </div>
 
             <div className="ourjourney">
@@ -45,19 +59,20 @@ const aboutUs = () => {
           </div>
         </div>
         <img
-          src="./src/images/householding.png"
+          src={householdingImg}
           width={610}
           height={435}
           className="household"
+          alt="Household"
         />
       </div>
 
       <div className="trythisone">
         <div className="holla">
           <div className="starry1">
-            <img src="./src/images/star1.png" width={24} height={24} />
-            <img src="./src/images/star2.png" width={14.4} height={14.4} />
-            <img src="./src/images/star3.png" width={6.72} height={6.72} />
+            <img src={star1Img} width={24} height={24} alt="Star 1" />
+            <img src={star2Img} width={14.4} height={14.4} alt="Star 2" />
+            <img src={star3Img} width={6.72} height={6.72} alt="Star 3" />
           </div>
           <div className="ourjourney">
             <h1 className="Dream"> Our Values</h1>
@@ -75,10 +90,11 @@ const aboutUs = () => {
             <div className="starcomp">
               <div className="starsdiv">
                 <img
-                  src="./src/images/truststar.png"
+                  src={truststartImg}
                   width={60}
                   height={60}
                   className="starjourney"
+                  alt="Trust Star"
                 />
                 <h3>Trust</h3>
               </div>
@@ -90,10 +106,11 @@ const aboutUs = () => {
             <div className="starcomp">
               <div className="starsdiv">
                 <img
-                  src="./src/images/excellence.png"
+                  src={excellenceImg}
                   width={60}
                   height={60}
                   className="starjourney"
+                  alt="Excellence"
                 />
                 <h3>Excellence</h3>
               </div>
@@ -108,10 +125,11 @@ const aboutUs = () => {
             <div className="starcomp">
               <div className="starsdiv">
                 <img
-                  src="./src/images/client3.png"
+                  src={client3Img}
                   width={60}
                   height={60}
                   className="starjourney"
+                  alt="Client 3"
                 />
                 <h3>Client-Centric</h3>
               </div>
@@ -123,10 +141,11 @@ const aboutUs = () => {
             <div className="starcomp">
               <div className="starsdiv">
                 <img
-                  src="./src/images/excellence.png"
+                  src={excellenceImg}
                   width={60}
                   height={60}
                   className="starjourney"
+                  alt="Excellence"
                 />
                 <h3>Our Commitment</h3>
               </div>
@@ -141,9 +160,9 @@ const aboutUs = () => {
 
       <div className="starprops">
         <div className="starSign">
-          <img src="./src/images/star1.png" width={24} height={24} />
-          <img src="./src/images/star2.png" width={14.4} height={14.4} />
-          <img src="./src/images/star3.png" width={6.72} height={6.72} />
+          <img src={star1Img} width={24} height={24} alt="Star 1" />
+          <img src={star2Img} width={14.4} height={14.4} alt="Star 2" />
+          <img src={star3Img} width={6.72} height={6.72} alt="Star 3" />
         </div>
         <div className="checkprops">
           <h1>Our Achievements</h1>
@@ -183,9 +202,9 @@ const aboutUs = () => {
       </div>
       <div className="Navstarsign">
         <div className="starSign">
-          <img src="./src/images/star1.png" width={24} height={24} />
-          <img src="./src/images/star2.png" width={14.4} height={14.4} />
-          <img src="./src/images/star3.png" width={6.72} height={6.72} />
+          <img src={star1Img} width={24} height={24} alt="Star 1" />
+          <img src={star2Img} width={14.4} height={14.4} alt="Star 2" />
+          <img src={star3Img} width={6.72} height={6.72} alt="Star 3" />
         </div>
         <div className="checkprops">
           <h1>Navigating the Estatein Experience</h1>
@@ -269,9 +288,9 @@ const aboutUs = () => {
       </div>
       <div className="hollas">
         <div className="starry1">
-          <img src="./src/images/star1.png" width={24} height={24} />
-          <img src="./src/images/star2.png" width={14.4} height={14.4} />
-          <img src="./src/images/star3.png" width={6.72} height={6.72} />
+          <img src={star1Img} width={24} height={24} alt="Star 1" />
+          <img src={star2Img} width={14.4} height={14.4} alt="Star 2" />
+          <img src={star3Img} width={6.72} height={6.72} alt="Star 3" />
         </div>
         <div className="ourjourney">
           <h1 className="Dream"> Meet the Estatein Team</h1>
@@ -288,10 +307,11 @@ const aboutUs = () => {
           <div className="delegates">
             <div className="tweetpic">
               <img
-                src="./src/images/Max.png"
+                src={wadeImg}
                 width={257}
                 height={220}
                 className="max"
+                alt="Wade"
               />
               <div className="tweetsss">
                 <button className="tweets">
@@ -301,6 +321,7 @@ const aboutUs = () => {
                     src="./src/images/tweet.png"
                     width={20}
                     height={16.25}
+                    alt="Tweet"
                   />
                 </button>
               </div>
@@ -310,9 +331,9 @@ const aboutUs = () => {
             <div className="sayshello">
               <div className="sayhellos">
                 <h4>Say Hello</h4>
-                <img src="./src/images/wave.png" width={36} height={36} />
+                <img src="./src/images/wave.png" width={36} height={36} alt="Wave" />
               </div>
-              <img src="./src/images/send.png" width={36} height={36} />
+              <img src="./src/images/send.png" width={36} height={36} alt="Send" />
             </div>
           </div>
         </div>
@@ -320,15 +341,16 @@ const aboutUs = () => {
           <div className="delegates">
             <div className="tweetpic">
               <img
-                src="./src/images/sarah.png"
+                src={emelieImg}
                 width={257}
                 height={220}
                 className="max"
+                alt="Emelie"
               />
               <div className="tweetsss">
                 <button className="tweets">
                   {" "}
-                  <img src="./src/images/tweet.png" width={20} height={16.25} />
+                  <img src="./src/images/tweet.png" width={20} height={16.25} alt="Tweet" />
                 </button>
               </div>
             </div>
@@ -337,9 +359,9 @@ const aboutUs = () => {
             <div className="sayshello">
               <div className="sayhellos">
                 <h4>Say Hello</h4>
-                <img src="./src/images/wave.png" width={36} height={36} />
+                <img src="./src/images/wave.png" width={36} height={36} alt="Wave" />
               </div>
-              <img src="./src/images/send.png" width={36} height={36} />
+              <img src="./src/images/send.png" width={36} height={36} alt="Send" />
             </div>
           </div>
         </div>
@@ -347,15 +369,16 @@ const aboutUs = () => {
           <div className="delegates">
             <div className="tweetpic">
               <img
-                src="./src/images/david.png"
+                src={johnImg}
                 width={257}
                 height={220}
                 className="max"
+                alt="John"
               />
               <div className="tweetsss">
                 <button className="tweets">
                   {" "}
-                  <img src="./src/images/tweet.png" width={20} height={16.25} />
+                  <img src="./src/images/tweet.png" width={20} height={16.25} alt="Tweet" />
                 </button>
               </div>
             </div>
@@ -364,9 +387,9 @@ const aboutUs = () => {
             <div className="sayshello">
               <div className="sayhellos">
                 <h4>Say Hello</h4>
-                <img src="./src/images/wave.png" width={36} height={36} />
+                <img src="./src/images/wave.png" width={36} height={36} alt="Wave" />
               </div>
-              <img src="./src/images/send.png" width={36} height={36} />
+              <img src="./src/images/send.png" width={36} height={36} alt="Send" />
             </div>
           </div>
         </div>
@@ -378,11 +401,12 @@ const aboutUs = () => {
                 width={257}
                 height={220}
                 className="max"
+                alt="Turner"
               />
               <div className="tweetsss">
                 <button className="tweets">
                   {" "}
-                  <img src="./src/images/tweet.png" width={20} height={16.25} />
+                  <img src="./src/images/tweet.png" width={20} height={16.25} alt="Tweet" />
                 </button>
               </div>
             </div>
@@ -391,18 +415,18 @@ const aboutUs = () => {
             <div className="sayshello">
               <div className="sayhellos">
                 <h4>Say Hello</h4>
-                <img src="./src/images/wave.png" width={36} height={36} />
+                <img src="./src/images/wave.png" width={36} height={36} alt="Wave" />
               </div>
-              <img src="./src/images/send.png" width={36} height={36} />
+              <img src="./src/images/send.png" width={36} height={36} alt="Send" />
             </div>
           </div>
         </div>
       </div>
       <div className="starprops">
         <div className="starSign">
-          <img src="./src/images/star1.png" width={24} height={24} />
-          <img src="./src/images/star2.png" width={14.4} height={14.4} />
-          <img src="./src/images/star3.png" width={6.72} height={6.72} />
+          <img src={star1Img} width={24} height={24} alt="Star 1" />
+          <img src={star2Img} width={14.4} height={14.4} alt="Star 2" />
+          <img src={star3Img} width={6.72} height={6.72} alt="Star 3" />
         </div>
         <div className="checkprops">
           <h1>Our Valued Clients</h1>
@@ -432,7 +456,7 @@ const aboutUs = () => {
             <div className="juijutsus">
               <div className="domainexpansions">
                 <div className="domainexpansion">
-                  <img src="./src/images/Domain.png" width={20} height={20} />
+                  <img src="./src/images/Domain.png" width={20} height={20} alt="Domain" />
                   <p>Domain</p>
                 </div>
                 <h4 className="commercialstate">Commercial Real Estate</h4>
@@ -443,6 +467,7 @@ const aboutUs = () => {
                     src="./src/images/lightning.png"
                     width={20}
                     height={20}
+                    alt="Lightning"
                   />
                   <p>Category</p>
                 </div>
@@ -476,7 +501,7 @@ const aboutUs = () => {
             <div className="kingjuijutsus">
               <div className="domainexpansions">
                 <div className="domainexpansion">
-                  <img src="./src/images/Domain.png" width={20} height={20} />
+                  <img src="./src/images/Domain.png" width={20} height={20} alt="Domain" />
                   <p>Domain</p>
                 </div>
                 <h4 className="commercialstate">Commercial Real Estate</h4>
@@ -487,6 +512,7 @@ const aboutUs = () => {
                     src="./src/images/lightning.png"
                     width={20}
                     height={20}
+                    alt="Lightning"
                   />
                   <p>Category</p>
                 </div>
@@ -509,12 +535,10 @@ const aboutUs = () => {
         <p> 01 of 10 </p>
         <div className="pageBTNs">
           <button className="nextPage1">
-            {" "}
-            <img src="./src/images/arrow2.png" width={24} height={24}></img>
+            <img src={arrow2Img} width={24} height={24} alt="Previous" />
           </button>
           <button className="nextPage2">
-            {" "}
-            <img src="./src/images/arrow1.png" width={24} height={24}></img>
+            <img src={arrow1Img} width={24} height={24} alt="Next" />
           </button>
         </div>
       </div>

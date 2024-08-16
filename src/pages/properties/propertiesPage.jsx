@@ -1,7 +1,33 @@
 import React from "react";
-import Header from "../../components/header/indexmax";
-import Stark from "../../components/Stars/indexmax";
+import Header from "../../components/header";
+import Stark from "../../components/Stars";
 import Footer from "../../components/footer";
+
+// Import property images
+import prop1Img from "../../images/prop1.png";
+import prop2Img from "../../images/prop2.png";
+import prop3Img from "../../images/prop3.png";
+import prop4Img from "../../images/prop4.png";
+import prop5Img from "../../images/prop5.png";
+import prop6Img from "../../images/prop6.png";
+import prop7Img from "../../images/prop7.png";
+import prop8Img from "../../images/prop8.png";
+import prop9Img from "../../images/prop9.png";
+
+// Import other images
+import locateImg from "../../images/locate.png";
+import villa2Img from "../../images/villa2.png";
+import inhouseImg from "../../images/inhouse.png";
+import arrow2Img from "../../images/arrow2.png";
+import arrow1Img from "../../images/arrow1.png";
+import bedroomImg from "../../images/bedroom.png";
+import bathroomImg from "../../images/bathroom.png";
+import areaImg from "../../images/area.png";
+import lightningsImg from "../../images/lightnings.png";
+import star1Img from "../../images/star1.png";
+import star2Img from "../../images/star2.png";
+import star3Img from "../../images/star3.png";
+
 import "./propertiesPage.css";
 
 function propertiesPage() {
@@ -12,8 +38,8 @@ function propertiesPage() {
         <div className="seasidex">
           <h3>Seaside Serenity Villa</h3>
           <div className="locationx">
-            <img src="./src/images/locate.png" width={13.75} height={16.87} />
-            <p className="malibu">Malibu, Carlifonia</p>
+            <img src={locateImg} width={13.75} height={16.87} alt="Location" />
+            <p className="malibu">Malibu, California</p>
           </div>
         </div>
         <div className="pricex">
@@ -27,21 +53,21 @@ function propertiesPage() {
           <div className="better">
             <div className="badtguy">
               <div className="geniusYeah">
-                <img src="./src/images/prop1.png" width={122.22} height={74} />
-                <img src="./src/images/prop2.png" width={122.22} height={74} />
-                <img src="./src/images/prop3.png" width={122.22} height={74} />
-                <img src="./src/images/prop4.png" width={122.22} height={74} />
-                <img src="./src/images/prop5.png" width={122.22} height={74} />
-                <img src="./src/images/prop6.png" width={122.22} height={74} />
-                <img src="./src/images/prop7.png" width={122.22} height={74} />
-                <img src="./src/images/prop8.png" width={122.22} height={74} />
-                <img src="./src/images/prop9.png" width={122.22} height={74} />
+                <img src={prop1Img} width={122.22} height={74} alt="Property 1" />
+                <img src={prop2Img} width={122.22} height={74} alt="Property 2" />
+                <img src={prop3Img} width={122.22} height={74} alt="Property 3" />
+                <img src={prop4Img} width={122.22} height={74} alt="Property 4" />
+                <img src={prop5Img} width={122.22} height={74} alt="Property 5" />
+                <img src={prop6Img} width={122.22} height={74} alt="Property 6" />
+                <img src={prop7Img} width={122.22} height={74} alt="Property 7" />
+                <img src={prop8Img} width={122.22} height={74} alt="Property 8" />
+                <img src={prop9Img} width={122.22} height={74} alt="Property 9" />
               </div>
             </div>
 
             <div className="xproperties">
-              <img src="./src/images/villa2.png" width={585} height={507} />
-              <img src="./src/images/inhouse.png" width={585} height={507} />
+              <img src={villa2Img} width={585} height={507} alt="Villa 2" />
+              <img src={inhouseImg} width={585} height={507} alt="In-house" />
             </div>
           </div>
         </div>
@@ -50,10 +76,11 @@ function propertiesPage() {
           <div className="howdy">
             <div className="noirarrows">
               <img
-                src="./src/images/arrow2.png"
+                src={arrow2Img}
                 width={22}
                 height={22}
                 className="legolas"
+                alt="Previous"
               />
               <div className="pageson">
                 <button className="buttons" id="idisthis"></button>
@@ -64,10 +91,11 @@ function propertiesPage() {
                 <button className="buttons"></button>
               </div>
               <img
-                src="./src/images/arrow1.png"
+                src={arrow1Img}
                 width={22}
                 height={22}
                 className="legolas1"
+                alt="Next"
               />
             </div>
           </div>
@@ -76,7 +104,6 @@ function propertiesPage() {
 
       <div className="santabosses">
         <div className="santaboss">
-          {/* <div className="goodyeah"> */}
           <div className="santafes">
             <div className="santafe">
               <h2 className="santa">Description</h2>
@@ -94,7 +121,7 @@ function propertiesPage() {
             <div className="geniusclass">
               <div className="giants" id="giantess">
                 <div className="xprops">
-                  <img src="./src/images/bedroom.png" width={20} height={20} />
+                  <img src={bedroomImg} width={20} height={20} alt="Bedroom" />
                   <p>Bedrooms</p>
                 </div>
                 <h3 className="paragh">04</h3>
@@ -102,7 +129,7 @@ function propertiesPage() {
 
               <div className="giants">
                 <div className="xprops">
-                  <img src="./src/images/bathroom.png" width={20} height={20} />
+                  <img src={bathroomImg} width={20} height={20} alt="Bathroom" />
                   <p>Bathroom</p>
                 </div>
                 <h3 className="paragh">03</h3>
@@ -110,40 +137,39 @@ function propertiesPage() {
 
               <div className="giants">
                 <div className="xprops">
-                  <img src="./src/images/area.png" width={20} height={20} />
+                  <img src={areaImg} width={20} height={20} alt="Area" />
                   <p>Area</p>
                 </div>
                 <h3 className="paragh">2,500 Square Feet</h3>
               </div>
             </div>
           </div>
-          {/* </div> */}
 
           <div className="bosslevelbadtguy">
             <h2>Key Features and Amenities</h2>
 
             <div className="betterthebest">
               <div className="betterbest">
-                <img src="./src/images/lightnings.png" width={20} height={20} />
+                <img src={lightningsImg} width={20} height={20} alt="Lightning" />
                 <p>Expansive oceanfront terrace for outdoor entertaining</p>
               </div>
               <div className="betterbest">
-                <img src="./src/images/lightnings.png" width={20} height={20} />
+                <img src={lightningsImg} width={20} height={20} alt="Lightning" />
                 <p>Gourmet kitchen with top-of-the-line appliances</p>
               </div>
               <div className="betterbest">
-                <img src="./src/images/lightnings.png" width={20} height={20} />
+                <img src={lightningsImg} width={20} height={20} alt="Lightning" />
                 <p>Private beach access for morning strolls and sunset views</p>
               </div>
               <div className="betterbest">
-                <img src="./src/images/lightnings.png" width={20} height={20} />
+                <img src={lightningsImg} width={20} height={20} alt="Lightning" />
                 <p>
                   Master suite with a spa-inspired bathroom and ocean-facing
                   <br></br> balcony
                 </p>
               </div>
               <div className="betterbest">
-                <img src="./src/images/lightnings.png" width={20} height={20} />
+                <img src={lightningsImg} width={20} height={20} alt="Lightning" />
                 <p>Private garage and ample storage space</p>
               </div>
             </div>
@@ -219,9 +245,9 @@ function propertiesPage() {
       </div>
 
       <div className="starSign">
-        <img src="./src/images/star1.png" width={24} height={24} />
-        <img src="./src/images/star2.png" width={14.4} height={14.4} />
-        <img src="./src/images/star3.png" width={6.72} height={6.72} />
+        <img src={star1Img} width={24} height={24} alt="Star 1" />
+        <img src={star2Img} width={14.4} height={14.4} alt="Star 2" />
+        <img src={star3Img} width={6.72} height={6.72} alt="Star 3" />
       </div>
 
       <div className="colors">
@@ -437,9 +463,9 @@ function propertiesPage() {
       </div>
 
       <div className="starSign">
-        <img src="./src/images/star1.png" width={24} height={24} />
-        <img src="./src/images/star2.png" width={14.4} height={14.4} />
-        <img src="./src/images/star3.png" width={6.72} height={6.72} />
+        <img src={star1Img} width={24} height={24} alt="Star 1" />
+        <img src={star2Img} width={14.4} height={14.4} alt="Star 2" />
+        <img src={star3Img} width={6.72} height={6.72} alt="Star 3" />
       </div>
 
       <div className="colors">
@@ -492,11 +518,11 @@ function propertiesPage() {
         <div className="pageBTNs">
           <button className="nextPage1">
             {" "}
-            <img src="./src/images/arrow2.png" width={24} height={24}></img>
+            <img src={arrow2Img} width={24} height={24} alt="Previous"></img>
           </button>
           <button className="nextPage2">
             {" "}
-            <img src="./src/images/arrow1.png" width={24} height={24}></img>
+            <img src={arrow1Img} width={24} height={24} alt="Next"></img>
           </button>
         </div>
       </div>
