@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../../components/header";
 import DreamHome from "../../components/dreamHome";
-import Footer from "../../components/footer"
+import Footer from "../../components/Footer"
 import "./servicesPage.css";
 
 // Import all images
