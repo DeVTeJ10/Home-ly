@@ -13,7 +13,6 @@ const homePage = () => {
       <div className="hello">
         <div className="Discover">
           <h1 className="Dream">
-            {" "}
             Discover your Dream <br></br> Property with Estatein
           </h1>
           <p className="journey">
