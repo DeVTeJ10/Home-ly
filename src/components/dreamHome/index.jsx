@@ -1,7 +1,7 @@
 import React from 'react'
 import './dreamHome.css'
 
-// Import the images
+// Import all the images
 import tryImg from '../../images/try.png'
 import propertyImg from '../../images/property.png'
 
