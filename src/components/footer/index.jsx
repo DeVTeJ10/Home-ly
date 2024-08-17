@@ -1,5 +1,8 @@
 import React from "react";
 import "./footer.css";
+import logoImg from "../../images/Logo.png";
+import planarImg from "../../images/planar.png";
+import postmanImg from "../../images/postman.png";
 
 const index = () => {
   return (
@@ -7,12 +10,12 @@ const index = () => {
       <div className="finalfooter">
         <div className="sentient">
           <div className="logo2s">
-            <img src="./src/images/Logo.png" width={113.33} height={34} className="logossss"/>
+            <img src={logoImg} width={113.33} height={34} className="logossss" alt="Logo"/>
             <div className="dinosaurs">
             <input placeholder="Enter Your Email" className="gangstacode" type="email"></input>
           </div>
-          <img src="./src/images/planar.png" width={24} height={24} className="planar"/>
-          <img src="./src/images/postman.png" width={24} height={24} className="postman"/>
+          <img src={planarImg} width={24} height={24} className="planar" alt="Planar"/>
+          <img src={postmanImg} width={24} height={24} className="postman" alt="Postman"/>
             </div>
         </div>
 

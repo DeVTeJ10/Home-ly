@@ -2,12 +2,15 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./header.css";
 
+// Import the logo image
+import logoImg from "../../images/Logo.png";
+
 const index = () => {
   return (
     <div>
       <div className="dashboard">
         <div className="logo1">
-          <img src="./src/images/Logo.png" width={113.33} height={34} />
+          <img src={logoImg} width={113.33} height={34} alt="Logo" />
         </div>
         <div className="dashboardNav">
           <Link to={"/"}>

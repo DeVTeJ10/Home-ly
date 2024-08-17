@@ -1,26 +1,28 @@
 import React from 'react'
 import './dreamHome.css'
 
-
+// Import the images
+import tryImg from '../../images/try.png'
+import propertyImg from '../../images/property.png'
 
 const index = () => {
   return (
     <div>
         <div className='dreamhomes'>
             <div className='find'>
-                <img src="./src/images/try.png" width={60} height={60} />
+                <img src={tryImg} width={60} height={60} alt="Find" />
                 <p className='dreamHome'> Find Your Dream Home </p>
             </div>
             <div className='unlock'>
-                <img src="./src/images/property.png" width={60} height={60}/>
+                <img src={propertyImg} width={60} height={60} alt="Unlock" />
                 <p className='dreamHome'> Unlock Property Value </p>
             </div>
             <div className='management'>
-                <img src="./src/images/try.png" width={60} height={60}/>
+                <img src={tryImg} width={60} height={60} alt="Management" />
                 <p className='dreamHome'> Effortless Property Management </p>
             </div>
             <div className='investment'>
-                <img src="./src/images/try.png" width={60} height={60}/>
+                <img src={tryImg} width={60} height={60} alt="Investment" />
                 <p className='dreamHome'> Smart Investments, Informed Decisions </p>
             </div>
         </div>

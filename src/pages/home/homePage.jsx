@@ -6,6 +6,28 @@ import checkImg from "../../images/Container.png";
 import { Link, Route, Routes } from "react-router-dom";
 import "./homePage.css";
 
+// Import all images
+import circogoImg from "../../images/circogo.png";
+import star1Img from "../../images/star1.png";
+import star2Img from "../../images/star2.png";
+import star3Img from "../../images/star3.png";
+import villaImg from "../../images/villa.png";
+import bedroomImg from "../../images/bedroom.png";
+import bathroomImg from "../../images/bathroom.png";
+import villa2Img from "../../images/villa 2.png";
+import havenImg from "../../images/haven.png";
+import cottageImg from "../../images/cottage.png";
+import arrow2Img from "../../images/arrow2.png";
+import arrow1Img from "../../images/arrow1.png";
+import stars1Img from "../../images/stars1.png";
+import stars2Img from "../../images/stars2.png";
+import stars3Img from "../../images/stars3.png";
+import stars4Img from "../../images/stars4.png";
+import stars5Img from "../../images/stars5.png";
+import wadeImg from "../../images/wade.png";
+import emelieImg from "../../images/emelie.png";
+import johnImg from "../../images/john.png";
+
 const homePage = () => {
   return (
     <div>
@@ -38,19 +60,20 @@ const homePage = () => {
             </div>
           </div>
         </div>
-        <img src={checkImg} width={690} height={622} />
+        <img src={checkImg} width={690} height={622} alt="Check" />
       </div>
       <DreamHome />
       <img
-        src="./src/images/circogo.png"
+        src={circogoImg}
         width={129}
         height={129}
         className="type"
+        alt="Circogo"
       />
       <div className="starSign">
-        <img src="./src/images/star1.png" width={24} height={24} />
-        <img src="./src/images/star2.png" width={14.4} height={14.4} />
-        <img src="./src/images/star3.png" width={6.72} height={6.72} />
+        <img src={star1Img} width={24} height={24} alt="Star 1" />
+        <img src={star2Img} width={14.4} height={14.4} alt="Star 2" />
+        <img src={star3Img} width={6.72} height={6.72} alt="Star 3" />
       </div>
 
       <div className="checkprops">
@@ -69,10 +92,11 @@ const homePage = () => {
       <div className="allforone">
         <div className="oneforall">
           <img
-            src="./src/images/villa.png"
+            src={villaImg}
             width={353.33}
             height={255}
             className="cottage"
+            alt="Villa"
           />
           <h3 className="seaside">Seaside Serenity Villa</h3>
           <p className="stunning">
@@ -81,15 +105,15 @@ const homePage = () => {
           </p>
           <div className="whatif">
             <div className="propteristics">
-              <img src="./src/images/bedroom.png" width={20} height={20} />
+              <img src={bedroomImg} width={20} height={20} alt="Bedroom" />
               <h4> 4-Bedroom </h4>
             </div>
             <div className="bathroom">
-              <img src="./src/images/bathroom.png" width={20} height={20} />
+              <img src={bathroomImg} width={20} height={20} alt="Bathroom" />
               <h4> 3-Bathroom </h4>
             </div>
             <div className="villa2">
-              <img src="./src/images/villa 2.png" width={20} height={20} />
+              <img src={villa2Img} width={20} height={20} alt="Villa 2" />
               <h4> Villa </h4>
             </div>
           </div>
@@ -104,10 +128,11 @@ const homePage = () => {
 
         <div className="oneforall">
           <img
-            src="./src/images/haven.png"
+            src={havenImg}
             width={353.33}
             height={255}
             className="cottage"
+            alt="Haven"
           />
           <h3 className="seaside">Metropolitan Haven</h3>
           <p className="stunning">
@@ -116,15 +141,15 @@ const homePage = () => {
           </p>
           <div className="whatif">
             <div className="propteristics">
-              <img src="./src/images/bedroom.png" width={20} height={20} />
+              <img src={bedroomImg} width={20} height={20} alt="Bedroom" />
               <h4> 2-Bedroom </h4>
             </div>
             <div className="bathroom">
-              <img src="./src/images/bathroom.png" width={20} height={20} />
+              <img src={bathroomImg} width={20} height={20} alt="Bathroom" />
               <h4> 2-Bathroom </h4>
             </div>
             <div className="villa2">
-              <img src="./src/images/villa 2.png" width={20} height={20} />
+              <img src={villa2Img} width={20} height={20} alt="Villa 2" />
               <h4> Villa </h4>
             </div>
           </div>
@@ -139,10 +164,11 @@ const homePage = () => {
 
         <div className="oneforall">
           <img
-            src="./src/images/cottage.png"
+            src={cottageImg}
             width={353.33}
             height={255}
             className="cottage"
+            alt="Cottage"
           />
           <h3 className="seaside">Rustic Retreat Cottage</h3>
           <p className="stunning">
@@ -151,15 +177,15 @@ const homePage = () => {
           </p>
           <div className="whatif">
             <div className="propteristics">
-              <img src="./src/images/bedroom.png" width={20} height={20} />
+              <img src={bedroomImg} width={20} height={20} alt="Bedroom" />
               <h4> 3-Bedroom </h4>
             </div>
             <div className="bathroom">
-              <img src="./src/images/bathroom.png" width={20} height={20} />
+              <img src={bathroomImg} width={20} height={20} alt="Bathroom" />
               <h4> 3-Bathroom </h4>
             </div>
             <div className="villa2">
-              <img src="./src/images/villa 2.png" width={20} height={20} />
+              <img src={villa2Img} width={20} height={20} alt="Villa 2" />
               <h4> Villa </h4>
             </div>
           </div>
@@ -177,19 +203,17 @@ const homePage = () => {
         <p> 01 of 60 </p>
         <div className="pageBTNs">
           <button className="nextPage1">
-            {" "}
-            <img src="./src/images/arrow2.png" width={24} height={24}></img>
+            <img src={arrow2Img} width={24} height={24} alt="Previous" />
           </button>
           <button className="nextPage2">
-            {" "}
-            <img src="./src/images/arrow1.png" width={24} height={24}></img>
+            <img src={arrow1Img} width={24} height={24} alt="Next" />
           </button>
         </div>
       </div>
       <div className="starSigns">
-        <img src="./src/images/star1.png" width={24} height={24} />
-        <img src="./src/images/star2.png" width={14.4} height={14.4} />
-        <img src="./src/images/star3.png" width={6.72} height={6.72} />
+        <img src={star1Img} width={24} height={24} alt="Star 1" />
+        <img src={star2Img} width={14.4} height={14.4} alt="Star 2" />
+        <img src={star3Img} width={6.72} height={6.72} alt="Star 3" />
       </div>
 
       <div className="clientFeedback">
@@ -208,34 +232,39 @@ const homePage = () => {
         <div className="starComps">
           <div className="stars">
             <img
-              src="./src/images/stars1.png"
+              src={stars1Img}
               width={20}
               height={20}
               className="starks"
+              alt="Star 1"
             />
             <img
-              src="./src/images/stars2.png"
+              src={stars2Img}
               width={20}
               height={20}
               className="starks"
+              alt="Star 2"
             />
             <img
-              src="./src/images/stars3.png"
+              src={stars3Img}
               width={20}
               height={20}
               className="starks"
+              alt="Star 3"
             />
             <img
-              src="./src/images/stars4.png"
+              src={stars4Img}
               width={20}
               height={20}
               className="starks"
+              alt="Star 4"
             />
             <img
-              src="./src/images/stars5.png"
+              src={stars5Img}
               width={20}
               height={20}
               className="starks"
+              alt="Star 5"
             />
           </div>
 
@@ -248,7 +277,7 @@ const homePage = () => {
             </p>
           </div>
           <div className="clientss">
-            <img src="./src/images/wade.png" width={50} height={50} />
+            <img src={wadeImg} width={50} height={50} alt="Wade Warren" />
             <div className="">
               <p>Wade Warren</p>
               <p>USA, California</p>
@@ -258,34 +287,39 @@ const homePage = () => {
         <div className="starComps">
           <div className="stars">
             <img
-              src="./src/images/stars1.png"
+              src={stars1Img}
               width={20}
               height={20}
               className="starks"
+              alt="Star 1"
             />
             <img
-              src="./src/images/stars2.png"
+              src={stars2Img}
               width={20}
               height={20}
               className="starks"
+              alt="Star 2"
             />
             <img
-              src="./src/images/stars3.png"
+              src={stars3Img}
               width={20}
               height={20}
               className="starks"
+              alt="Star 3"
             />
             <img
-              src="./src/images/stars4.png"
+              src={stars4Img}
               width={20}
               height={20}
               className="starks"
+              alt="Star 4"
             />
             <img
-              src="./src/images/stars5.png"
+              src={stars5Img}
               width={20}
               height={20}
               className="starks"
+              alt="Star 5"
             />
           </div>
           <div className="qwerty">
@@ -297,7 +331,7 @@ const homePage = () => {
             </p>
           </div>
           <div className="clientss">
-            <img src="./src/images/emelie.png" width={50} height={50} />
+            <img src={emelieImg} width={50} height={50} alt="Emelie Thomson" />
             <div className="">
               <p>Emelie Thomson</p>
               <p>USA, Florida</p>
@@ -307,34 +341,39 @@ const homePage = () => {
         <div className="starComps">
           <div className="stars">
             <img
-              src="./src/images/stars1.png"
+              src={stars1Img}
               width={20}
               height={20}
               className="starks"
+              alt="Star 1"
             />
             <img
-              src="./src/images/stars2.png"
+              src={stars2Img}
               width={20}
               height={20}
               className="starks"
+              alt="Star 2"
             />
             <img
-              src="./src/images/stars3.png"
+              src={stars3Img}
               width={20}
               height={20}
               className="starks"
+              alt="Star 3"
             />
             <img
-              src="./src/images/stars4.png"
+              src={stars4Img}
               width={20}
               height={20}
               className="starks"
+              alt="Star 4"
             />
             <img
-              src="./src/images/stars5.png"
+              src={stars5Img}
               width={20}
               height={20}
               className="starks"
+              alt="Star 5"
             />
           </div>
           <div className="qwerty">
@@ -347,7 +386,7 @@ const homePage = () => {
             </p>
           </div>
           <div className="clientss">
-            <img src="./src/images/john.png" width={50} height={50} />
+            <img src={johnImg} width={50} height={50} alt="John Mans" />
             <div className="">
               <p>John Mans</p>
               <p>USA, Nevada</p>
@@ -359,19 +398,17 @@ const homePage = () => {
         <p> 01 of 10 </p>
         <div className="pageBTNs">
           <button className="nextPage1">
-            {" "}
-            <img src="./src/images/arrow2.png" width={24} height={24}></img>
+            <img src={arrow2Img} width={24} height={24} alt="Previous" />
           </button>
           <button className="nextPage2">
-            {" "}
-            <img src="./src/images/arrow1.png" width={24} height={24}></img>
+            <img src={arrow1Img} width={24} height={24} alt="Next" />
           </button>
         </div>
       </div>
       <div className="starSign">
-        <img src="./src/images/star1.png" width={24} height={24} />
-        <img src="./src/images/star2.png" width={14.4} height={14.4} />
-        <img src="./src/images/star3.png" width={6.72} height={6.72} />
+        <img src={star1Img} width={24} height={24} alt="Star 1" />
+        <img src={star2Img} width={14.4} height={14.4} alt="Star 2" />
+        <img src={star3Img} width={6.72} height={6.72} alt="Star 3" />
       </div>
 
       <div className="colors">
@@ -423,12 +460,10 @@ const homePage = () => {
         <p> 01 of 10 </p>
         <div className="pageBTNs">
           <button className="nextPage1">
-            {" "}
-            <img src="./src/images/arrow2.png" width={24} height={24}></img>
+            <img src={arrow2Img} width={24} height={24} alt="Previous" />
           </button>
           <button className="nextPage2">
-            {" "}
-            <img src="./src/images/arrow1.png" width={24} height={24}></img>
+            <img src={arrow1Img} width={24} height={24} alt="Next" />
           </button>
         </div>
       </div>
