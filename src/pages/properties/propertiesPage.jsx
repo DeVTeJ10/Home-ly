@@ -1,4 +1,3 @@
-import React from "react";
 import Header from "../../components/header";
 import Stark from "../../components/Stars";
 import Footer from "../../components/footer";
