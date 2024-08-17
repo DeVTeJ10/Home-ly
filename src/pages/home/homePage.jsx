@@ -1,4 +1,3 @@
-import React from "react";
 import Header from "../../components/header";
 import FooterComponent from "../../components/footer";
 import DreamHome from "../../components/dreamHome";
