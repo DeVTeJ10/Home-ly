@@ -1,6 +1,5 @@
 import HeaderComponent from "../../components/header";
 import Footer from "../../components/footer";
-import { Link, Route, Routes } from "react-router-dom";
 import "./aboutUs.css";
 
 // Import all images
@@ -477,7 +476,7 @@ const aboutUs = () => {
             <div className="coded">
               <p>What They Said 🤗</p>
               <p className="cyncro">
-                Estatein's expertise in finding the perfect office space for our
+                Estatein&apos;s expertise in finding the perfect office space for our
                 <br></br>
                 expanding operations was invaluable. They truly understand our
                 <br></br> business needs.
@@ -522,7 +521,7 @@ const aboutUs = () => {
             <div className="procoded">
               <p>What They Said 🤗</p>
               <p className="cyncro">
-                Estatein's ability to identify prime retail locations helped us
+                Estatein&apos;s ability to identify prime retail locations helped us
                 expand<br></br> our brand presence. They are a trusted partner
                 in our growth.
               </p>
@@ -545,7 +544,7 @@ const aboutUs = () => {
         <h1>Start Your Real Estate Journey Today</h1>
         <div className="allProperties">
           <p className="xplore">
-            Your dream property is just a click away. Whether you're looking for
+            Your dream property is just a click away. Whether you&apos;re looking for
             a new home, a strategic investment, or expert real estate advice,
             <br></br> Estatein is here to assist you every step of the way. Take
             the first step towards your real estate goals and explore our
