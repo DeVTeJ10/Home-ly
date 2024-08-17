@@ -1,4 +1,3 @@
-import React from "react";
 import "./footer.css";
 import logoImg from "../../images/Logo.png";
 import planarImg from "../../images/planar.png";
