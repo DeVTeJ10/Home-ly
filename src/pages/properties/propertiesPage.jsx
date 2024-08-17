@@ -436,7 +436,7 @@ function propertiesPage() {
             </div>
 
             <div className="thebestyouqsxq">
-              <p>Homeowners' Association Fee</p>
+              <p>Homeowners&apos; Association Fee</p>
               <div className="dollars">
                 <h3>$300</h3>
                 <p>Property transfer tax, legal fees, inspection, insurance</p>
@@ -473,8 +473,8 @@ function propertiesPage() {
           <h1>Frequently Asked Questions</h1>
           <div className="allProperties">
             <p className="xplore">
-              Find answers to common questions about Estatein's services,
-              property listings, and the real estate process. We're here to
+              Find answers to common questions about Estatein&apos;s services,
+              property listings, and the real estate process. We&apos;re here to
               provide clarity and<br></br> assist you every step of the way.
             </p>
             <button className="viewAll">View all FAQs</button>
@@ -531,7 +531,7 @@ function propertiesPage() {
         <h1>Start Your Real Estate Journey Today</h1>
         <div className="allProperties">
           <p className="xplore">
-            Your dream property is just a click away. Whether you're looking for
+            Your dream property is just a click away. Whether you&apos;re looking for
             a new home, a strategic investment, or expert real estate advice,
             <br></br> Estatein is here to assist you every step of the way. Take
             the first step towards your real estate goals and explore our

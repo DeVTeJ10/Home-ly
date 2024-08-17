@@ -35,7 +35,7 @@ const aboutUs = () => {
                 Our story is one of continuous growth and evolution. We started
                 as a small team with<br></br> big dreams, determined to create a
                 real estate platform that transcended the<br></br> ordinary.
-                Over the years, we've expanded our reach, forged valuable
+                Over the years, we&apos;ve expanded our reach, forged valuable
                 partnerships,
                 <br></br> and gained the trust of countless clients.
               </p>
@@ -177,7 +177,7 @@ const aboutUs = () => {
         <div className="qwertyuiop">
           <h3>3+ Years of Excellence</h3>
           <p className="learnHow">
-            With over 3 years in the industry, we've<br></br> amassed a wealth
+            With over 3 years in the industry, we&apos;ve<br></br> amassed a wealth
             of knowledge and<br></br> experience.
           </p>
         </div>
@@ -192,7 +192,7 @@ const aboutUs = () => {
         <div className="qwertyuiop">
           <h3>Industry Recognition</h3>
           <p className="learnHowss">
-            We've earned the respect of our peers and<br></br> industry leaders,
+            We&apos;ve earned the respect of our peers and<br></br> industry leaders,
             with accolades and awards<br></br> that reflect our commitment to
             excellence.
           </p>
@@ -208,8 +208,8 @@ const aboutUs = () => {
           <h1>Navigating the Estatein Experience</h1>
           <div className="allProperties">
             <p className="xplore">
-              At Estatein, we've designed a straightforward process to help you
-              find and purchase your dream property with ease. Here's a
+              At Estatein, we&apos;ve designed a straightforward process to help you
+              find and purchase your dream property with ease. Here&apos;s a
               step-by-step guide<br></br> to how it all works.
             </p>
           </div>
@@ -233,7 +233,7 @@ const aboutUs = () => {
         <div className="qwertyuiops">
           <h3>Narrowing Down Your Choices</h3>
           <p className="learnHow">
-            Once you've found properties that catch your <br></br> eye, save
+            Once you&apos;ve found properties that catch your <br></br> eye, save
             them to your account or make a<br></br> shortlist. This allows you
             to compare and revisit<br></br> your favorites as you make your
             decision.
@@ -259,8 +259,8 @@ const aboutUs = () => {
           <div className="qwertyuiops">
             <h3>See It for Yourself</h3>
             <p className="learnHow">
-              Arrange viewings of the properties you're<br></br> interested in.
-              We'll coordinate with the property<br></br> owners and accompany
+              Arrange viewings of the properties you&apos;re<br></br> interested in.
+              We&apos;ll coordinate with the property<br></br> owners and accompany
               you to ensure you get<br></br> a firsthand look at your potential
               new home.
             </p>
@@ -277,7 +277,7 @@ const aboutUs = () => {
           <div className="qwertyuiops">
             <h3>Getting the Best Deal</h3>
             <p className="learnHowss">
-              We'll help you negotiate the best terms and<br></br> prepare your
+              We&apos;ll help you negotiate the best terms and<br></br> prepare your
               offer. Our goal is to secure the<br></br> property at the right
               price and on favorable<br></br> terms.
             </p>
@@ -432,7 +432,7 @@ const aboutUs = () => {
             <p className="xplore">
               At Estatein, we have had the privilege of working with a diverse
               range of clients across various industries. Here are some of the
-              clients we've had<br></br> the pleasure of serving
+              clients we&apos;ve had<br></br> the pleasure of serving
             </p>
           </div>
         </div>

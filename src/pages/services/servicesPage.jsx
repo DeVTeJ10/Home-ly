@@ -1,4 +1,3 @@
-import React from "react";
 import Header from "../../components/header";
 import Footer from "../../components/footer"
 import "./servicesPage.css";
@@ -144,7 +143,7 @@ const servicesPage = () => {
           <h1> Effortless Property Management </h1>
           <div className="clientSay">
             <p className="success">
-              Owning a property should be a pleasure, not a hassle. Estatein's
+              Owning a property should be a pleasure, not a hassle. Estatein&apos;s
               Property Management Service takes the stress out of property
               ownership, offering<br></br> comprehensive solutions tailored to
               your needs. Explore the categories below to see how we can make
@@ -229,7 +228,7 @@ const servicesPage = () => {
               <div className="clientSay">
                 <p className="success">
                   Building a real estate portfolio requires a strategic<br></br>{" "}
-                  approach. Estatein's Investment Advisory Service<br></br>{" "}
+                  approach. Estatein&apos;s Investment Advisory Service<br></br>{" "}
                   empowers you to make smart investments and informed<br></br>{" "}
                   decisions.
                 </p>
@@ -310,7 +309,7 @@ const servicesPage = () => {
         <h1>Start Your Real Estate Journey Today</h1>
         <div className="allProperties">
           <p className="xplore">
-            Your dream property is just a click away. Whether you're looking for
+            Your dream property is just a click away. Whether you&apos;re looking for
             a new home, a strategic investment, or expert real estate advice,
             <br></br> Estatein is here to assist you every step of the way. Take
             the first step towards your real estate goals and explore our
