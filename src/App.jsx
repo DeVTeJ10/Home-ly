@@ -2,7 +2,6 @@ import HomePage from "./pages/home/homePage"
 import AboutUsPage from "./pages/aboutUs/aboutUsPage"
 import PropertiesPage from "./pages/properties/propertiesPage"
 import ServicesPage from "./pages/services/servicesPage"
-import { Link, Route, Routes } from 'react-router-dom'
 
 
 

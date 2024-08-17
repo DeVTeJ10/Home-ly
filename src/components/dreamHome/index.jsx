@@ -1,4 +1,3 @@
-import React from 'react'
 import './dreamHome.css'
 
 // Import all the images

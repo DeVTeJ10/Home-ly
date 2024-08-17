@@ -271,7 +271,7 @@ const homePage = () => {
             <h3>Exceptional Service!</h3>
             <p>
               Our experience with Estatein was outstanding.<br></br> Their
-              team's dedication and professionalism<br></br> made finding our
+              team&apos;s dedication and professionalism<br></br> made finding our
               dream home a breeze. Highly<br></br> recommended!
             </p>
           </div>
@@ -326,7 +326,7 @@ const homePage = () => {
             <p>
               Estatein provided us with top-notch service.<br></br>
               They helped us sell our property quickly and at <br></br>a great
-              price. We couldn't be happier with the <br></br>results.
+              price. We couldn&apos;t be happier with the <br></br>results.
             </p>
           </div>
           <div className="clientss">
@@ -415,8 +415,8 @@ const homePage = () => {
           <h1>Frequently Asked Questions</h1>
           <div className="allProperties">
             <p className="xplore">
-              Find answers to common questions about Estatein's services,
-              property listings, and the real estate process. We're here to
+              Find answers to common questions about Estatein&apos;s services,
+              property listings, and the real estate process. We&apos;re here to
               provide clarity and<br></br> assist you every step of the way.
             </p>
             <button className="viewAll">View all FAQs</button>
@@ -470,7 +470,7 @@ const homePage = () => {
         <h1>Start Your Real Estate Journey Today</h1>
         <div className="allProperties">
           <p className="xplore">
-            Your dream property is just a click away. Whether you're looking for
+            Your dream property is just a click away. Whether you&apos;re looking for
             a new home, a strategic investment, or expert real estate advice,
             <br></br> Estatein is here to assist you every step of the way. Take
             the first step towards your real estate goals and explore our
