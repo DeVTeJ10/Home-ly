@@ -15,6 +15,10 @@ import arrow1Img from "../../images/arrow1.png";
 import wadeImg from "../../images/wade.png";
 import emelieImg from "../../images/emelie.png";
 import johnImg from "../../images/john.png";
+import turnerImg from "../../images/turner.png";
+import tweetImg from "../../images/tweet.png";
+import waveImg from "../../images/wave.png";
+import sendImg from "../../images/send.png";
 
 const aboutUs = () => {
   return (
@@ -316,7 +320,7 @@ const aboutUs = () => {
                   {" "}
                   <img
                     className="tweetings"
-                    src="./src/images/tweet.png"
+                    src={tweetImg}
                     width={20}
                     height={16.25}
                     alt="Tweet"
@@ -329,9 +333,9 @@ const aboutUs = () => {
             <div className="sayshello">
               <div className="sayhellos">
                 <h4>Say Hello</h4>
-                <img src="./src/images/wave.png" width={36} height={36} alt="Wave" />
+                <img src={waveImg} width={36} height={36} alt="Wave" />
               </div>
-              <img src="./src/images/send.png" width={36} height={36} alt="Send" />
+              <img src={sendImg} width={36} height={36} alt="Send" />
             </div>
           </div>
         </div>
@@ -348,7 +352,7 @@ const aboutUs = () => {
               <div className="tweetsss">
                 <button className="tweets">
                   {" "}
-                  <img src="./src/images/tweet.png" width={20} height={16.25} alt="Tweet" />
+                  <img src={tweetImg} width={20} height={16.25} alt="Tweet" />
                 </button>
               </div>
             </div>
@@ -357,9 +361,9 @@ const aboutUs = () => {
             <div className="sayshello">
               <div className="sayhellos">
                 <h4>Say Hello</h4>
-                <img src="./src/images/wave.png" width={36} height={36} alt="Wave" />
+                <img src={waveImg} width={36} height={36} alt="Wave" />
               </div>
-              <img src="./src/images/send.png" width={36} height={36} alt="Send" />
+              <img src={sendImg} width={36} height={36} alt="Send" />
             </div>
           </div>
         </div>
@@ -376,7 +380,7 @@ const aboutUs = () => {
               <div className="tweetsss">
                 <button className="tweets">
                   {" "}
-                  <img src="./src/images/tweet.png" width={20} height={16.25} alt="Tweet" />
+                  <img src={tweetImg} width={20} height={16.25} alt="Tweet" />
                 </button>
               </div>
             </div>
@@ -385,9 +389,9 @@ const aboutUs = () => {
             <div className="sayshello">
               <div className="sayhellos">
                 <h4>Say Hello</h4>
-                <img src="./src/images/wave.png" width={36} height={36} alt="Wave" />
+                <img src={waveImg} width={36} height={36} alt="Wave" />
               </div>
-              <img src="./src/images/send.png" width={36} height={36} alt="Send" />
+              <img src={sendImg} width={36} height={36} alt="Send" />
             </div>
           </div>
         </div>
@@ -395,7 +399,7 @@ const aboutUs = () => {
           <div className="delegates">
             <div className="tweetpic">
               <img
-                src="./src/images/turner.png"
+                src={turnerImg}
                 width={257}
                 height={220}
                 className="max"
@@ -404,7 +408,7 @@ const aboutUs = () => {
               <div className="tweetsss">
                 <button className="tweets">
                   {" "}
-                  <img src="./src/images/tweet.png" width={20} height={16.25} alt="Tweet" />
+                  <img src={tweetImg} width={20} height={16.25} alt="Tweet" />
                 </button>
               </div>
             </div>
@@ -413,9 +417,9 @@ const aboutUs = () => {
             <div className="sayshello">
               <div className="sayhellos">
                 <h4>Say Hello</h4>
-                <img src="./src/images/wave.png" width={36} height={36} alt="Wave" />
+                <img src={waveImg} width={36} height={36} alt="Wave" />
               </div>
-              <img src="./src/images/send.png" width={36} height={36} alt="Send" />
+              <img src={sendImg} width={36} height={36} alt="Send" />
             </div>
           </div>
         </div>
