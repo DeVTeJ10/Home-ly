@@ -15,7 +15,7 @@ import arrow1Img from "../../images/arrow1.png";
 import wadeImg from "../../images/wade.png";
 import emelieImg from "../../images/emelie.png";
 import johnImg from "../../images/john.png";
-import turnerImg from "../../images/turner.png";
+import turnerImg from "../../images/turnergurl.png";
 import tweetImg from "../../images/tweet.png";
 import waveImg from "../../images/wave.png";
 import sendImg from "../../images/send.png";
@@ -347,7 +347,7 @@ const aboutUs = () => {
                 width={257}
                 height={220}
                 className="max"
-                alt="Emelie"
+                alt="Sarah"
               />
               <div className="tweetsss">
                 <button className="tweets">
@@ -375,7 +375,7 @@ const aboutUs = () => {
                 width={257}
                 height={220}
                 className="max"
-                alt="John"
+                alt="David"
               />
               <div className="tweetsss">
                 <button className="tweets">
