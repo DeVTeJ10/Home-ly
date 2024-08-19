@@ -19,6 +19,8 @@ import guardianImg from "../../images/guardian.png";
 import insightImg from "../../images/insight.png";
 import assesmentImg from "../../images/assesment.png";
 import ideasImg from "../../images/ideas.png";
+import propsmangImg from "../../images/propsmang.png";
+import smartsunImg from "../../images/smartsun.png";
 
 const servicesPage = () => {
   return (
@@ -44,11 +46,11 @@ const servicesPage = () => {
             <p className="dreamHome"> Unlock Property Value </p>
           </div>
           <div className="management">
-            <img src={tryImg} width={60} height={60} alt="Effortless Property Management" />
+            <img src={propsmangImg} width={60} height={60} alt="Effortless Property Management" />
             <p className="dreamHome"> Effortless Property Management </p>
           </div>
           <div className="investment">
-            <img src={tryImg} width={60} height={60} alt="Smart Investments, Informed Decisions" />
+            <img src={smartsunImg} width={60} height={60} alt="Smart Investments, Informed Decisions" />
             <p className="dreamHome"> Smart Investments, Informed Decisions </p>
           </div>
         </div>
