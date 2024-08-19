@@ -3,6 +3,8 @@ import './dreamHome.css'
 // Import all the images
 import tryImg from '../../images/try.png'
 import propertyImg from '../../images/property.png'
+import propsmangImg from '../../images/propsmang.png'
+import smartsunImg from '../../images/smartsun.png'
 
 const index = () => {
   return (
@@ -17,11 +19,11 @@ const index = () => {
                 <p className='dreamHome'> Unlock Property Value </p>
             </div>
             <div className='management'>
-                <img src={tryImg} width={60} height={60} alt="Management" />
+                <img src={propsmangImg} width={60} height={60} alt="Management" />
                 <p className='dreamHome'> Effortless Property Management </p>
             </div>
             <div className='investment'>
-                <img src={tryImg} width={60} height={60} alt="Investment" />
+                <img src={smartsunImg} width={60} height={60} alt="Investment" />
                 <p className='dreamHome'> Smart Investments, Informed Decisions </p>
             </div>
         </div>
