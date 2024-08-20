@@ -19,6 +19,8 @@ import turnerImg from "../../images/turnergurl.png";
 import tweetImg from "../../images/tweet.png";
 import waveImg from "../../images/wave.png";
 import sendImg from "../../images/send.png";
+import domainImg from "../../images/Domain.png";
+import lightningImg from "../../images/lightning.png";
 
 const aboutUs = () => {
   return (
@@ -458,7 +460,7 @@ const aboutUs = () => {
             <div className="juijutsus">
               <div className="domainexpansions">
                 <div className="domainexpansion">
-                  <img src="./src/images/Domain.png" width={20} height={20} alt="Domain" />
+                  <img src={domainImg} width={20} height={20} alt="Domain" />
                   <p>Domain</p>
                 </div>
                 <h4 className="commercialstate">Commercial Real Estate</h4>
@@ -466,7 +468,7 @@ const aboutUs = () => {
               <div className="domainexpansions">
                 <div className="domainexpansion">
                   <img
-                    src="./src/images/lightning.png"
+                    src={lightningImg}
                     width={20}
                     height={20}
                     alt="Lightning"
@@ -503,7 +505,7 @@ const aboutUs = () => {
             <div className="kingjuijutsus">
               <div className="domainexpansions">
                 <div className="domainexpansion">
-                  <img src="./src/images/Domain.png" width={20} height={20} alt="Domain" />
+                  <img src={domainImg} width={20} height={20} alt="Domain" />
                   <p>Domain</p>
                 </div>
                 <h4 className="commercialstate">Commercial Real Estate</h4>
@@ -511,7 +513,7 @@ const aboutUs = () => {
               <div className="domainexpansions">
                 <div className="domainexpansion">
                   <img
-                    src="./src/images/lightning.png"
+                    src={lightningImg}
                     width={20}
                     height={20}
                     alt="Lightning"
