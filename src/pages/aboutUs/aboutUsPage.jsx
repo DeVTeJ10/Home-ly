@@ -21,6 +21,9 @@ import waveImg from "../../images/wave.png";
 import sendImg from "../../images/send.png";
 import domainImg from "../../images/Domain.png";
 import lightningImg from "../../images/lightning.png";
+import maxImg from "../../images/max.png";
+import sarahImg from "../../images/sarah.png";
+import davidImg from "../../images/david.png";
 
 const aboutUs = () => {
   return (
@@ -311,11 +314,11 @@ const aboutUs = () => {
           <div className="delegates">
             <div className="tweetpic">
               <img
-                src={wadeImg}
+                src={maxImg}
                 width={257}
                 height={220}
                 className="max"
-                alt="Wade"
+                alt="Max"
               />
               <div className="tweetsss">
                 <button className="tweets">
@@ -345,7 +348,7 @@ const aboutUs = () => {
           <div className="delegates">
             <div className="tweetpic">
               <img
-                src={emelieImg}
+                src={sarahImg}
                 width={257}
                 height={220}
                 className="max"
@@ -373,7 +376,7 @@ const aboutUs = () => {
           <div className="delegates">
             <div className="tweetpic">
               <img
-                src={johnImg}
+                src={davidImg}
                 width={257}
                 height={220}
                 className="max"
@@ -485,7 +488,8 @@ const aboutUs = () => {
                 Estatein&apos;s expertise in finding the perfect office space for our
                 <br></br>
                 expanding operations was invaluable. They truly understand our
-                <br></br> business needs.
+                <br></br>
+                business needs.
               </p>
             </div>
           </div>
