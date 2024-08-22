@@ -21,9 +21,9 @@ import waveImg from "../../images/wave.png";
 import sendImg from "../../images/send.png";
 import domainImg from "../../images/Domain.png";
 import lightningImg from "../../images/lightning.png";
-import maxImg from "../../images/max.png";
-import sarahImg from "../../images/sarah.png";
-import davidImg from "../../images/david.png";
+import maxImg from "../../images/Max.png";
+import sarahImg from "../../images/Sarah.png";
+import davidImg from "../../images/David.png";
 
 const aboutUs = () => {
   return (
