@@ -48,3 +48,8 @@
     align-items: center;
     gap: 4px;
 }
+
+.contact-us{
+    display: flex;
+    gap: 10px;
+}
