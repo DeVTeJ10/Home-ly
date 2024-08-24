@@ -8,6 +8,7 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
+    line-height:5px;
 }
 
 .signup-input{
@@ -28,4 +29,13 @@
     padding: 10px;
     background-color:blueviolet;
     color: white;   
+}
+
+.container-signup{
+    /* border: 1px solid gray; */
+}
+
+.sisenor{
+    padding-left: 400px;
+    padding-right: 400px;
 }
