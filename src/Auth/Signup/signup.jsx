@@ -6,6 +6,8 @@ import "./signup.css"
 const SignUp = () => {
   return (
     <div>
+      <div className='sisenor'>
+      <div className='container-signup'>
       <div className='signup-container'>
         <Link to="/">
         <img src={logoImg} alt="Logo" />
@@ -18,6 +20,8 @@ const SignUp = () => {
         <input type="password" placeholder="Password" className='signup-input'/>
         <input type="password" placeholder="Confirm Password" className='signup-input'/>
         <button className='signup-button'>Sign Up</button>
+      </div>
+      </div>
       </div>
     </div>
   );
