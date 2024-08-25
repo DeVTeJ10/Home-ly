@@ -9,7 +9,9 @@ const index = () => {
     <div>
       <div className="dashboard">
         <div className="logo1">
+          <Link to={"/"}>
           <img src={logoImg} width={113.33} height={34} alt="Logo" />
+          </Link>
         </div>
         <div className="dashboardNav">
           <Link to={"/"}>
