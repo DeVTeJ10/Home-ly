@@ -18,7 +18,9 @@ const SignUp = () => {
         <input type='text' placeholder='Country' className='signup-input'/>
         <input type='number' placeholder='Phone Number' className='signup-input'/>
         <input type="password" placeholder="Password" className='signup-input'/>
-        <input type="password" placeholder="Confirm Password" className='signup-input'/>
+        <input type="text" placeholder="describe yourself" className='signup-input'/>
+        <input type="file" placeholder="Upload Image" className='signup-input'/>
+        <input type="checkbox" className='ticking the box'/>
         <button className='signup-button'>Sign Up</button>
       </div>
       </div>
