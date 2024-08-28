@@ -8,17 +8,18 @@ import "./signup.css"
 
 const SignUp = () => {
 
+    const [name, setName] = useState("");
     const [username, setUsername] = useState("");
     const [email, setEmail] = useState("");
     const [country, setCountry] = useState("");
-    const [phoneNumber, setPhoneNumber] = useState("");
+    const [phone, setPhone] = useState("");
     const [password, setPassword] = useState("");
   
     const handleSubmit = (e) => {
         e.preventDefault()
-        const user = {username, email, country, phoneNumber, password}
+        const user = {name, username, email, country, phone, password}
 
-        axios.post("https://finaki-backend.onrender.com/api/v1/auth/register")
+        axios.post("https://finaki-backend.onrender.com/api/v1/auth/register", user)
         .then(response => {
           console.log("data sent succesfully:", response)
         })
@@ -37,7 +38,14 @@ const SignUp = () => {
         <img src={logoImg} alt="Logo" />
         </Link>
         <h1 className='anticipates'>Anticipate Your Dream Home</h1>
-      <form onSubmit={handleSubmit}>
+
+      <form onSubmit={handleSubmit} autoComplete='on'>
+        <input type="text" 
+                value={name}
+                onChange={(e) => setName(e.target.value)} 
+                placeholder="Name" className='signup-input'
+                id='name'/>
+
         <input type="text" 
                 value={username}
                 onChange={(e) => setUsername(e.target.value)} 
@@ -57,18 +65,16 @@ const SignUp = () => {
                 id='country'/>
 
         <input type='number' 
-                value={phoneNumber} 
-                onChange={(e) => setPhoneNumber(e.target.value)} 
+                value={phone} 
+                onChange={(e) => setPhone(e.target.value)} 
                 placeholder='Phone Number' className='signup-input'
-                id='phoneNumber'/>
+                id='phone'/>
 
         <input type="password" 
                 value={password} 
                 onChange={(e) => setPassword(e.target.value)} 
                 placeholder="Password" className='signup-input'
                 id='password'/>
-
-
 
         <button className='signup-button' type='submit'>Sign Up</button>
       </form>
