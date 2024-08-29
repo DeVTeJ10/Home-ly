@@ -8,16 +8,17 @@ import "./signup.css"
 
 const SignUp = () => {
 
-    const [name, setName] = useState("");
+    const [firstname, setFirstname] = useState("");
+    const [lastname, setLastname] = useState("");
     const [username, setUsername] = useState("");
     const [email, setEmail] = useState("");
-    const [country, setCountry] = useState("");
-    const [phone, setPhone] = useState("");
+    const [mobile, setMobile] = useState("");
+    const [address, setAddress] = useState("");
     const [password, setPassword] = useState("");
   
     const handleSubmit = (e) => {
         e.preventDefault()
-        const user = {name, username, email, country, phone, password}
+        const user = {firstname, lastname, username, email, mobile, address, password}
 
         axios.post("https://finaki-backend.onrender.com/api/v1/auth/register", user)
         .then(response => {
@@ -39,36 +40,42 @@ const SignUp = () => {
         </Link>
         <h1 className='anticipates'>Anticipate Your Dream Home</h1>
 
-      <form onSubmit={handleSubmit} autoComplete='on'>
+      <form onSubmit={handleSubmit} >
         <input type="text" 
-                value={name}
-                onChange={(e) => setName(e.target.value)} 
-                placeholder="Name" className='signup-input'
-                id='name'/>
+                value={firstname}
+                onChange={(e) => setFirstname(e.target.value)} 
+                placeholder="First Name" className='signup-input'
+                id='firstname'/>
 
         <input type="text" 
-                value={username}
+                value={lastname}
+                onChange={(e) => setLastname(e.target.value)} 
+                placeholder="Last Name" className='signup-input'
+                id='lastname'/>
+
+        <input type="text" 
+                value={username} 
                 onChange={(e) => setUsername(e.target.value)} 
                 placeholder="Username" className='signup-input'
-                id='username'/>
+                id='text'/>
 
-        <input type="email" 
+        <input type='email' 
                 value={email} 
                 onChange={(e) => setEmail(e.target.value)} 
-                placeholder="Email" className='signup-input'
-                id='email'/>
-
-        <input type='text' 
-                value={country} 
-                onChange={(e) => setCountry(e.target.value)} 
-                placeholder='Country' className='signup-input'
+                placeholder='Email' className='signup-input'
                 id='country'/>
 
         <input type='number' 
-                value={phone} 
-                onChange={(e) => setPhone(e.target.value)} 
+                value={mobile} 
+                onChange={(e) => setMobile(e.target.value)} 
                 placeholder='Phone Number' className='signup-input'
                 id='phone'/>
+
+        <input type='text'
+                value={address}
+                onChange={(e) => setAddress(e.target.value)}
+                placeholder='Address' className='signup-input'
+                id='address'/>
 
         <input type="password" 
                 value={password} 
