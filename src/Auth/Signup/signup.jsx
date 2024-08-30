@@ -22,11 +22,11 @@ const SignUp = () => {
 
         axios.post("https://finaki-backend.onrender.com/api/v1/auth/register", user)
         .then(response => {
-          console.log("data sent succesfully:", response)
+          console.log("data sent succesfully")
         })
         .catch(error => {
-          console.log("error sending data:", error)
-        })
+          console.error("error sending data", error)
+        });
     }
 
   return (
@@ -40,7 +40,7 @@ const SignUp = () => {
         </Link>
         <h1 className='anticipates'>Anticipate Your Dream Home</h1>
 
-      <form onSubmit={handleSubmit} >
+      <form onSubmit={handleSubmit} autoComplete='on'>
         <input type="text" 
                 value={firstname}
                 onChange={(e) => setFirstname(e.target.value)} 
