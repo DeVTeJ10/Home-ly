@@ -6,47 +6,57 @@ import "./login.css";
 
 const Login = () => {
 
-  const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
+  const [successfull, setSuccessfull] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const users = {username, password}
+    const users = { email, password };
 
     axios.post("https://finaki-backend.onrender.com/api/v1/auth/login", users)
-    .then(response => {
-      console.log("data sent succesfully:", response)
-    })
-    .catch(error => {
-      console.log("error sending data:", error)
-    })
+      .then(response => {
+        console.log("data sent successfully:", response);
+        setSuccessfull(response.data.message); // Set success message
+        setError(""); // Clear any previous error messages
+      })
+      .catch(error => {
+        console.error("error sending data", error.response ? error.response.data : error);
+        setError(error.response ? error.response.data.message : "An unexpected error occurred."); // Set error message
+        setSuccessfull(""); // Clear any previous success messages
+      });
   }
 
   return (
-
     <div>
       <div className='login-container'>
         <Link to="/">
-        <img src={logo} alt="Logo" />
+          <img src={logo} alt="Logo" />
         </Link>
         <h1 className='welcome-back'>Welcome Back</h1>
 
+        {error && <p className="error">{error}</p>} {/* Display error message */}
+        {successfull && <p className="success">{successfull}</p>} {/* Display success message */}
+
         <form onSubmit={handleSubmit} autoComplete='on'>
-        <input type="text" 
-              value={username}
-              onChange={(e) => setUsername(e.target.value)}
-              placeholder="username" 
-              className='login-input'
-              id='username'/>
+          <input type="email" 
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder="Email" 
+                className='login-input'
+                id='Email'
+                name='Email'/>
 
-        <input type="password" 
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              placeholder="Password" 
-              className='login-input'
-              id='password'/>
+          <input type="password" 
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                placeholder="Password" 
+                className='login-input'
+                id='password'
+                name='password'/>
 
-        <button className='login-button' type='submit'>Login</button>
+          <button className='login-button' type='submit'>Login</button>
         </form>
       </div>
     </div>
