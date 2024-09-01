@@ -9,7 +9,7 @@ import "./signup.css"
 const SignUp = () => {
 
     const [name, setName] = useState("");
-    const [username, setUsername] = useState("");
+    const [username, setUsername] = useState("")
     const [email, setEmail] = useState("");
     const [phone, setPhone] = useState("");
     const [country, setCountry] = useState("");
@@ -28,8 +28,11 @@ const SignUp = () => {
                 setError(""); // Clear any previous error messages
             })
             .catch(error => {
-                console.error("error sending data", error.response ? error.response.data : error);
-                setError(error.response ? error.response.data.message : "An unexpected error occurred.");
+                console.error("error sending data", error);
+                const errorMessage = error.response 
+                    ? error.response.data.message 
+                    : "An unexpected error occurred."; // Set error message
+                setError(errorMessage);
                 setSuccess(""); // Clear any previous success messages
             });
     }
@@ -60,7 +63,7 @@ const SignUp = () => {
                 id='username'
                 name='username'/>
 
-        <input type="text" 
+        <input type="email" 
                 value={email} 
                 onChange={(e) => setEmail(e.target.value)} 
                 placeholder="Email" className='signup-input'
@@ -70,7 +73,7 @@ const SignUp = () => {
         <input type='tel' 
                 value={phone} 
                 onChange={(e) => setPhone(e.target.value)} 
-                placeholder='Phone Number' className='signup-input'
+                placeholder='Phone' className='signup-input'
                 id='phone'
                 name='phone'/>
 
