@@ -18,7 +18,8 @@ const SignUp = () => {
     const [success, setSuccess] = useState("");
   
     const handleSubmit = (e) => {
-        e.preventDefault();
+        e.preventDefault(); // Prevent default form submission
+
         const user = { name, username, email, phone, country, password };
 
         axios.post("https://finaki-backend.onrender.com/api/v1/auth/register", user)
@@ -26,12 +27,29 @@ const SignUp = () => {
                 console.log("data sent successfully:", response.data);
                 setSuccess(response.data.message);
                 setError(""); // Clear any previous error messages
+
+                // Define getData inside handleSubmit for easy flow of data
+                const getData = () => {
+                    axios.get("https://finaki-backend.onrender.com/api/v1/user/668d4f7cde02087694aa1c16")
+                        .then(response => {
+                            console.log("data successfully gotten:", response.data);
+                            setSuccess(response.data.message);
+                            setError(""); // Clear any previous error messages
+                        })
+                        .catch(error => {
+                            console.error("error getting data", error);
+                            const errorMessage = error.response?.data?.message || "An unexpected error occurred.";
+                            setError(errorMessage);
+                            setSuccess(""); // Clear any previous success messages
+                        });
+                }
+
+                // Call getData after successful signup
+                getData();
             })
             .catch(error => {
                 console.error("error sending data", error);
-                const errorMessage = error.response 
-                    ? error.response.data.message 
-                    : "An unexpected error occurred."; // Set error message
+                const errorMessage = error.response?.data?.message || "An unexpected error occurred.";
                 setError(errorMessage);
                 setSuccess(""); // Clear any previous success messages
             });
