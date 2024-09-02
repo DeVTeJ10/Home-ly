@@ -20,13 +20,35 @@ const Login = () => {
         console.log("data sent successfully:", response);
         setSuccessfull(response.data.message); // Set success message
         setError(""); // Clear any previous error messages
+
+        // Define getData inside handleSubmit for easy flow of data
+        const getData = () => {
+          axios.get("https://finaki-backend.onrender.com/api/v1/user/668d4f7cde02087694aa1c16") // Adjust the URL as needed
+            .then(response => {
+              console.log("data successfully gotten:", response.data);
+              // Handle the fetched data as needed
+              setSuccessfull(response.data.message);
+              setError(""); // Clear any previous error messages
+            })
+            .catch(error => {
+              console.error("error getting data", error);
+              const errorMessage = error.response?.data?.message || "An unexpected error occurred.";
+              setError(errorMessage);
+              setSuccessfull(""); // Clear any previous success messages
+            });
+        }
+
+        // Call getData after successful login
+        getData();
       })
       .catch(error => {
-        console.error("error sending data", error.response ? error.response.data : error);
-        setError(error.response ? error.response.data.message : "An unexpected error occurred."); // Set error message
-        setSuccessfull(""); // Clear any previous success messages
+        const message = error.response?.data?.message || 
+                        (error.request ? "No response from server. Check your network." 
+                                       : "Unexpected error occurred.");
+        console.error("Error:", message);
+        setError(message);
+        setSuccessfull(""); // Clear any previous successful messages
       });
-
   }
 
   // const fetchData = async() =>{
