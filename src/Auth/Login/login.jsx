@@ -6,8 +6,8 @@ import "./login.css";
 
 const Login = () => {
 
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [email, setEmail] = useState(localStorage.getItem('email'));
+  const [password, setPassword] = useState(localStorage.getItem('password'));
   const [error, setError] = useState("");
   const [successfull, setSuccessfull] = useState("");
 
@@ -15,31 +15,37 @@ const Login = () => {
     e.preventDefault();
     const users = { email, password };
 
-    axios.post("https://finaki-backend.onrender.com/api/v1/auth/login", users)
+    axios.post("https://real-estate-backend-nodejs-ywr4.onrender.com/api/v1/auth/login", users)
       .then(response => {
         console.log("data sent successfully:", response);
         setSuccessfull(response.data.message); // Set success message
         setError(""); // Clear any previous error messages
 
+
+
+
+
+
+
         // Define getData inside handleSubmit for easy flow of data
-        const getData = () => {
-          axios.get("https://finaki-backend.onrender.com/api/v1/user/668d4f7cde02087694aa1c16") // Adjust the URL as needed
-            .then(response => {
-              console.log("data successfully gotten:", response.data);
-              // Handle the fetched data as needed
-              setSuccessfull(response.data.message);
-              setError(""); // Clear any previous error messages
-            })
-            .catch(error => {
-              console.error("error getting data", error);
-              const errorMessage = error.response?.data?.message || "An unexpected error occurred.";
-              setError(errorMessage);
-              setSuccessfull(""); // Clear any previous success messages
-            });
-        }
+        // const getData = () => {
+        //   axios.get("https://finaki-backend.onrender.com/api/v1/user/668d4f7cde02087694aa1c16") // Adjust the URL as needed
+        //     .then(response => {
+        //       console.log("data successfully gotten:", response.data);
+        //       // Handle the fetched data as needed
+        //       setSuccessfull(response.data.message);
+        //       setError(""); // Clear any previous error messages
+        //     })
+        //     .catch(error => {
+        //       console.error("error getting data", error);
+        //       const errorMessage = error.response?.data?.message || "An unexpected error occurred.";
+        //       setError(errorMessage);
+        //       setSuccessfull(""); // Clear any previous success messages
+        //     });
+        // }
 
         // Call getData after successful login
-        getData();
+        // getData();
       })
       .catch(error => {
         const message = error.response?.data?.message || 
