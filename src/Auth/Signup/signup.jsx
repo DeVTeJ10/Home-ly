@@ -2,10 +2,10 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import logoImg from "../../images/Logo.png";
 import { Link } from "react-router-dom";
-import "./signup.css"
+import "./signup.css";
 
 const SignUp = () => {
-    const [dataForm, setdataForm] = useState({
+    const [dataForm, setDataForm] = useState({
         first_name: '',
         last_name: '',
         username: '',
@@ -15,44 +15,43 @@ const SignUp = () => {
         password: '',
     });
 
-    
     useEffect(() => {
-        const savedDataForm = JSON.parse(localStorage.getItem('dataform'))
-        if (savedDataForm){
-                setDataForm(savedDataForm)
+        const savedDataForm = JSON.parse(localStorage.getItem('dataform'));
+        if (savedDataForm) {
+            setDataForm(savedDataForm);
         }
-    })
-
+    }, []); // Add dependency array
+    
     const handleChange = (e) => {
-        const { names, value} = e.target;
-        const updatedDataForm = {... dataForm, [names]: value};
-        setDataForm(updatedDataForm)
-    }
+        const { name, value } = e.target;
+        setDataForm(prevState => ({ ...prevState, [name]: value }));
+    };
 
     const handleSubmit = (e) => {
         e.preventDefault(); // Prevent default form submission
 
-        // const user = { dataForm };
-
-        axios.post("https://real-estate-backend-nodejs-ywr4.onrender.com/api/v1/auth/register:", dataForm)
+        axios.post("https://real-estate-backend-nodejs-ywr4.onrender.com/api/v1/auth/register", dataForm)
             .then(response => {
                 console.log("data sent successfully:", response.data);
-                setdataForm({ ...dataForm, success: response.data.message, error: "" });
+                setDataForm({ ...dataForm, success: response.data.message, error: "" });
 
 
-                // Save token to local storage
-                const token = response.data.token
-                localStorage.setItem("authToken", token)
-                console.log("Sign up succesful, token stored:", token)
+                const token = response.data.token;
+                if (token) {
+                    localStorage.setItem('authToken', token); // Store the token in local storage
+                    console.log("Token gotten succesfully", token)
+                } 
+
+                    // Save dataForm to local storage
+                    localStorage.setItem('dataform', JSON.stringify(dataForm));
 
             })
             .catch(error => {
                 console.error("error sending data", error);
                 const errorMessage = error.response?.data?.message || "An unexpected error occurred.";
-                setdataForm({ ...dataForm, error: errorMessage, success: "" });
+                setDataForm({ ...dataForm, error: errorMessage, success: "" });
             });
     };
-
 
     return (
         <div>
@@ -67,49 +66,49 @@ const SignUp = () => {
                         <form onSubmit={handleSubmit} autoComplete='on'>
                             <input type="text" 
                                 value={dataForm.first_name}
-                                onChange={(e) => setdataForm({ ...dataForm, first_name: e.target.value })} 
+                                onChange={handleChange} 
                                 placeholder="First Name" className='signup-input'
                                 id='firstname'
-                                name='firstname' />
+                                name='first_name' /> {/* Correct name attribute */}
 
                             <input type="text" 
                                 value={dataForm.last_name}
-                                onChange={(e) => setdataForm({ ...dataForm, last_name: e.target.value })} 
+                                onChange={handleChange} 
                                 placeholder="Last Name" className='signup-input'
                                 id='lastname'
-                                name='lastname' />
+                                name='last_name' /> {/* Correct name attribute */}
 
                             <input type="text" 
                                 value={dataForm.username}
-                                onChange={(e) => setdataForm({ ...dataForm, username: e.target.value })} 
+                                onChange={handleChange} 
                                 placeholder="Username" className='signup-input'
                                 id='username'
                                 name='username' />
 
                             <input type="email" 
                                 value={dataForm.email} 
-                                onChange={(e) => setdataForm({ ...dataForm, email: e.target.value })} 
+                                onChange={handleChange} 
                                 placeholder="Email" className='signup-input'
                                 id='email'
                                 name='email' />
 
                             <input type='tel' 
                                 value={dataForm.mobile} 
-                                onChange={(e) => setdataForm({ ...dataForm, mobile: e.target.value })} 
+                                onChange={handleChange} 
                                 placeholder='Mobile' className='signup-input'
                                 id='mobile'
                                 name='mobile' />
 
                             <input type='text'
                                 value={dataForm.address}
-                                onChange={(e) => setdataForm({ ...dataForm, address: e.target.value })}
+                                onChange={handleChange}
                                 placeholder='Address' className='signup-input'
                                 id='address'
                                 name='address' />
 
                             <input type="password" 
                                 value={dataForm.password} 
-                                onChange={(e) => setdataForm({ ...dataForm, password: e.target.value })} 
+                                onChange={handleChange} 
                                 placeholder="Password" className='signup-input'
                                 id='password'
                                 name='password' />

@@ -1,67 +1,56 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import axios from "axios";
 import logo from "../../images/Logo.png";
 import { Link } from "react-router-dom";
 import "./login.css";
 
 const Login = () => {
-
-  const [email, setEmail] = useState(localStorage.getItem('email'));
-  const [password, setPassword] = useState(localStorage.getItem('password'));
+  const [loginForm, setLoginForm] = useState({
+    email: '',
+    password: '',
+  });
   const [error, setError] = useState("");
-  const [successfull, setSuccessfull] = useState("");
+  const [successful, setSuccessful] = useState("");
+
+  useEffect(() => {
+    const savedDataForm = JSON.parse(localStorage.getItem('dataform'));
+    if (savedDataForm && savedDataForm.email) {
+      setLoginForm(prevState => ({
+        ...prevState,
+        email: savedDataForm.email
+      }));
+    }
+  }, []);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setLoginForm(prevState => ({ ...prevState, [name]: value }));
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const users = { email, password };
+    const { email, password } = loginForm;
 
-    axios.post("https://real-estate-backend-nodejs-ywr4.onrender.com/api/v1/auth/login", users)
+    axios.post("https://real-estate-backend-nodejs-ywr4.onrender.com/api/v1/auth/login", { email, password })
       .then(response => {
         console.log("data sent successfully:", response);
-        setSuccessfull(response.data.message); // Set success message
-        setError(""); // Clear any previous error messages
+        setSuccessful(response.data.message);
+        setError("");
 
-
-
-
-
-
-
-        // Define getData inside handleSubmit for easy flow of data
-        // const getData = () => {
-        //   axios.get("https://finaki-backend.onrender.com/api/v1/user/668d4f7cde02087694aa1c16") // Adjust the URL as needed
-        //     .then(response => {
-        //       console.log("data successfully gotten:", response.data);
-        //       // Handle the fetched data as needed
-        //       setSuccessfull(response.data.message);
-        //       setError(""); // Clear any previous error messages
-        //     })
-        //     .catch(error => {
-        //       console.error("error getting data", error);
-        //       const errorMessage = error.response?.data?.message || "An unexpected error occurred.";
-        //       setError(errorMessage);
-        //       setSuccessfull(""); // Clear any previous success messages
-        //     });
-        // }
-
-        // Call getData after successful login
-        // getData();
+        if (response.data.token) {
+          localStorage.setItem('authToken', response.data.token);
+          console.log('Login successful, token stored', response.data.token);
+        }
       })
       .catch(error => {
         const message = error.response?.data?.message || 
                         (error.request ? "No response from server. Check your network." 
-                                       : "Unexpected error occurred.");
+                                      : "Unexpected error occurred.");
         console.error("Error:", message);
         setError(message);
-        setSuccessfull(""); // Clear any previous successful messages
+        setSuccessful("");
       });
   }
-
-  // const fetchData = async() =>{
-  //   try{
-  //     const response = await axios.get ('')
-  //   }
-  // }
 
   return (
     <div>
@@ -71,25 +60,29 @@ const Login = () => {
         </Link>
         <h1 className='welcome-back'>Welcome Back</h1>
 
-        {error && <p className="error">{error}</p>} {/* Display error message */}
-        {successfull && <p className="success">{successfull}</p>} {/* Display success message */}
+        {error && <p className="error">{error}</p>}
+        {successful && <p className="success">{successful}</p>}
 
         <form onSubmit={handleSubmit} autoComplete='on'>
-          <input type="email" 
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="Email" 
-                className='login-input'
-                id='Email'
-                name='Email'/>
+          <input 
+            type="email" 
+            value={loginForm.email}
+            onChange={handleChange}
+            placeholder="Email" 
+            className='login-input'
+            id='email'
+            name='email'
+          />
 
-          <input type="password" 
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                placeholder="Password" 
-                className='login-input'
-                id='password'
-                name='password'/>
+          <input 
+            type="password" 
+            value={loginForm.password}
+            onChange={handleChange}
+            placeholder="Password" 
+            className='login-input'
+            id='password'
+            name='password'
+          />
 
           <button className='login-button' type='submit'>Login</button>
         </form>
