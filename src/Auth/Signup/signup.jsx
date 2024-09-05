@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import logoImg from "../../images/Logo.png";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./signup.css";
 
 const SignUp = () => {
@@ -15,13 +15,15 @@ const SignUp = () => {
         password: '',
     });
 
+    const navigate = useNavigate()
+
     useEffect(() => {
         const savedDataForm = JSON.parse(localStorage.getItem('dataform'));
         if (savedDataForm) {
             setDataForm(savedDataForm);
         }
     }, []); // Add dependency array
-    
+
     const handleChange = (e) => {
         const { name, value } = e.target;
         setDataForm(prevState => ({ ...prevState, [name]: value }));
@@ -34,16 +36,7 @@ const SignUp = () => {
             .then(response => {
                 console.log("data sent successfully:", response.data);
                 setDataForm({ ...dataForm, success: response.data.message, error: "" });
-
-
-                const token = response.data.token;
-                if (token) {
-                    localStorage.setItem('authToken', token); // Store the token in local storage
-                    console.log("Token gotten succesfully", token)
-                } 
-
-                    // Save dataForm to local storage
-                    localStorage.setItem('dataform', JSON.stringify(dataForm));
+                navigate('/login')
 
             })
             .catch(error => {
