@@ -88,6 +88,9 @@ const Login = () => {
             name='password'
           />
             <button className='login-button' type='submit'>Login</button>
+            <Link to={"/forgot-password"}>
+             <h3 className='forgotpassword'>Forgot Password?</h3>
+            </Link>
         </form>
       </div>
     </div>
