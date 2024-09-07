@@ -7,22 +7,25 @@ import "./forgotPassword.css"
 
 const forgotPassword = () => {
 
-  // const [email, setEmail] = useState({
-  //   email: ''
-  // });
+  const [email, setEmail] = useState({
+    email: ''
+  });
 
-  // const [error, setError] = useState("");
-  // const [successful, setSuccessful] = useState("");
-  // const navigate = useNavigate()
+  const [error, setError] = useState("");
+  const [successful, setSuccessful] = useState("");
+  const navigate = useNavigate()
 
 
 
-    // const handleSubmit = (e) =>{
-    //   e.preventDefault();
-    //   const {passwordEmail} = email
+        const handleSubmit = (e) => {
+          e.preventDefault()
 
-    //   axios.post("")
-    // }
+          axios.post("https://finaki-backend.onrender.com/api/v1/auth/forgot-password-token", email)
+            .then(response => {
+              console.log("data sent succesfully", response.data)
+            }
+          )
+        }
 
 
 
@@ -31,12 +34,10 @@ const forgotPassword = () => {
       <div className='login-container'>
 
       <Link to ={"/"}>
-
         <img src={logo} />
-
       </Link>
-        <h2 className='forgotpassword'>Please Enter Your Email</h2>
-        {/* <form onSubmit={handleSubmit} autoComplete='on'> */}
+        <h3 className='forgotpassword'> Reset Your Password </h3>
+        <form  autoComplete='on'>
           <input
             type="email"
             // value={loginForm}
@@ -46,10 +47,10 @@ const forgotPassword = () => {
             id='email'
             name='email'
           />
-          <Link to={"/reset-password"}>
+          {/* <Link to={"/reset-password"}> */}
             <button className='login-button' type='submit'>Submit Email</button>
-          </Link>
-        {/* </form> */}
+          {/* </Link> */}
+        </form>
       </div>
     </div>
   );
