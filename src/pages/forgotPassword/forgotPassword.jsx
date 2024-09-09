@@ -7,13 +7,12 @@ import "./forgotPassword.css"
 
 const forgotPassword = () => {
 
-  const [forgotpassword, setForgotpassword] = useState({
+  const [ForgotPassword, setForgotpassword] = useState({
     email: ''
   });
 
   const [error, setError] = useState("");
   const [successful, setSuccessful] = useState("");
-  // const navigate = useNavigate()
 
 
 
@@ -22,23 +21,26 @@ const forgotPassword = () => {
       setForgotpassword(prevState => ({ ...prevState, [name]: value }));
     }
 
-        const handleSubmit = (e) => {
+        const handleSubmit =  (e) => {
           e.preventDefault()
+          const { email } = ForgotPassword;
 
-          axios.post("https://finaki-backend.onrender.com/api/v1/auth/forgot-password-token", {forgotpassword})
+           axios.post("https://real-estate-backend-nodejs-ywr4.onrender.com/api/v1/auth/forgot-password-token", { email: ForgotPassword.email })
             .then(response => {
-              console.log("data sent succesfully", response.data)
-              setForgotpassword({ ...forgotpassword, success: response.data.message, error: "" })
-              // const resetprogress = successful.response?.data?.message || "Link sent succesfullly"
+              console.log("password reset link sent succesfully", response.data)
+              setSuccessful(response.data.message)
+              setForgotpassword({ ...ForgotPassword, success: response.data.message, error: "" })
+              setError("")
+
+              if (response?.data?.user?.email) {
+              console.log('Login successful', response.data.email);
+          }
             })
             .catch(error => {
               console.error("error sending data", error);
-              const errorMessage = error.response?.data?.message || "An unexpected error occurred.";
-              setForgotpassword({ ...forgotpassword, error: errorMessage, success: "" });
           });
   };
         
-
 
 
   return (
@@ -50,9 +52,13 @@ const forgotPassword = () => {
       </Link>
         <h3 className='forgotpassword'> Reset Your Password </h3>
         <form  onSubmit={handleSubmit} autoComplete='on'>
+
+        {successful && <p className="success-message">{successful}</p>}
+        {error && <p className="error-message">{error}</p>}
+
           <input
             type="email"
-            value={forgotpassword.email}
+            value={ForgotPassword.email}
             onChange={handleChange}
             placeholder="Input Email"
             className='login-input'

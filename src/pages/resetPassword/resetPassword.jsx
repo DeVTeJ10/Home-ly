@@ -4,6 +4,14 @@ import axios from 'axios';
 import logo from "../../images/Logo.png"
 
 const resetPassword = () => {
+
+
+
+
+
+
+
+  
   return (
     <div>
       <div className='login-container'>
@@ -12,8 +20,7 @@ const resetPassword = () => {
         </Link>
         <h3 className='welcome-back'>Please Input Matching Passwords</h3>
 
-        {/* {error && <p className="error">{error}</p>}
-        {successful && <p className="success">{successful}</p>} */}
+        
 
         {/* <form onSubmit={handleSubmit} autoComplete='on'> */}
           <input
