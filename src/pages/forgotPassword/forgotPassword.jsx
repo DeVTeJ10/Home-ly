@@ -33,7 +33,7 @@ const forgotPassword = () => {
               setError("")
 
               if (response?.data?.user?.email) {
-              console.log('Login successful', response.data.email);
+              console.log('Password reset succesful', response.data.email);
           }
             })
             .catch(error => {
@@ -65,9 +65,7 @@ const forgotPassword = () => {
             id='email'
             name='email'
           />
-          {/* <Link to={"/reset-password"}> */}
             <button className='login-button' type='submit'>Submit Email</button>
-          {/* </Link> */}
         </form>
       </div>
     </div>
