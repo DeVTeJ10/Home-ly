@@ -5,13 +5,24 @@ import logo from "../../images/Logo.png"
 
 const resetPassword = () => {
 
+  const urlParams = new URLSearchParams (window.location.search);
+  const token = urlParams.get('token');
+
+
+  const [resetPassword, setResetPassword] = useState({
+    password: '',
+});
+
+
+    const handleSubmit = (e) => {
+        axios.put("https://real-estate-backend-nodejs-ywr4.onrender.com/api/v1/auth/reset-password/2ad429ca81675a27f59be21e58268d4569652fe9e59ca6c79cc92c97863b5d59", password)
+        .then(response => {
+          console.log("password updated succesfully:", response.data )
+        })
+    }
 
 
 
-
-
-
-  
   return (
     <div>
       <div className='login-container'>
@@ -22,29 +33,19 @@ const resetPassword = () => {
 
         
 
-        {/* <form onSubmit={handleSubmit} autoComplete='on'> */}
+        <form onSubmit={handleSubmit} autoComplete='on'>
           <input
-            type="email"
+            type="password"
             // value={loginForm.email}
             // onChange={handleChange}
             placeholder="Password"
-            className='login-input'
-            id='email'
-            name='email'
-          />
-
-          <input
-            type="password"
-            // value={loginForm.password}
-            // onChange={handleChange}
-            placeholder="Confirm Password"
             className='login-input'
             id='password'
             name='password'
           />
             <button className='login-button' type='submit'>Login</button>
 
-        {/* </form> */}
+        </form>
       </div>
     </div>
   );
