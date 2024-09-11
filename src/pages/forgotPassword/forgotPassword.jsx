@@ -32,6 +32,8 @@ const forgotPassword = () => {
               setForgotpassword({ ...ForgotPassword, success: response.data.message, error: "" })
               setError("")
 
+              
+
               if (response?.data?.user?.email) {
               console.log('Password reset succesful', response.data.email);
           }
