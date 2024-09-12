@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import { useSearchParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { json, Link } from 'react-router-dom';
 import axios from 'axios';
 import logo from "../../images/Logo.png"
@@ -8,36 +8,27 @@ import { useLocation } from 'react-router-dom';
 
     const resetPassword = () => {
 
-
+      const {token} = useParams()
       const [ResetPassword, setResetPassword] = useState({
         password: '',
     });
       const [error, setError] = useState("");
       const [successful, setSuccessful] = useState("");
-      const [token, setToken] = useState('');
-      const [query, useSearchParams] = useState()   
 
+      console.log(token)
+                        
 
-
-       useEffect((e) => {
-        const tokenFromUrl = searchParams.get('token') || '';
-          setToken(tokenFromUrl); // Update token state
-            }, [searchParams]);
-                                          
-
-
-  const handleChange = (e) => {
+      const handleChange = (e) => {
     const { name, value } = e.target;
     setResetPassword(prevState => ({ ...prevState, [name]: value }));
   };
-
 
 
     const handleSubmit = async (e) => {
         e.preventDefault()
 
         try {
-          const response = await axios.put('https://real-estate-backend-nodejs-ywr4.onrender.com/api/v1/auth/reset-password/2ad429ca81675a27f59be21e58268d4569652fe9e59ca6c79cc92c97863b5d59?=tejirioru@gmail.com', {
+          const response = await axios.put('https://real-estate-backend-nodejs-ywr4.onrender.com/api/v1/auth/reset-password/{token}', {
             token,  // The token extracted from the URL
             password: ResetPassword.password,
           });

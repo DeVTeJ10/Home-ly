@@ -40,7 +40,7 @@ const SignUp = () => {
 
             })
             .catch(error => {
-                console.error("error sending data", error);
+                console.error("error sending data");
                 const errorMessage = error.response?.data?.message || "An unexpected error occurred.";
                 setDataForm({ ...dataForm, error: errorMessage, success: "" });
             });
