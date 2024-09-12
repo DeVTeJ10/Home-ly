@@ -5,6 +5,7 @@ import PropertiesPage from "./pages/properties/propertiesPage"
 import ServicesPage from "./pages/services/servicesPage"
 import ForgotPasswordPage from "./pages/forgotPassword/forgotPassword"
 import ResetPasswordPage from "./pages/resetPassword/resetPassword"
+import CreatePost from "./pages/createPost/createPost"
 import SignupPage from "./Auth/Signup/signup"
 import LoginPage from "./Auth/Login/login"
 
@@ -25,6 +26,7 @@ function App() {
         <Route path="/login" element={<LoginPage/>} />
         <Route path="/forgot-password" element={<ForgotPasswordPage/>} />
         <Route path="/reset-password/:token" element={<ResetPasswordPage/>} />
+        <Route path="/create-post" element={<CreatePost/>} />
       </Routes>
     </>
   )
