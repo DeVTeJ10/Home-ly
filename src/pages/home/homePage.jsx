@@ -3,6 +3,8 @@ import FooterComponent from "../../components/footer";
 import DreamHome from "../../components/dreamHome";
 import checkImg from "../../images/Container.png";
 import "./homePage.css";
+import axios from "axios";
+import { Link } from "react-router-dom";
 
 // Import all images
 import circogoImg from "../../images/circogo.png";
@@ -41,7 +43,9 @@ const homePage = () => {
           </p>
           <div className="learnProperties">
             <button className="learnMore"> Learn more </button>
+            <Link to={"/create-post"}>
             <button className="browseProp"> Browse properties </button>
+            </Link>
           </div>
           <div className="experiences">
             <div className="happyCustomers">

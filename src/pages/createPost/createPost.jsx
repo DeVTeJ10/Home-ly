@@ -1,7 +1,8 @@
 import React, {useState} from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
-
+import logo from "../../images/Logo.png";
+import "./createPost.css"
 
 
 
@@ -21,19 +22,33 @@ const inputProduct = () => {
         longitude: '',
         type: '',
         property: ''
-
       });
 
 
-  const [error, setError] = useState("");
-  const [successful, setSuccessful] = useState("");
+    const [error, setError] = useState("");
+    const [successful, setSuccessful] = useState("");
 
+
+    const handleChange = (e) =>{
+        const {name, value} = e.target
+        setCreatepost(prevState => ({ ...prevState, [name]: value }));
+      }
+  
     
   
     const handleSubmit = (e) => {
             e.prevent.default()
 
-            axios.post("https://real-estate-backend-nodejs-ywr4.onrender.com/api/v1/post/create")
+            axios.post("https://real-estate-backend-nodejs-ywr4.onrender.com/api/v1/post/create", CreatePost)
+            .then(response = () =>{
+                console.log("Post created succesfully", response.data)
+                setCreatepost({... CreatePost, success: response.data.message, error: ""})
+            })
+            .catch(error => {
+                console.error("error posting data");
+                const errorMessage = error.response?.data?.message || "An unexpected error occurred.";
+                setCreatepost({ ...CreatePost, error: errorMessage, success: "" });
+            });
         }
 
 
@@ -43,96 +58,95 @@ const inputProduct = () => {
                 <div className='container-signup'>
                     <div className='signup-container'>
                         <Link to="/">
-                            <img src={logoImg} alt="Logo" />
+                            <img src={logo} alt="Logo" />
                         </Link>
-                        <h1 className='anticipates'>Anticipate Your Dream Home</h1>
 
                         <form onSubmit={handleSubmit} autoComplete='on'>
                             <input type="text" 
-                                // value={dataForm.first_name}
-                                // onChange={handleChange} 
-                                placeholder="title" className='signup-input'
-                                id='firstname'
-                                name='first_name' /> {/* Correct name attribute */}
+                                value={CreatePost.title}
+                                onChange={handleChange} 
+                                placeholder="title" 
+                                id='title'
+                                name='title' /> {/* Correct name attribute */}
 
                             <input type="text" 
-                                // value={dataForm.last_name}
-                                // onChange={handleChange} 
-                                placeholder="price" className='signup-input'
-                                id='lastname'
-                                name='last_name' /> {/* Correct name attribute */}
+                                value={CreatePost.price}
+                                onChange={handleChange} 
+                                placeholder="price" 
+                                id='price'
+                                name='price' /> {/* Correct name attribute */}
 
                             <input type="text" 
-                                // value={dataForm.username}
-                                // onChange={handleChange} 
-                                placeholder="image" className='signup-input'
-                                id='username'
-                                name='username' />
+                                value={CreatePost.image}
+                                onChange={handleChange} 
+                                placeholder="image" 
+                                id='image'
+                                name='image' />
 
                             <input type="text" 
-                                // value={dataForm.email} 
-                                // onChange={handleChange} 
-                                placeholder="description" className='signup-input'
-                                id='email'
-                                name='email' />
+                                value={CreatePost.description} 
+                                onChange={handleChange} 
+                                placeholder="description" 
+                                id='description'
+                                name='description' />
 
                             <input type='text' 
-                                // value={dataForm.mobile} 
-                                // onChange={handleChange} 
-                                placeholder='city' className='signup-input'
-                                id='mobile'
-                                name='mobile' />
+                                value={CreatePost.city} 
+                                onChange={handleChange} 
+                                placeholder='city' 
+                                id='city'
+                                name='city' /> */
 
                             <input type='text'
-                                // value={dataForm.address}
-                                // onChange={handleChange}
-                                placeholder='Address' className='signup-input'
+                                value={CreatePost.address}
+                                onChange={handleChange}
+                                placeholder='Address' 
                                 id='address'
                                 name='address' />
 
                             <input type="text" 
-                                // value={dataForm.password} 
-                                // onChange={handleChange} 
-                                placeholder="bathroom" className='signup-input'
-                                id='password'
-                                name='password' />
+                                value={CreatePost.bathroom} 
+                                onChange={handleChange} 
+                                placeholder="bathroom" 
+                                id='bathroom'
+                                name='bathroom' />
 
                             <input type="text" 
-                                // value={dataForm.password} 
-                                // onChange={handleChange} 
-                                placeholder="bedroom" className='signup-input'
-                                id='password'
-                                name='password' />
+                                value={CreatePost.bedroom} 
+                                onChange={handleChange} 
+                                placeholder="bedroom" 
+                                id='bedroom'
+                                name='bedroom' />
+
+                            <input type="number" 
+                                value={CreatePost.latitude} 
+                                onChange={handleChange} 
+                                placeholder="latitude"
+                                id='latitude'
+                                name='latitude' />
+
+                            <input type="number" 
+                                value={CreatePost.longitude} 
+                                onChange={handleChange} 
+                                placeholder="longitude"
+                                id='longitude'
+                                name='longitude' />
 
                             <input type="text" 
-                                // value={dataForm.password} 
-                                // onChange={handleChange} 
-                                placeholder="latitude" className='signup-input'
-                                id='password'
-                                name='password' />
+                                value={CreatePost.type} 
+                                onChange={handleChange} 
+                                placeholder="type" 
+                                id='type'
+                                name='type' />
 
                             <input type="text" 
-                                // value={dataForm.password} 
-                                // onChange={handleChange} 
-                                placeholder="longitude" className='signup-input'
-                                id='password'
-                                name='password' />
+                                value={CreatePost.property} 
+                                onChange={handleChange} 
+                                placeholder="property"
+                                id='property'
+                                name='property' />
 
-                            <input type="text" 
-                                // value={dataForm.password} 
-                                // onChange={handleChange} 
-                                placeholder="type" className='signup-input'
-                                id='password'
-                                name='password' />
-
-                            <input type="text" 
-                                // value={dataForm.password} 
-                                // onChange={handleChange} 
-                                placeholder="property" className='signup-input'
-                                id='password'
-                                name='password' />
-
-                            <button className='signup-button' type='submit'>Post Product</button>
+                            <button type='submit'>Post Product</button>
                         </form>
                     </div>
                 </div>
