@@ -1,12 +1,11 @@
-import React, {useState, useEffect} from 'react';
+import { useState, } from 'react';
 import { useParams } from 'react-router-dom';
-import { json, Link } from 'react-router-dom';
+import {  Link } from 'react-router-dom';
 import axios from 'axios';
 import logo from "../../images/Logo.png"
-import { useLocation } from 'react-router-dom';
 
 
-    const resetPassword = () => {
+    const ResetPassword = () => {
 
       const {token} = useParams()
       const [ResetPassword, setResetPassword] = useState({
@@ -26,9 +25,13 @@ import { useLocation } from 'react-router-dom';
 
     const handleSubmit = async (e) => {
         e.preventDefault()
+        
+
+
+
 
         try {
-          const response = await axios.put('https://real-estate-backend-nodejs-ywr4.onrender.com/api/v1/auth/reset-password/{token}', {
+           await axios.put('https://real-estate-backend-nodejs-ywr4.onrender.com/api/v1/auth/reset-password/{token}', {
             token,  // The token extracted from the URL
             password: ResetPassword.password,
           });
@@ -36,6 +39,8 @@ import { useLocation } from 'react-router-dom';
         } catch (error) {
           setError('Error resetting password');
         }
+        
+
     };
 
 
@@ -68,4 +73,4 @@ import { useLocation } from 'react-router-dom';
   );
 };
 
-export default resetPassword;
+export default ResetPassword;

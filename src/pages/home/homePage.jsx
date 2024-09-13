@@ -3,7 +3,7 @@ import FooterComponent from "../../components/footer";
 import DreamHome from "../../components/dreamHome";
 import checkImg from "../../images/Container.png";
 import "./homePage.css";
-import axios from "axios";
+// import axios from "axios";
 import { Link } from "react-router-dom";
 
 // Import all images
@@ -84,7 +84,7 @@ const homePage = () => {
           <p className="xplore">
             Explore our handpicked selection of featured properties. Each
             listing offers a glimpse into exceptional homes and investments
-            available<br></br>through Estatein. Click "View Details" for more
+            available<br></br>through Estatein. Click View Details for more
             information.
           </p>
           <button className="viewAll">View All Properties</button>

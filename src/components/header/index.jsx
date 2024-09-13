@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import  {useEffect, useState} from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import "./header.css";
@@ -6,7 +6,7 @@ import logoImg from "../../images/Logo.png";
 
     
 
-const index = () => {
+const Index = () => {
 
       const [authUser, setAuthUser] = useState(null)
       const token = localStorage.getItem('authToken');
@@ -72,4 +72,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;

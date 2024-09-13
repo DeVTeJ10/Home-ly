@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import  { useEffect, useState } from 'react';
 import axios from 'axios';
 import logoImg from "../../images/Logo.png";
 import { Link, useNavigate } from "react-router-dom";
@@ -16,6 +16,9 @@ const SignUp = () => {
     });
 
     const navigate = useNavigate()
+
+
+
 
     useEffect(() => {
         const savedDataForm = JSON.parse(localStorage.getItem('dataform'));
@@ -55,6 +58,9 @@ const SignUp = () => {
                             <img src={logoImg} alt="Logo" />
                         </Link>
                         <h1 className='anticipates'>Anticipate Your Dream Home</h1>
+
+
+
 
                         <form onSubmit={handleSubmit} autoComplete='on'>
                             <input type="text" 
