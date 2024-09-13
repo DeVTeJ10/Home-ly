@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import  { useState, } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import logo from "../../images/Logo.png";
 import "./forgotPassword.css"
 
 
-const forgotPassword = () => {
+const ForgotPassword = () => {
 
   const [ForgotPassword, setForgotpassword] = useState({
     email: ''
@@ -23,7 +23,7 @@ const forgotPassword = () => {
 
         const handleSubmit =  (e) => {
           e.preventDefault()
-          const { email } = ForgotPassword;
+          // const { email } = ForgotPassword;
 
            axios.post("https://real-estate-backend-nodejs-ywr4.onrender.com/api/v1/auth/forgot-password-token", { email: ForgotPassword.email })
             .then(response => {
@@ -74,4 +74,4 @@ const forgotPassword = () => {
   );
 };
 
-export default forgotPassword;
+export default ForgotPassword;

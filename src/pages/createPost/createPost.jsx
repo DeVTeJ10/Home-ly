@@ -1,12 +1,14 @@
-import React, {useState} from 'react';
+import  {useState, useEffect} from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 import logo from "../../images/Logo.png";
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';  // Import CSS for styling
 import "./createPost.css"
 
 
 
-const inputProduct = () => {
+const InputProduct = () => {
 
     const [CreatePost, setCreatepost] = useState({
 
@@ -22,34 +24,50 @@ const inputProduct = () => {
         longitude: '',
         type: '',
         property: ''
+
       });
 
 
-    const [error, setError] = useState("");
-    const [successful, setSuccessful] = useState("");
 
 
     const handleChange = (e) =>{
-        const {name, value} = e.target
+        const {name, value} = e.target;
         setCreatepost(prevState => ({ ...prevState, [name]: value }));
       }
-  
-    
-  
-    const handleSubmit = (e) => {
-            e.prevent.default()
 
-            axios.post("https://real-estate-backend-nodejs-ywr4.onrender.com/api/v1/post/create", CreatePost)
-            .then(response = () =>{
-                console.log("Post created succesfully", response.data)
-                setCreatepost({... CreatePost, success: response.data.message, error: ""})
-            })
-            .catch(error => {
-                console.error("error posting data");
-                const errorMessage = error.response?.data?.message || "An unexpected error occurred.";
-                setCreatepost({ ...CreatePost, error: errorMessage, success: "" });
-            });
+      useEffect(() => {
+        const CreateDataForm = JSON.parse(localStorage.getItem('Createpost'));
+        if (CreateDataForm) {
+            setCreatepost(CreateDataForm);
         }
+    }, []); // Add dependency array
+  
+    console.log(CreatePost)
+
+    const token = localStorage.getItem('authToken');
+    console.log(token);
+
+    //how to get a token from localstorage or or how to get items
+    
+  //how to set a token as an header in axios post request endpoint below
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  
+    axios.post("https://real-estate-backend-nodejs-ywr4.onrender.com/api/v1/post/create", CreatePost, {
+      headers: {
+        Authorization: `Bearer ${token}`,  // Ensure token is defined and valid
+      },
+    })
+    .then(response => {  // Renamed 'res' to 'response' to avoid conflicts
+      console.log("Post created successfully", response.data);
+      toast.success("Post created successfully!")
+    })
+    .catch(error => {
+      console.error("Error posting data", error);
+    });
+  };
+  
+
 
 
   return (
@@ -61,20 +79,21 @@ const inputProduct = () => {
                             <img src={logo} alt="Logo" />
                         </Link>
 
+
                         <form onSubmit={handleSubmit} autoComplete='on'>
                             <input type="text" 
                                 value={CreatePost.title}
                                 onChange={handleChange} 
                                 placeholder="title" 
                                 id='title'
-                                name='title' /> {/* Correct name attribute */}
+                                name='title' /> 
 
-                            <input type="text" 
+                            <input type="number" 
                                 value={CreatePost.price}
                                 onChange={handleChange} 
                                 placeholder="price" 
                                 id='price'
-                                name='price' /> {/* Correct name attribute */}
+                                name='price' /> 
 
                             <input type="text" 
                                 value={CreatePost.image}
@@ -104,28 +123,28 @@ const inputProduct = () => {
                                 id='address'
                                 name='address' />
 
-                            <input type="text" 
+                            <input type="number" 
                                 value={CreatePost.bathroom} 
                                 onChange={handleChange} 
                                 placeholder="bathroom" 
                                 id='bathroom'
                                 name='bathroom' />
 
-                            <input type="text" 
+                            <input type="number" 
                                 value={CreatePost.bedroom} 
                                 onChange={handleChange} 
                                 placeholder="bedroom" 
                                 id='bedroom'
                                 name='bedroom' />
 
-                            <input type="number" 
+                            <input type="text" 
                                 value={CreatePost.latitude} 
                                 onChange={handleChange} 
                                 placeholder="latitude"
                                 id='latitude'
                                 name='latitude' />
 
-                            <input type="number" 
+                            <input type="text" 
                                 value={CreatePost.longitude} 
                                 onChange={handleChange} 
                                 placeholder="longitude"
@@ -146,7 +165,7 @@ const inputProduct = () => {
                                 id='property'
                                 name='property' />
 
-                            <button type='submit'>Post Product</button>
+                            <button className='submitBtn' type='submit'>Post Product</button>
                         </form>
                     </div>
                 </div>
@@ -155,4 +174,4 @@ const inputProduct = () => {
   );
 };
 
-export default inputProduct;
+export default InputProduct;
