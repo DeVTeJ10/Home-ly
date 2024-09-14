@@ -47,9 +47,7 @@ const InputProduct = () => {
     const token = localStorage.getItem('authToken');
     console.log(token);
 
-    //how to get a token from localstorage or or how to get items
     
-  //how to set a token as an header in axios post request endpoint below
   const handleSubmit = (e) => {
     e.preventDefault();
   
