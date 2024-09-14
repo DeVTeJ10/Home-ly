@@ -1,10 +1,12 @@
-import Header from "../../components/header";
+import Header from "../../components/header/header";
 import FooterComponent from "../../components/footer";
 import DreamHome from "../../components/dreamHome";
 import checkImg from "../../images/Container.png";
 import "./homePage.css";
-// import axios from "axios";
+import axios from "axios";
 import { Link } from "react-router-dom";
+import { useState, useEffect} from "react";
+
 
 // Import all images
 import circogoImg from "../../images/circogo.png";
@@ -28,7 +30,52 @@ import wadeImg from "../../images/wade.png";
 import emelieImg from "../../images/emelie.png";
 import johnImg from "../../images/john.png";
 
-const homePage = () => {
+
+const HomePage = () => {
+
+  const [DisplayHome, setDisplayhome] = useState({
+
+      _id: '',
+      title: '',
+      slug: '',
+      price: '',
+      image: '',
+      description: '',
+      address: '',
+      city: '',
+      bedroom: '',
+      bathroom: '',
+      latitude: '',
+      longitude: '',
+      type: '',
+      property: '',
+      userId: [
+        ''
+      ]
+
+  });
+
+
+  
+  const fetchData = async () => {
+    try {
+      const response = await axios.get('https://real-estate-backend-nodejs-ywr4.onrender.com/post/all', {
+        headers: {  // Corrected key here
+
+        },
+      });
+
+      console.log(response.data);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  useEffect(() => {
+    fetchData();
+  }, ); // Dependency on token
+  
+
   return (
     <div>
       <Header />
@@ -204,7 +251,7 @@ const homePage = () => {
       <div className="pages">
         <p> 01 of 60 </p>
         <div className="pageBTNs">
-          <button className="nextPage1">
+          <button className="nextPage1">``
             <img src={arrow2Img} width={24} height={24} alt="Previous" />
           </button>
           <button className="nextPage2">
@@ -488,4 +535,4 @@ const homePage = () => {
   );
 };
 
-export default homePage;
+export default HomePage;

@@ -1,4 +1,4 @@
-import Header from "../../components/header";
+import Header from "../../components/header/header";
 import Stark from "../../components/Stars";
 import Footer from "../../components/footer";
 

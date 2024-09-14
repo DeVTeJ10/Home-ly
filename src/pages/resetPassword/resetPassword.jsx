@@ -11,6 +11,8 @@ import logo from "../../images/Logo.png"
       const [ResetPassword, setResetPassword] = useState({
         password: '',
     });
+
+    
       const [error, setError] = useState("");
       const [successful, setSuccessful] = useState("");
 
@@ -26,8 +28,6 @@ import logo from "../../images/Logo.png"
     const handleSubmit = async (e) => {
         e.preventDefault()
         
-
-
 
 
         try {
