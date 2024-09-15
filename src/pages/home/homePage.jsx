@@ -33,7 +33,7 @@ import johnImg from "../../images/john.png";
 
 const HomePage = () => {
 
-  const [DisplayHome, setDisplayhome] = useState({
+  const [Posts, setPosts] = useState({
 
       _id: '',
       title: '',
@@ -56,12 +56,15 @@ const HomePage = () => {
   });
 
 
+    const token = localStorage.getItem("Authtoken")
+    console.log(token)
+
   
   const fetchData = async () => {
     try {
       const response = await axios.get('https://real-estate-backend-nodejs-ywr4.onrender.com/post/all', {
         headers: {  // Corrected key here
-
+          Authorization: `Bearer ${token}`,
         },
       });
 
