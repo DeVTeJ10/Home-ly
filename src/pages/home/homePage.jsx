@@ -50,10 +50,31 @@ const HomePage = () => {
       type: '',
       property: '',
       userId: [
-        ''
+        
       ]
 
   });
+
+
+  useEffect(() => {
+    const postDataForm = JSON.parse(localStorage.getItem('posts'));
+    if (postDataForm) {
+        setPosts(postDataForm);
+    }
+}, []); // Add dependency array
+
+
+
+// useEffect(() => {
+//   const postDataForm = JSON.parse(localStorage.getItem('dataform'));
+//   if (postDataForm && postDataForm.email) {
+//     setPosts(prevState => ({
+//       ...prevState,
+//       email: savedDataForm.email
+//     }));
+//   }
+// }, []);
+
 
 
     const token = localStorage.getItem("Authtoken")
@@ -74,9 +95,9 @@ const HomePage = () => {
     }
   };
 
-  useEffect(() => {
-    fetchData();
-  }, ); // Dependency on token
+  // useEffect(() => {
+  //   fetchData();
+  // }, ); // Dependency on token
   
 
   return (
@@ -145,6 +166,8 @@ const HomePage = () => {
         <div className="oneforall">
           <img
             src={villaImg}
+            value={Posts.image}
+            // onChange={handleChange}
             width={353.33}
             height={255}
             className="cottage"
@@ -157,7 +180,12 @@ const HomePage = () => {
           </p>
           <div className="whatif">
             <div className="propteristics">
-              <img src={bedroomImg} width={20} height={20} alt="Bedroom" />
+              <img src={bedroomImg}
+              value={Posts.image}
+              // onChange={handleChange} 
+              width={20} 
+              height={20} 
+              alt="Bedroom" />
               <h4> 4-Bedroom </h4>
             </div>
             <div className="bathroom">
