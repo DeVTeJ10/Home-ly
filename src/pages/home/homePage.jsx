@@ -49,7 +49,7 @@ const HomePage = () => {
       longitude: '',
       type: '',
       property: '',
-      userId: [
+      userId: [  
         
       ]
 
@@ -77,27 +77,26 @@ const HomePage = () => {
 
 
 
-    const token = localStorage.getItem("Authtoken")
-    console.log(token)
+
+
 
   
-  const fetchData = async () => {
-    try {
-      const response = await axios.get('https://real-estate-backend-nodejs-ywr4.onrender.com/post/all', {
-        headers: {  // Corrected key here
-          Authorization: `Bearer ${token}`,
-        },
-      });
+const handleRendering = (e) => {
+  e.preventDefault();
 
-      console.log(response.data);
-    } catch (error) {
-      console.log(error);
-    }
-  };
 
-  // useEffect(() => {
-  //   fetchData();
-  // }, ); // Dependency on token
+  axios.get("https://real-estate-backend-nodejs-ywr4.onrender.com/post/all", Posts)
+    .then(response => {
+      console.log("data sent successfully:", response); 
+      setPosts(response.data)
+    })
+    .catch(error => {
+      const message = error.response?.data?.message ||
+        (error.request ? "No response from server. Check your network."
+          : "Unexpected error occurred.");
+            console.error("Error:", message);
+    });
+}
   
 
   return (
@@ -173,7 +172,9 @@ const HomePage = () => {
             className="cottage"
             alt="Villa"
           />
-          <h3 className="seaside">Seaside Serenity Villa</h3>
+          <h3 className="seaside"
+          
+          >Seaside Serenity Villa</h3>
           <p className="stunning">
             A stunning 4-bedroom, 3-bathroom villa in a <br></br>peaceful
             suburban neighborhood... <b>Read More</b>
@@ -181,19 +182,24 @@ const HomePage = () => {
           <div className="whatif">
             <div className="propteristics">
               <img src={bedroomImg}
-              value={Posts.image}
               // onChange={handleChange} 
               width={20} 
               height={20} 
               alt="Bedroom" />
-              <h4> 4-Bedroom </h4>
+              <h4> </h4>
             </div>
             <div className="bathroom">
-              <img src={bathroomImg} width={20} height={20} alt="Bathroom" />
+              <img src={bathroomImg}
+               width={20} 
+               height={20} 
+               alt="Bathroom" />
               <h4> 3-Bathroom </h4>
             </div>
             <div className="villa2">
-              <img src={villa2Img} width={20} height={20} alt="Villa 2" />
+              <img src={villa2Img} 
+              width={20} 
+              height={20} 
+              alt="Villa 2" />
               <h4> Villa </h4>
             </div>
           </div>
