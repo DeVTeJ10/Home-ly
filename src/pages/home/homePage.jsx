@@ -33,72 +33,33 @@ import johnImg from "../../images/john.png";
 
 const HomePage = () => {
 
-  const [Posts, setPosts] = useState({
-
-      _id: '',
-      title: '',
-      slug: '',
-      price: '',
-      image: '',
-      description: '',
-      address: '',
-      city: '',
-      bedroom: '',
-      bathroom: '',
-      latitude: '',
-      longitude: '',
-      type: '',
-      property: '',
-      userId: [  
-        
-      ]
-
-  });
-
-
+  const [posts, setPosts] = useState(null);
+  
   useEffect(() => {
-    const postDataForm = JSON.parse(localStorage.getItem('posts'));
-    if (postDataForm) {
-        setPosts(postDataForm);
-    }
-}, []); // Add dependency array
 
 
+    const fetchPosts = async () => {
+      try {
+        const response = await axios.get("https://real-estate-backend-nodejs-ywr4.onrender.com/api/v1/post/all");
+        console.log("Data fetched successfully:", response);
+        setPosts(response?.data?.Posts); // Update the state with the fetched data
+      } catch (error) {
+        const message = error.response?.data?.message ||
+          (error.request ? "No response from server. Check your network."
+            : "Unexpected error occurred.");
+        console.error("Error:", message);
+      }
+    };
 
-// useEffect(() => {
-//   const postDataForm = JSON.parse(localStorage.getItem('dataform'));
-//   if (postDataForm && postDataForm.email) {
-//     setPosts(prevState => ({
-//       ...prevState,
-//       email: savedDataForm.email
-//     }));
-//   }
-// }, []);
 
+    fetchPosts();
+  }, []); 
 
-
-
+   
+      
 
 
   
-const handleRendering = (e) => {
-  e.preventDefault();
-
-
-  axios.get("https://real-estate-backend-nodejs-ywr4.onrender.com/post/all", Posts)
-    .then(response => {
-      console.log("data sent successfully:", response); 
-      setPosts(response.data)
-    })
-    .catch(error => {
-      const message = error.response?.data?.message ||
-        (error.request ? "No response from server. Check your network."
-          : "Unexpected error occurred.");
-            console.error("Error:", message);
-    });
-}
-  
-
   return (
     <div>
       <Header />
@@ -149,6 +110,7 @@ const handleRendering = (e) => {
       </div>
 
       <div className="checkprops">
+      
         <h1>Featured Properties</h1>
         <div className="allProperties">
           <p className="xplore">
@@ -162,128 +124,49 @@ const handleRendering = (e) => {
       </div>
 
       <div className="allforone">
-        <div className="oneforall">
+
+      {posts.map(values => (
+          <div className="oneforall" 
+          key={posts.title}>
           <img
             src={villaImg}
-            value={Posts.image}
-            // onChange={handleChange}
             width={353.33}
             height={255}
             className="cottage"
             alt="Villa"
           />
-          <h3 className="seaside"
-          
-          >Seaside Serenity Villa</h3>
-          <p className="stunning">
-            A stunning 4-bedroom, 3-bathroom villa in a <br></br>peaceful
-            suburban neighborhood... <b>Read More</b>
-          </p>
-          <div className="whatif">
-            <div className="propteristics">
-              <img src={bedroomImg}
-              // onChange={handleChange} 
-              width={20} 
-              height={20} 
-              alt="Bedroom" />
-              <h4> </h4>
-            </div>
-            <div className="bathroom">
-              <img src={bathroomImg}
-               width={20} 
-               height={20} 
-               alt="Bathroom" />
-              <h4> 3-Bathroom </h4>
-            </div>
-            <div className="villa2">
-              <img src={villa2Img} 
-              width={20} 
-              height={20} 
-              alt="Villa 2" />
-              <h4> Villa </h4>
-            </div>
-          </div>
-          <div className="qwert">
-            <div>
-              <p> Price </p>
-              <p className="hundred">$550,000</p>
-            </div>
-            <button className="viewprop">View Property Details</button>
-          </div>
-        </div>
-
-        <div className="oneforall">
-          <img
-            src={havenImg}
-            width={353.33}
-            height={255}
-            className="cottage"
-            alt="Haven"
-          />
-          <h3 className="seaside">Metropolitan Haven</h3>
-          <p className="stunning">
-            A stunning 4-bedroom, 3-bathroom villa in a <br></br>peaceful
-            suburban neighborhood... <b>Read More</b>
-          </p>
+          <h3 className="seaside">posts.title</h3>
+          <p className="stunning">stunningDescription1</p>
           <div className="whatif">
             <div className="propteristics">
               <img src={bedroomImg} width={20} height={20} alt="Bedroom" />
-              <h4> 2-Bedroom </h4>
+              <h4>values.bedroom</h4>
             </div>
             <div className="bathroom">
               <img src={bathroomImg} width={20} height={20} alt="Bathroom" />
-              <h4> 2-Bathroom </h4>
+              <h4>bathroomCount1.posts</h4>
             </div>
             <div className="villa2">
               <img src={villa2Img} width={20} height={20} alt="Villa 2" />
-              <h4> Villa </h4>
+              <h4>villaType1</h4>
             </div>
           </div>
           <div className="qwert">
             <div>
-              <p> Price </p>
-              <p className="hundred">$550,000</p>
+              <p className="priceLabel">priceLabel1</p>
+              <p className="hundred">priceValue1</p>
             </div>
             <button className="viewprop">View Property Details</button>
           </div>
-        </div>
+          </div>
+      ))}
 
-        <div className="oneforall">
-          <img
-            src={cottageImg}
-            width={353.33}
-            height={255}
-            className="cottage"
-            alt="Cottage"
-          />
-          <h3 className="seaside">Rustic Retreat Cottage</h3>
-          <p className="stunning">
-            A stunning 4-bedroom, 3-bathroom villa in a <br></br>peaceful
-            suburban neighborhood... <b>Read More</b>
-          </p>
-          <div className="whatif">
-            <div className="propteristics">
-              <img src={bedroomImg} width={20} height={20} alt="Bedroom" />
-              <h4> 3-Bedroom </h4>
-            </div>
-            <div className="bathroom">
-              <img src={bathroomImg} width={20} height={20} alt="Bathroom" />
-              <h4> 3-Bathroom </h4>
-            </div>
-            <div className="villa2">
-              <img src={villa2Img} width={20} height={20} alt="Villa 2" />
-              <h4> Villa </h4>
-            </div>
-          </div>
-          <div className="qwert">
-            <div>
-              <p> Price </p>
-              <p className="hundred">$550,000</p>
-            </div>
-            <button className="viewprop">View Property Details</button>
-          </div>
-        </div>
-      </div>
+
+   
+    </div>
+
+
+
 
       <div className="pages">
         <p> 01 of 60 </p>
@@ -358,7 +241,7 @@ const handleRendering = (e) => {
             <h3>Exceptional Service!</h3>
             <p>
               Our experience with Estatein was outstanding.<br></br> Their
-              team&apos;s dedication and professionalism<br></br> made finding our
+              teams dedication and professionalism<br></br> made finding our
               dream home a breeze. Highly<br></br> recommended!
             </p>
           </div>
@@ -413,7 +296,7 @@ const handleRendering = (e) => {
             <p>
               Estatein provided us with top-notch service.<br></br>
               They helped us sell our property quickly and at <br></br>a great
-              price. We couldn&apos;t be happier with the <br></br>results.
+              price. We couldnt be happier with the <br></br>results.
             </p>
           </div>
           <div className="clientss">
