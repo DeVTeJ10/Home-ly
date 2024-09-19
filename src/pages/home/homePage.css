@@ -223,6 +223,7 @@ h1{
     margin-top: 60px;
 }
 
+
 .qwert{
     display: flex;
     justify-content: space-around;
@@ -257,6 +258,7 @@ h1{
 
 .allforone{
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
     background-color: #141414;
     padding-left: 80px;
