@@ -34,6 +34,7 @@ import johnImg from "../../images/john.png";
 const HomePage = () => {
 
   const [posts, setPosts] = useState(null);
+
   
   useEffect(() => {
 
@@ -124,10 +125,9 @@ const HomePage = () => {
       </div>
 
       <div className="allforone">
-
-      {posts.map(values => (
-          <div className="oneforall" 
-          key={posts.title}>
+          <div className="oneforall" >
+          {posts?.map(post => (
+            <div key={post.id} className="item">
           <img
             src={villaImg}
             width={353.33}
@@ -135,34 +135,32 @@ const HomePage = () => {
             className="cottage"
             alt="Villa"
           />
-          <h3 className="seaside">posts.title</h3>
-          <p className="stunning">stunningDescription1</p>
+          <h3 className="seaside">{post.title}</h3>
+          <p className="stunning">{post.description}</p>
           <div className="whatif">
             <div className="propteristics">
               <img src={bedroomImg} width={20} height={20} alt="Bedroom" />
-              <h4>values.bedroom</h4>
+              <h4>{post.bedroom}</h4>
             </div>
             <div className="bathroom">
               <img src={bathroomImg} width={20} height={20} alt="Bathroom" />
-              <h4>bathroomCount1.posts</h4>
+              <h4>b{posts.bathroom}</h4>
             </div>
             <div className="villa2">
               <img src={villa2Img} width={20} height={20} alt="Villa 2" />
-              <h4>villaType1</h4>
+              <h4>{posts.type}</h4>
             </div>
           </div>
           <div className="qwert">
             <div>
-              <p className="priceLabel">priceLabel1</p>
-              <p className="hundred">priceValue1</p>
+              <p className="priceLabel">{posts.price}</p>
+              <p className="hundred">{posts.price}</p>
             </div>
             <button className="viewprop">View Property Details</button>
           </div>
-          </div>
-      ))}
-
-
-   
+      </div>
+            ))}
+    </div>
     </div>
 
 
