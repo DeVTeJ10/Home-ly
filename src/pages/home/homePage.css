@@ -223,6 +223,11 @@ h1{
     margin-top: 60px;
 }
 
+.item{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 
 .qwert{
     display: flex;
@@ -260,10 +265,12 @@ h1{
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    justify-content: center;
     background-color: #141414;
     padding-left: 80px;
     padding-right: 80px;
 }
+
 
 .cottage{
     margin-bottom: 20px;

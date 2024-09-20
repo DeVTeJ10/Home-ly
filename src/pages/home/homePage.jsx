@@ -17,8 +17,8 @@ import villaImg from "../../images/villa.png";
 import bedroomImg from "../../images/bedroom.png";
 import bathroomImg from "../../images/bathroom.png";
 import villa2Img from "../../images/villa 2.png";
-import havenImg from "../../images/haven.png";
-import cottageImg from "../../images/cottage.png";
+// import havenImg from "../../images/haven.png";
+// import cottageImg from "../../images/cottage.png";
 import arrow2Img from "../../images/arrow2.png";
 import arrow1Img from "../../images/arrow1.png";
 import stars1Img from "../../images/stars1.png";
@@ -33,7 +33,7 @@ import johnImg from "../../images/john.png";
 
 const HomePage = () => {
 
-  const [posts, setPosts] = useState(null);
+  const [posts, setPosts] = useState();
 
   
   useEffect(() => {
@@ -57,7 +57,7 @@ const HomePage = () => {
   }, []); 
 
    
-      
+      console.log("kkk",posts)
   
   return (
     <div>
@@ -122,10 +122,10 @@ const HomePage = () => {
         </div>
       </div>
 
-      
+      <div className="allforone">
+
           {posts?.map(post => (
             <div key={post.id} className="item">
-              <div className="allforone">
               <div className="oneforall" >
           <img
             src={villaImg}
@@ -134,20 +134,20 @@ const HomePage = () => {
             className="cottage"
             alt="Villa"
           />
-          <h3 className="seaside">{post.title}</h3>
-          <p className="stunning">{post.description}</p>
+          <h3 className="seaside" >{post.title}</h3>
+          <p className="stunning" >{post.description}</p>
           <div className="whatif">
             <div className="propteristics">
               <img src={bedroomImg} width={20} height={20} alt="Bedroom" />
-              <h4>3{post.bedroom} bedroom</h4>
+              <h4 >{post.bedroom} bedroom</h4>
             </div>
             <div className="bathroom">
               <img src={bathroomImg} width={20} height={20} alt="Bathroom" />
-              <h4>1{post.bathroom}</h4>
+              <h4 >{post.bathroom}</h4>
             </div>
             <div className="villa2">
               <img src={villa2Img} width={20} height={20} alt="Villa 2" />
-              <h4>{post.type}</h4>
+              <h4 >{post.type}</h4>
             </div>
           </div>
           <div className="qwert">
@@ -159,8 +159,9 @@ const HomePage = () => {
           </div>
       </div>
       </div>
-      </div>
             ))}
+                  </div>
+
     
 
 
