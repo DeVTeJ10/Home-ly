@@ -12,6 +12,9 @@ const Index = () => {
       const token = localStorage.getItem('authToken');
 
 
+
+
+
       console.log("authUser", authUser)
         const fetchData = async () => {
           try {
