@@ -1,6 +1,9 @@
 import Header from "../../components/header/header";
 import Stark from "../../components/Stars";
 import Footer from "../../components/footer";
+import axios from "axios";
+import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
 
 // Import property images
 import prop1Img from "../../images/prop1.png";
@@ -30,6 +33,31 @@ import star3Img from "../../images/star3.png";
 import "./propertiesPage.css";
 
 function propertiesPage() {
+
+  const [postings, setPostings] = useState();
+
+  
+  useEffect(() => {
+
+
+    const fetchPostings = async () => {
+      try {
+        const response = await axios.get("https://real-estate-backend-nodejs-ywr4.onrender.com/api/v1/post/all");
+        console.log("Data fetched successfully:", response);
+        setPostings(response?.data?.Posts); // Update the state with the fetched data
+      } catch (error) {
+        const message = error.response?.data?.message ||
+          (error.request ? "No response from server. Check your network."
+            : "Unexpected error occurred.");
+        console.error("Error:", message);
+      }
+    };
+
+
+
+
+
+
   return (
     <div>
       <Header />
