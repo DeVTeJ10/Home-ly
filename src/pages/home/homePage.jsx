@@ -17,8 +17,6 @@ import villaImg from "../../images/villa.png";
 import bedroomImg from "../../images/bedroom.png";
 import bathroomImg from "../../images/bathroom.png";
 import villa2Img from "../../images/villa 2.png";
-// import havenImg from "../../images/haven.png";
-// import cottageImg from "../../images/cottage.png";
 import arrow2Img from "../../images/arrow2.png";
 import arrow1Img from "../../images/arrow1.png";
 import stars1Img from "../../images/stars1.png";
