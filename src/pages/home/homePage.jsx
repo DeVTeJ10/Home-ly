@@ -55,7 +55,6 @@ const HomePage = () => {
   }, []); 
 
    
-      console.log("kkk",posts)
   
   return (
     <div>
