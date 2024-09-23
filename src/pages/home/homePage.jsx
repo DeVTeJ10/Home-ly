@@ -49,7 +49,7 @@ const HomePage = () => {
         console.error("Error:", message);
       }
     };
-
+  
 
     fetchPosts();
   }, []); 
@@ -152,12 +152,14 @@ const HomePage = () => {
               <p className="priceLabel">${post.price}</p>
               <p className="hundred">${post.price}</p>
             </div>
+            <Link to={`/properties-page/${post._id}`}>
             <button className="viewprop">View Property Details</button>
+            </Link>
           </div>
       </div>
       </div>
             ))}
-                  </div>
+              </div>
 
     
 
