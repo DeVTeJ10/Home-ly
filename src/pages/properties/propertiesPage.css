@@ -19,6 +19,9 @@
     color: white;
 }
 
+/* .sisenoryours{
+
+} */
 
 .malibu{
     color: white;
@@ -28,6 +31,10 @@
     display: flex;
     align-items: center;
     gap: 20px;
+}
+
+.posterisedBaller{
+    border: 1px;
 }
 
 .pricex{

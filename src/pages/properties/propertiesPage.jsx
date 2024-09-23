@@ -1,10 +1,13 @@
+// import React from "react";
 import Header from "../../components/header/header";
 import Stark from "../../components/Stars";
 import Footer from "../../components/footer";
 import axios from "axios";
-import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
-import React from "react";
+import { useParams } from "react-router-dom";
+
+
+
 
 // Import property images
 import prop1Img from "../../images/prop1.png";
@@ -30,12 +33,12 @@ import lightningsImg from "../../images/lightnings.png";
 import star1Img from "../../images/star1.png";
 import star2Img from "../../images/star2.png";
 import star3Img from "../../images/star3.png";
-
 import "./propertiesPage.css";
 
-function PropertiesPage() {
+const PropertiesPage = () => {
 
   const [postings, setPostings] = useState();
+  const { id } = useParams();
 
   
   useEffect(() => {
@@ -43,7 +46,7 @@ function PropertiesPage() {
 
     const fetchPostings = async () => {
       try {
-        const response = await axios.get("https://real-estate-backend-nodejs-ywr4.onrender.com/api/v1/post/668eb1e98db9105dde32521c");
+        const response = await axios.get(`https://real-estate-backend-nodejs-ywr4.onrender.com/api/v1/post/${id}`);
         console.log("Data fetched successfully:", response);
         setPostings(response?.data?.Posts); // Update the state with the fetched data
       } catch (error) {
@@ -52,22 +55,24 @@ function PropertiesPage() {
             : "Unexpected error occurred.");
         console.error("Error:", message);
       }
-    };fetchPostings();
-  }, []);  
-  }
+    };
+  
 
-
+    fetchPostings();
+  }, [id]); 
     
-
-
 
 
     return(
       <div>
         <Header />
+      <div>
+        {postings?.map(posters => (
+          <div key={posters.id} className="items">
+          <div className="posterisedBaller">
         <div className="propertiesx">
           <div className="seasidex">
-            <h3>Seaside Serenity Villa</h3>
+            <h3>check this man</h3>
             <div className="locationx">
               <img src={locateImg} width={13.75} height={16.87} alt="Location" />
               <p className="malibu">Malibu, California</p>
@@ -207,6 +212,13 @@ function PropertiesPage() {
           </div>
         </div>
       </div>
+      </div>
+      </div>
+      ))};
+      </div>
+
+
+
 
       <div className="starkses">
         <Stark />
@@ -575,7 +587,7 @@ function PropertiesPage() {
       <Footer />
     </div>
   );
-  
+};
 
 
 
