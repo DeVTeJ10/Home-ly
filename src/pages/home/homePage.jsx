@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 import { useState, useEffect} from "react";
 
 
+
 // Import all images
 import circogoImg from "../../images/circogo.png";
 import star1Img from "../../images/star1.png";
@@ -53,6 +54,8 @@ const HomePage = () => {
 
     fetchPosts();
   }, []); 
+
+
 
    
   
@@ -152,8 +155,9 @@ const HomePage = () => {
               <p className="priceLabel">${post.price}</p>
               <p className="hundred">${post.price}</p>
             </div>
-            <Link to={`/properties-page/${post._id}`}>
+            <Link to={`/properties-page/${post.id}` }>
             <button className="viewprop">View Property Details</button>
+
             </Link>
           </div>
       </div>
