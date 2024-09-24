@@ -5,8 +5,7 @@ import Footer from "../../components/footer";
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-
-
+import {  useLocation } from "react-router-dom";
 
 
 // Import property images
@@ -37,16 +36,30 @@ import "./propertiesPage.css";
 
 const PropertiesPage = () => {
 
-  const [postings, setPostings] = useState();
-  const { id } = useParams();
+  const [postings, setPostings] = useState(null);
+  const { _id } = useParams();
+  const location = useLocation();  // <== Added location for URL debugging
+
+
+  console.log("Current URL:", location.pathname);
+
+
+  
 
   
   useEffect(() => {
 
 
+    if (!_id) {
+      console.error("No ID found in URL parameters");  // <== Handle missing or undefined ID
+      return;
+    }
+
     const fetchPostings = async () => {
       try {
-        const response = await axios.get(`https://real-estate-backend-nodejs-ywr4.onrender.com/api/v1/post/${id}`);
+        const response = await axios.get('https://real-estate-backend-nodejs-ywr4.onrender.com/api/v1/post/${_id}',{
+          id,
+        });
         console.log("Data fetched successfully:", response);
         setPostings(response?.data?.Posts); // Update the state with the fetched data
       } catch (error) {
@@ -59,17 +72,20 @@ const PropertiesPage = () => {
   
 
     fetchPostings();
-  }, [id]); 
+  }, [_id,location]); 
     
+
+  console.log(_id)
 
 
     return(
       <div>
         <Header />
-      <div>
-        {postings?.map(posters => (
-          <div key={posters.id} className="items">
-          <div className="posterisedBaller">
+      <div className="xpropertiesty">
+        {/* {postings.map((posters => ( */}
+           {/* <div key={posters.id} className="items">  */}
+
+
         <div className="propertiesx">
           <div className="seasidex">
             <h3>check this man</h3>
@@ -212,9 +228,8 @@ const PropertiesPage = () => {
           </div>
         </div>
       </div>
-      </div>
-      </div>
-      ))};
+       {/* </div>  */}
+       {/* )))}; */}
       </div>
 
 
