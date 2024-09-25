@@ -36,32 +36,30 @@ import "./propertiesPage.css";
 
 const PropertiesPage = () => {
 
-  const [postings, setPostings] = useState(null);
-  const { _id } = useParams();
+  const [post, setPost] = useState(null);
+  const { id } = useParams();
   const location = useLocation();  // <== Added location for URL debugging
 
 
-  console.log("Current URL:", location.pathname);
+  // console.log("Current URL:", location.pathname);
 
 
-  
+  console.log('ll', post)
 
   
   useEffect(() => {
 
 
-    if (!_id) {
+    if (!id) {
       console.error("No ID found in URL parameters");  // <== Handle missing or undefined ID
       return;
     }
 
     const fetchPostings = async () => {
       try {
-        const response = await axios.get('https://real-estate-backend-nodejs-ywr4.onrender.com/api/v1/post/${_id}',{
-          id,
-        });
+        const response = await axios.get(`https://real-estate-backend-nodejs-ywr4.onrender.com/api/v1/post/${id}`)
         console.log("Data fetched successfully:", response);
-        setPostings(response?.data?.Posts); // Update the state with the fetched data
+        setPost(response?.data?.post); // Update the state with the fetched data
       } catch (error) {
         const message = error.response?.data?.message ||
           (error.request ? "No response from server. Check your network."
@@ -72,31 +70,29 @@ const PropertiesPage = () => {
   
 
     fetchPostings();
-  }, [_id,location]); 
+  }, [id, location]); 
     
 
-  console.log(_id)
+  console.log(id, location)
 
 
     return(
       <div>
         <Header />
-      <div className="xpropertiesty">
-        {/* {postings.map((posters => ( */}
-           {/* <div key={posters.id} className="items">  */}
+
 
 
         <div className="propertiesx">
           <div className="seasidex">
-            <h3>check this man</h3>
+            <h3>{post?.description}</h3>
             <div className="locationx">
               <img src={locateImg} width={13.75} height={16.87} alt="Location" />
-              <p className="malibu">Malibu, California</p>
+              <p className="malibu">{post?.location}</p>
             </div>
         </div>
         <div className="pricex">
           <p className="marg">Price</p>
-          <h3>$1,250,000</h3>
+          <h3>{post?.price}</h3>
         </div>
       </div>
 
@@ -228,9 +224,8 @@ const PropertiesPage = () => {
           </div>
         </div>
       </div>
-       {/* </div>  */}
-       {/* )))}; */}
-      </div>
+
+
 
 
 
