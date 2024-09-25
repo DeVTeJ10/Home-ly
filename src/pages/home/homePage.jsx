@@ -155,7 +155,7 @@ const HomePage = () => {
               <p className="priceLabel">${post.price}</p>
               <p className="hundred">${post.price}</p>
             </div>
-            <Link to={`/properties-page/${post.id}` }>
+            <Link to={`/properties-page/${post._id}` }>
             <button className="viewprop">View Property Details</button>
 
             </Link>
