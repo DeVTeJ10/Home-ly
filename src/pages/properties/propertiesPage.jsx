@@ -84,7 +84,7 @@ const PropertiesPage = () => {
 
         <div className="propertiesx">
           <div className="seasidex">
-            <h3>{post?.description}</h3>
+            <h3>{post?.title}</h3>
             <div className="locationx">
               <img src={locateImg} width={13.75} height={16.87} alt="Location" />
               <p className="malibu">{post?.location}</p>
@@ -92,7 +92,7 @@ const PropertiesPage = () => {
         </div>
         <div className="pricex">
           <p className="marg">Price</p>
-          <h3>{post?.price}</h3>
+          <h3>${post?.price}</h3>
         </div>
       </div>
 
@@ -172,7 +172,7 @@ const PropertiesPage = () => {
                   <img src={bedroomImg} width={20} height={20} alt="Bedroom" />
                   <p>Bedrooms</p>
                 </div>
-                <h3 className="paragh">04</h3>
+                <h3 className="paragh">{post?.bedroom}</h3>
               </div>
 
               <div className="giants">
@@ -180,7 +180,7 @@ const PropertiesPage = () => {
                   <img src={bathroomImg} width={20} height={20} alt="Bathroom" />
                   <p>Bathroom</p>
                 </div>
-                <h3 className="paragh">03</h3>
+                <h3 className="paragh">{post?.bathroom}</h3>
               </div>
 
               <div className="giants">

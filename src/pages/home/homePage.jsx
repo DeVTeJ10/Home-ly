@@ -9,6 +9,7 @@ import { useState, useEffect} from "react";
 
 
 
+
 // Import all images
 import circogoImg from "../../images/circogo.png";
 import star1Img from "../../images/star1.png";
@@ -28,27 +29,33 @@ import stars5Img from "../../images/stars5.png";
 import wadeImg from "../../images/wade.png";
 import emelieImg from "../../images/emelie.png";
 import johnImg from "../../images/john.png";
+import loadingGif from "../../images/load.gif"
 
 
 const HomePage = () => {
 
   const [posts, setPosts] = useState();
+  const [loading, setLoading] = useState(true)
 
   
   useEffect(() => {
 
 
+
     const fetchPosts = async () => {
       try {
         const response = await axios.get("https://real-estate-backend-nodejs-ywr4.onrender.com/api/v1/post/all");
-        console.log("Data fetched successfully:", response);
+        console.log("Data fetched successfully:", response);        
         setPosts(response?.data?.Posts); // Update the state with the fetched data
+        setLoading(false)
       } catch (error) {
         const message = error.response?.data?.message ||
           (error.request ? "No response from server. Check your network."
             : "Unexpected error occurred.");
         console.error("Error:", message);
+        setLoading(false)
       }
+
     };
   
 
@@ -122,54 +129,59 @@ const HomePage = () => {
         </div>
       </div>
 
-      <div className="allforone">
 
-          {posts?.map(post => (
-            <div key={post.id} className="item">
-              <div className="oneforall" >
-          <img
-            src={villaImg}
-            width={353.33}
-            height={255}
-            className="cottage"
-            alt="Villa"
-          />
-          <h3 className="seaside" >{post.title}</h3>
-          <p className="stunning" >{post.description}</p>
-          <div className="whatif">
-            <div className="propteristics">
-              <img src={bedroomImg} width={20} height={20} alt="Bedroom" />
-              <h4 >{post.bedroom} bedroom</h4>
-            </div>
-            <div className="bathroom">
-              <img src={bathroomImg} width={20} height={20} alt="Bathroom" />
-              <h4 >{post.bathroom}</h4>
-            </div>
-            <div className="villa2">
-              <img src={villa2Img} width={20} height={20} alt="Villa 2" />
-              <h4 >{post.type}</h4>
-            </div>
-          </div>
-          <div className="qwert">
-            <div>
-              <p className="priceLabel">${post.price}</p>
-              <p className="hundred">${post.price}</p>
-            </div>
-            <Link to={`/properties-page/${post._id}` }>
-            <button className="viewprop">View Property Details</button>
+    <div className="allforone">
 
-            </Link>
+{/* Loader implementation */}
+        {loading ? (
+          <div className="loading-container">
+            <img src={loadingGif} alt="Loading..." className="loading-gif" />
+            <p>Loading properties, please wait...</p>
           </div>
+        ) : (
+      posts?.map(post => (
+        <div key={post.id} className="item">
+          <div className="oneforall" >
+      <img
+        src={villaImg}
+        width={353.33}
+        height={255}
+        className="cottage"
+        alt="Villa"
+      />
+      <h3 className="seaside" >{post.title}</h3>
+      <p className="stunning" >{post.description}</p>
+      <div className="whatif">
+        <div className="propteristics">
+          <img src={bedroomImg} width={20} height={20} alt="Bedroom" />
+          <h4 >{post.bedroom} bedroom</h4>
+        </div>
+        <div className="bathroom">
+          <img src={bathroomImg} width={20} height={20} alt="Bathroom" />
+          <h4 >{post.bathroom}</h4>
+        </div>
+        <div className="villa2">
+          <img src={villa2Img} width={20} height={20} alt="Villa 2" />
+          <h4 >{post.type}</h4>
+        </div>
+      </div>
+      <div className="qwert">
+        <div>
+          <p className="priceLabel">${post.price}</p>
+          <p className="hundred">${post.price}</p>
+        </div>
+        <Link to={`/properties-page/${post._id}` }>
+        <button className="viewprop">View Property Details</button>
+
+        </Link>
       </div>
       </div>
-            ))}
-              </div>
+      </div>
+      ))
+        )}
 
+          </div>
     
-
-
-
-
       <div className="pages">
         <p> 01 of 60 </p>
         <div className="pageBTNs">
