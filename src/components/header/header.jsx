@@ -13,8 +13,6 @@ const Index = () => {
 
 
 
-
-
       console.log("authUser", authUser)
         const fetchData = async () => {
           try {
@@ -33,6 +31,8 @@ const Index = () => {
         useEffect(() => {
           fetchData();
         }, [token]); // Dependency on token
+
+
         
   return (
     <div>
@@ -49,7 +49,7 @@ const Index = () => {
           <Link to={"/about-us"}>
             <h3>About us</h3>
           </Link>
-          <Link to={"/properties-page"}>
+          <Link to={"/properties-page/:id"}>
           <h3>Properties</h3>
           </Link>
           <Link to={"/services-page"}>
@@ -57,8 +57,15 @@ const Index = () => {
           </Link>
         </div>
         {
+
           authUser?.user?.first_name ?
-          <span>Welcome: {authUser?.user?.first_name}</span>
+          <span>
+            Welcome: {authUser?.user?.first_name}
+          <Link to={"/login"}>
+            <button className="contactUS">sign out</button>
+          </Link>
+          </span>
+
           :
           <div className="contact-us">
           <Link to={"/signup"}>

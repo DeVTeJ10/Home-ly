@@ -29,7 +29,7 @@ import stars5Img from "../../images/stars5.png";
 import wadeImg from "../../images/wade.png";
 import emelieImg from "../../images/emelie.png";
 import johnImg from "../../images/john.png";
-import loadingGif from "../../images/load.gif"
+import loadingGif from "../../images/loadings.gif"
 
 
 const HomePage = () => {
@@ -135,8 +135,7 @@ const HomePage = () => {
 {/* Loader implementation */}
         {loading ? (
           <div className="loading-container">
-            <img src={loadingGif} alt="Loading..." className="loading-gif" />
-            <p>Loading properties, please wait...</p>
+            <img src={loadingGif} alt="Loading..." className="loading-gif" width={35} height={35} />
           </div>
         ) : (
       posts?.map(post => (
@@ -172,7 +171,6 @@ const HomePage = () => {
         </div>
         <Link to={`/properties-page/${post._id}` }>
         <button className="viewprop">View Property Details</button>
-
         </Link>
       </div>
       </div>
