@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import "./header.css";
 import logoImg from "../../images/Logo.png";
+import { useNavigate } from "react-router-dom";
 
     
 
@@ -10,6 +11,18 @@ const Index = () => {
 
       const [authUser, setAuthUser] = useState(null)
       const token = localStorage.getItem('authToken');
+      const navigate = useNavigate()
+
+
+
+
+
+    const handleLogOut = () => {
+
+      localStorage.clear(token)
+      navigate('/login')
+
+    }
 
 
 
@@ -62,7 +75,7 @@ const Index = () => {
           <span>
             Welcome: {authUser?.user?.first_name}
           <Link to={"/login"}>
-            <button className="contactUS">sign out</button>
+            <button className="contactUS" onClick={handleLogOut}>sign out</button>
           </Link>
           </span>
 
